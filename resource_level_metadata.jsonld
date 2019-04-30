@@ -1,0 +1,43 @@
+{
+ "@context": {
+  "@base": "http://www.ejprarediseases.org/vocabulary/",
+  "ejp": "http://www.ejprarediseases.org/vocabulary/",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "dc": "http://purl.org/dc/terms/",
+  "dce": "http://purl.org/dc/elements/1.1/",
+  "dct": "http://purl.org/dc/terms/1.1/",
+  "dcat":"http://www.w3.org/ns/dcat#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "obo": "http://purl.obolibrary.org/obo/",
+  "Orphanet": "http://www.orpha.net/ORDO/Orphanet_",
+  "topic": "http://edamontology.org/topic_",
+  "id": "dc:identifier",
+  "name": "dct:title",
+  "description": "dct:description",
+  "theme": {
+    "@id" : "dcat:themeTaxonomy",
+    "@type": "@id"
+  },
+  "homepage": {
+     "@id": "foaf:homepage",
+     "@type" : "@id"
+  },
+  "location": "dct:spatial",
+  "alias": "dc:alternative",
+  "same_as": "owl:sameAs",
+  "license": "dct:license",
+  "has_data_on_individuals": "ejp:has_data_on_individuals",
+  "has_metrics_on_registered_individuals": "ejp:has_metrics_on_registered_individuals",
+  "has_biosamples": "ejp:has_biosamples",
+  "has_contact_details": "ejp:has_contact_details",
+  "Registry": "obo:ERO_0001843",
+  "BioBank": "topic:3337",
+  "Catalog": "dct:Catalog",
+  "type": {
+   "@id": "rdf:type",
+   "@type": "@id"
+  }
+}
