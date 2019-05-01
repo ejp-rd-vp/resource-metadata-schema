@@ -1,4 +1,4 @@
-# Metadata for EJP rare disease registries and catalogs
+# Metadata for EJP rare disease registries, biobanks and catalogs
 
 We are developing minimal schemas for rare disease resources to expose metadata to the EJP virtual platform (VP).
 The schemas will be published as JSON schemas with a semantic mapping to standard vocabularies provided using JSON-LD.
