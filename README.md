@@ -14,7 +14,7 @@ A simplified representation of the same data in CSV format is in [rd_resource_me
 
 ### Example
 
-An example instance of a resource level metadata taken from Orphanet can be seen in [orphanet_24435.json](examples/orphanet_24435.json).
+An example instance of a resource level metadata [taken from Orphanet](https://www.orpha.net/consor4.01/www/cgi-bin/Directory_Institutions.php?lng=EN&data_id=24435&title=Selbsthilfegruppe%20Ektodermale%20Dysplasie&data_type=Test) can be seen in [orphanet_24435.json](examples/orphanet_24435.json).
 
 ### JSON-LD
 
