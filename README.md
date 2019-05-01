@@ -31,7 +31,7 @@ be sufficent to expose data aboutthese resource through the virtual platform
 * Provide a mechanism to identify resources and harmonise duplicate resources across catalogs
 * Provide geographical infomation so resources can be filtered by country in the VP
 * Expose if resources contain data about individuals with a rare disease e.g. a patient registry
-* Expose if resources provide metrics about individuals, suchs as number of cases
+* Expose if resources provide metrics about individuals, such as number of cases
 * Expose if a resource has access to biological samples, such as tissue or cell ines.
 * Expose if the resource has further contact information
 * ...
