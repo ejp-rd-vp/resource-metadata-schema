@@ -8,7 +8,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.ejprarediseases.org/resource/1> a ns2:Registry ;
+<http://www.ejprarediseases.org/resource/1> a ejp:Registry ;
     dc:description "Die Ektodermale Dysplasie (ed) ist eine genetisch bedingte Erkrankung. Typisch fÃ¼r uns ist, dass wir nicht, oder nur wenig schwitzen kÃ¶nnen, dass Zahnanomalien auftreten, ZÃ¤hne fehlen oder in spitzer Form wachsen, dass Kinder Flaumhaare haben und der Haarwuchs weniger als normal ist. Eine genaue Beschreibung der Symptome und der Ursachen kÃ¶nnen Sie in der Rubrik âWas ist edâ nachlesen." ;
     dc:spatial "Austria" ;
     dc:title "Selbsthilfegruppe Ektodermale Dysplasie" ;
