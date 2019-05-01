@@ -1,6 +1,6 @@
 # Metadata for EJP rare disease registries and catalogs
 
-We are developing minimal schemas for rare disease resources to expose metadata to the EJP virtual platform.
+We are developing minimal schemas for rare disease resources to expose metadata to the EJP virtual platform (VP).
 The schemas will be published as JSON schemas with a semantic mapping to standard vocabularies provided using JSON-LD.
 
 The core model is designed to represent data about a rare disease resource, these include rare disease registries, biobanks, expert networks and catalog of rare disease resources. The model is based on and builds from the
@@ -31,7 +31,7 @@ be sufficent to expose data aboutthese resource through the virtual platform
 * Provide a mechanism to identify resources and harmonise duplicate resources across catalogs
 * Provide geographical infomation so resources can be filtered by country in the VP
 * Expose if resources contain data about individuals with a rare disease e.g. a patient registry
-* Expose if resources provide metrics about individuals, suchs as number of cases
+* Expose if resources provide metrics about individuals, such as number of cases
 * Expose if a resource has access to biological samples, such as tissue or cell ines.
 * Expose if the resource has further contact information
 * ...
