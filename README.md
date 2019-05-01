@@ -8,8 +8,8 @@ the W3C DCAT vocabulary for describing a data catalogs and datasets.
 
 ## Resource level schema
 
-The primary JSON schema for a resource is described in [resource_level_metadata.json](resource_level_metadata.json).
-A simplified representation of the same data in CSV format is in [resource_level_metadata.csv](resource_level_metadata.csv).
+The primary JSON schema for a resource is described in [rd_resource_metadata.json](rd_resource_metadata.json).
+A simplified representation of the same data in CSV format is in [rd_resource_metadata.csv](rd_resource_metadata.csv).
 
 
 ### Example
@@ -18,7 +18,7 @@ An example instance of a resource level metadata taken from Orphanet can be seen
 
 ### JSON-LD
 
-You can apply the JSON-LD context from [resource_level_metadata.jsonld](resource_level_metadata.jsonld) to any JSON document to generate an RDF representation. An example of a resource entry in
+You can apply the JSON-LD context from [rd_resource_metadata.jsonld](rd_resource_metadata.jsonld) to any JSON document to generate an RDF representation. An example of a resource entry in
 RDF turtle format is in [orphanet_24435.ttl](examples/orphanet_24435.ttl)
 
 ## Use cases
