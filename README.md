@@ -8,8 +8,8 @@ the W3C DCAT vocabulary for describing a data catalogs and datasets.
 
 ## Resource level schema
 
-The primary JSON schema for a resource is described in [resource_level_metadata.json].
-A simplified representation of the same data in CSV format is in [resource_level_metadata.csv].
+The primary JSON schema for a resource is described in [resource_level_metadata.json](resource_level_metadata.json).
+A simplified representation of the same data in CSV format is in [resource_level_metadata.csv](resource_level_metadata.json).
 
 
 ### Example
