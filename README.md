@@ -1,14 +1,16 @@
 # Metadata for EJP rare disease registries, biobanks and catalogs
 
 As part of the [European Joint Programme (EJP) for Rare Disease](http://www.ejprarediseases.org), we are developing minimal schemas for rare disease resources to expose metadata to the EJP virtual platform (VP).
-The schemas will be published as JSON schemas with a semantic mapping to standard vocabularies provided using JSON-LD.
+The schemas will be published as JSON schemas with a semantic mapping to standard vocabularies using JSON-LD.
 
-The core model is designed to represent data about a rare disease resource, these include rare disease registries, biobanks, expert networks and catalog of rare disease resources. The model is based on and builds from the
+The core model is designed to represent data about a rare disease resource, these include rare disease registries, biobanks, expert networks and catalogs of resources. The model is based on and builds from the
 the W3C DCAT vocabulary for describing a data catalogs and datasets.
+
+> Status: DRAFT - 1st May, 2019. This is currently a strawman proposal intended to generate discussion and help in developing an early demonstrator. 
 
 ## Resource level JSON schema
 
-The primary JSON schema for a resource is described in [rd_resource_metadata.json](rd_resource_metadata.json).
+The JSON schema for a resource is described in [rd_resource_metadata.json](rd_resource_metadata.json).
 
 A simplified representation of the same data in CSV format is in [rd_resource_metadata.csv](rd_resource_metadata.csv).
 
