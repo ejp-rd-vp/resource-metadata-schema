@@ -6,17 +6,18 @@ The schemas will be published as JSON schemas with a semantic mapping to standar
 The core model is designed to represent data about a rare disease resource, these include rare disease registries, biobanks, expert networks and catalog of rare disease resources. The model is based on and builds from the
 the W3C DCAT vocabulary for describing a data catalogs and datasets.
 
-## Resource level schema
+## Resource level JSON schema
 
 The primary JSON schema for a resource is described in [rd_resource_metadata.json](rd_resource_metadata.json).
+
 A simplified representation of the same data in CSV format is in [rd_resource_metadata.csv](rd_resource_metadata.csv).
 
 
-### Example
+### Example data
 
 An example instance of a resource level metadata [taken from Orphanet](https://www.orpha.net/consor4.01/www/cgi-bin/Directory_Institutions.php?lng=EN&data_id=24435&title=Selbsthilfegruppe%20Ektodermale%20Dysplasie&data_type=Test) can be seen in [orphanet_24435.json](examples/orphanet_24435.json).
 
-### JSON-LD
+### RDF + JSON-LD
 
 You can apply the JSON-LD context from [rd_resource_metadata.jsonld](rd_resource_metadata.jsonld) to any JSON document to generate an RDF representation. An example of a resource entry in
 RDF turtle format is in [orphanet_24435.ttl](examples/orphanet_24435.ttl)
