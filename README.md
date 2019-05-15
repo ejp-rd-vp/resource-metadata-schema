@@ -11,7 +11,7 @@ The core model is designed to represent data about a rare disease resource, thes
 
 This diagram illustrates the basic idea of a schema block. Blocks are reusable components and new blocks can be defined that inherit from parent blocks. 
 
-![schema](EJP schema blocks.png?raw=true)
+![schema](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/master/EJP%20schema%20blocks.png?raw=true)
 
 ## Resource level JSON schema
 
