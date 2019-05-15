@@ -15,9 +15,9 @@ This diagram illustrates the basic idea of a schema block. Blocks are reusable c
 
 ## Resource level JSON schema
 
-A example of a catalogue block in JSON schema is described in [rd_resource_metadata.json](rd_resource_metadata.json).
+A example of a catalogue block in JSON schema is described in [catalog_block.json](catalog_block.json).
 
-A simplified representation of the same data in CSV format is in [rd_resource_metadata.csv](rd_resource_metadata.csv).
+A simplified representation of the same data in CSV format is in [catalog_block.csv](catalog_block.csv).
 
 ### Example data
 
@@ -25,19 +25,26 @@ An example instance of a resource level metadata [taken from Orphanet](https://w
 
 ```
 {
-  "@id":"24435",
-  "@type": "PatientRegistry",
-  "name": "Selbsthilfegruppe Ektodermale Dysplasie",
-  "description": "Die Ektodermale Dysplasie (ed) ist eine genetisch bedingte Erkrankung. Typisch für uns ist, dass wir nicht, oder nur wenig schwitzen können, dass Zahnanomalien auftreten, Zähne fehlen oder in spitzer Form wachsen, dass Kinder Flaumhaare haben und der Haarwuchs weniger als normal ist. Eine genaue Beschreibung der Symptome und der Ursachen können Sie in der Rubrik „Was ist ed“ nachlesen.",
-  "theme": ["Orphanet:398189"],
-  "homepage": "http://www.ektodermale-dysplasie.de",
-  "location": "Austria",
-  "has_data_on_individuals": true,
-  "has_metrics_on_registered_individuals": true,
-  "has_biosamples": false,
-  "has_contact_details": true
+  "@id":"https://www.orpha.net",
+  "@type": "Catalog",
+  "name": "Orphanet catalog of registries",
+  "homepage": "https://www.orpha.net"
 }
 ```
+
+```
+{
+  "@id":"24435",
+  "type": "PatientRegistry",
+  "name": "Selbsthilfegruppe Ektodermale Dysplasie",
+  "description": "Die Ektodermale Dysplasie (ed) ist eine genetisch bedingte Erkrankung. Typisch für uns ist, dass wir nicht, oder nur wenig schwitzen können, dass Zahnanomalien auftreten, Zähne fehlen oder in spitzer Form wachsen, dass Kinder Flaumhaare haben und der Haarwuchs weniger als normal ist. Eine genaue Beschreibung der Symptome und der Ursachen können Sie in der Rubrik „Was ist ed“ nachlesen.",
+  "theme": [ { id : "Orphanet:398189"} ]
+  "homepage": "http://www.ektodermale-dysplasie.de",
+  "location": { country : "Austria" },
+  "inCatalog" : [ {  "@id":"https://www.orpha.net" } ]
+}
+```
+
 
 ### RDF + JSON-LD
 
