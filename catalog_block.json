@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "High-level metadata for a rare disease resource, registry, catalog or biobank",
+  "required": [
+    "id",
+    "name",
+    "description"
+  ],
+  "title": "Rare disease resource",
+  "properties": {
+    "@id": {
+      "description": "a primary identifer for the resource",
+      "type": "string",
+    },
+    "@type": {
+      "description": "the primary type for this resource",
+      "type": "string",
+      "enum": [
+          "Registry", "BioBank", "Catalog"
+      ]
+    },
+    "name": {
+      "description": "a name or short description for the resource",
+      "type": "string",
+    },
+    "description": {
+      "description": "A description for the resource",
+      "type": "string",
+    },
+    "about": {
+      "$ref" : "code_block.json",
+      "description": "A list of Orphanet codes that represent the theme of this resource. ",
+      "type": "array"
+    },
+    "homepage": {
+      "description": "The primary URL for the homepage of the resource",
+      "type": "string",
+    },
+    "location": {
+      "description": "primary country or location associated with the resource ",
+      "type": "string",
+      "$ref" : "location_block.json"
+    },
+    "alias": {
+      "description": "alias or synonym for this resource",
+      "type": "string",
+    },
+    "same_as": {
+      "description": "alternate identifiers or ulr for the same resource",
+      "type": "string",
+    }
+  }
+}
+
