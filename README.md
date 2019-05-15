@@ -23,6 +23,22 @@ A simplified representation of the same data in CSV format is in [rd_resource_me
 
 An example instance of a resource level metadata [taken from Orphanet](https://www.orpha.net/consor4.01/www/cgi-bin/Directory_Institutions.php?lng=EN&data_id=24435&title=Selbsthilfegruppe%20Ektodermale%20Dysplasie&data_type=Test) can be seen in [orphanet_24435.json](examples/orphanet_24435.json).
 
+```
+{
+  "@id":"24435",
+  "@type": "PatientRegistry",
+  "name": "Selbsthilfegruppe Ektodermale Dysplasie",
+  "description": "Die Ektodermale Dysplasie (ed) ist eine genetisch bedingte Erkrankung. Typisch für uns ist, dass wir nicht, oder nur wenig schwitzen können, dass Zahnanomalien auftreten, Zähne fehlen oder in spitzer Form wachsen, dass Kinder Flaumhaare haben und der Haarwuchs weniger als normal ist. Eine genaue Beschreibung der Symptome und der Ursachen können Sie in der Rubrik „Was ist ed“ nachlesen.",
+  "theme": ["Orphanet:398189"],
+  "homepage": "http://www.ektodermale-dysplasie.de",
+  "location": "Austria",
+  "has_data_on_individuals": true,
+  "has_metrics_on_registered_individuals": true,
+  "has_biosamples": false,
+  "has_contact_details": true
+}
+```
+
 ### RDF + JSON-LD
 
 You can apply the JSON-LD context from [rd_resource_metadata.jsonld](rd_resource_metadata.jsonld) to any JSON document to generate an RDF representation. An example of a resource entry in
