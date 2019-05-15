@@ -15,7 +15,7 @@ This diagram illustrates the basic idea of a schema block. Blocks are reusable c
 
 ## Resource level JSON schema
 
-A example of a catalogue block in JSON schema is described in [catalog_block.json](catalog_block.json).
+A example of a catalog block in JSON schema is described in [catalog_block.json](catalog_block.json).
 
 A simplified representation of the same data in CSV format is in [catalog_block.csv](catalog_block.csv).
 
