@@ -1,19 +1,21 @@
 # Metadata for EJP rare disease registries, biobanks and catalogs
 
 As part of the [European Joint Programme (EJP) for Rare Disease](http://www.ejprarediseases.org), we are developing minimal schemas for rare disease resources to expose metadata to the EJP virtual platform (VP).
-The schemas will be published as JSON schemas with a semantic mapping to standard vocabularies using JSON-LD.
+The schemas are expressed as a number of schema blocks that can be combined to create rich metadata objects. The schema blocks will be published as JSON schem modules with a semantic mapping to standard vocabularies using JSON-LD.
 
-The core model is designed to represent data about a rare disease resource, these include rare disease registries, biobanks, expert networks and catalogs of resources. The model is based on and builds from the
-the W3C DCAT vocabulary for describing a data catalogs and datasets.
+The core model is designed to represent data about a rare disease resource, these include rare disease registries, biobanks, expert networks and catalogs of resources. The model is based on and builds on existing standards, such as the [European Rare Disease Registry Infrastructure](https://eu-rd-platform.jrc.ec.europa.eu) and the [Common Data Elements](http://www.erare.eu/sites/default/files/SetCommonData-EU%20RD%20Platform_CDS%20_final.pdf) initiatives in the rare diesease community and other more generalised initiatives such as the W3C [DCAT vocabulary](https://www.w3.org/TR/vocab-dcat/). We are also working to align with similar schema standarisation efforts such as [schema.org](https://schema.org), [bioschemas](https://bioschemas.org) and [GA4GH](https://www.ga4gh.org) (see also [schema blocks](https://schemablocks.org) and [phenopackets](http://phenopackets.org).
 
 > Status: DRAFT - 1st May, 2019. This is currently a strawman proposal intended to generate discussion and help in developing an early demonstrator. 
 
+## Schema block elements overview
+
+This diagram illustrates the basic idea of a schema block. Blocks are reusable components and new blocks can be defined that inherit from parent blocks. 
+
 ## Resource level JSON schema
 
-The JSON schema for a resource is described in [rd_resource_metadata.json](rd_resource_metadata.json).
+A example of a catalogue block in JSON schema is described in [rd_resource_metadata.json](rd_resource_metadata.json).
 
 A simplified representation of the same data in CSV format is in [rd_resource_metadata.csv](rd_resource_metadata.csv).
-
 
 ### Example data
 
@@ -23,6 +25,10 @@ An example instance of a resource level metadata [taken from Orphanet](https://w
 
 You can apply the JSON-LD context from [rd_resource_metadata.jsonld](rd_resource_metadata.jsonld) to any JSON document to generate an RDF representation. An example of a resource entry in
 RDF turtle format is in [orphanet_24435.ttl](examples/orphanet_24435.ttl)
+
+### Schema.org
+
+The schema blocks are designed to be compatible with schema.org style markup that allows you embedd the metadata into Web pages. Both RDFa and JSON-LD representations are supported microformats. See an (example of a draft schema.org proposal)[http://schema.semanticsfirst.com/devSpecs/PatientRegistry/] for a patient registry. 
 
 ## Use cases
 
