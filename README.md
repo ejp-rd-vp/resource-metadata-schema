@@ -46,7 +46,7 @@ RDF turtle format is in [orphanet_24435.ttl](examples/orphanet_24435.ttl)
 
 ### Schema.org
 
-The schema blocks are designed to be compatible with schema.org style markup that allows you embedd the metadata into Web pages. Both RDFa and JSON-LD representations are supported microformats. See an (example of a draft schema.org proposal)[http://schema.semanticsfirst.com/devSpecs/PatientRegistry/] for a patient registry. 
+The schema blocks are designed to be compatible with schema.org style markup that allows you embedd the metadata into Web pages. Both RDFa and JSON-LD representations are supported microformats. See an [example of a draft schema.org proposal](http://schema.semanticsfirst.com/devSpecs/PatientRegistry/) for a patient registry. 
 
 ## Use cases
 
