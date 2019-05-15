@@ -38,9 +38,9 @@ An example instance of a resource level metadata [taken from Orphanet](https://w
   "type": "PatientRegistry",
   "name": "Selbsthilfegruppe Ektodermale Dysplasie",
   "description": "Die Ektodermale Dysplasie (ed) ist eine genetisch bedingte Erkrankung. Typisch für uns ist, dass wir nicht, oder nur wenig schwitzen können, dass Zahnanomalien auftreten, Zähne fehlen oder in spitzer Form wachsen, dass Kinder Flaumhaare haben und der Haarwuchs weniger als normal ist. Eine genaue Beschreibung der Symptome und der Ursachen können Sie in der Rubrik „Was ist ed“ nachlesen.",
-  "theme": [ { id : "Orphanet:398189"} ]
+  "theme": [ { "id" : "Orphanet:398189"} ],
   "homepage": "http://www.ektodermale-dysplasie.de",
-  "location": { country : "Austria" },
+  "location": { "country" : "Austria" },
   "inCatalog" : [ {  "@id":"https://www.orpha.net" } ]
 }
 ```
@@ -48,7 +48,7 @@ An example instance of a resource level metadata [taken from Orphanet](https://w
 
 ### RDF + JSON-LD
 
-You can apply the JSON-LD context from [rd_resource_metadata.jsonld](rd_resource_metadata.jsonld) to any JSON document to generate an RDF representation. An example of a resource entry in
+You can apply the JSON-LD context from [ejp_vocabulary.jsonld](ejp_vocabulary.jsonld) to any JSON document to generate an RDF representation. An example of a resource entry in
 RDF turtle format is in [orphanet_24435.ttl](examples/orphanet_24435.ttl)
 
 ### Schema.org
