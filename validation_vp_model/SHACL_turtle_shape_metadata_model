@@ -18,7 +18,8 @@ ejp-s:CatalogOfRegistriesShape
         sh:path dct:publisher ;
         sh:name "Organisation" ;
         sh:description "The organisation that published a catalog of registries." ;
-        sh:node ejp:Organisation ;
+        sh:class ejp:Organisation; 
+        sh:node ejp-s:OrganisationShape ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
     ] ;
@@ -26,7 +27,8 @@ ejp-s:CatalogOfRegistriesShape
         sh:path dcat:dataset ;
         sh:name "patientRegistryDataset" ;
         sh:description "A patient registry dataset." ;
-        sh:node ejp:PatientRegistryDataset ;
+        sh:class ejp:PatientRegistryDataset; 
+        sh:node ejp-s:PatientRegistryDatasetShape;
         sh:minCount 1 ;
     ] .
      
@@ -41,6 +43,7 @@ ejp-s:OrganisationShape
         sh:path dct:spatial ;
         sh:name "Location" ;
         sh:description "The country where the organisation is situated." ;
+        sh:class ejp:Location;
         sh:node ejp-s:LocationShape ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
@@ -57,6 +60,7 @@ ejp-s:PatientRegistryDatasetShape
         sh:path ejp:populationCoverage ;
         sh:name "PopulationCoverage" ;
         sh:description "The country from which the patients in the dataset come from." ;
+        sh:class ejp:Location;
         sh:node ejp-s:LocationShape ;
         sh:minCount 1 ;
     ] ;
@@ -64,14 +68,15 @@ ejp-s:PatientRegistryDatasetShape
         sh:path dcat:theme ;
         sh:name "DiseaseCode" ;
         sh:description "The disease code." ;
-        sh:node ejp:DiseaseCode ;
+        sh:node ejp-s:DiseaseCodeShape ;
         sh:minCount 1 ;
     ] ;
     sh:property [
         sh:path dct:publisher ;
         sh:name "Organisation" ;
         sh:description "The organisation that published a catalog of registries." ;
-        sh:node ejp:Organisation ;
+        sh:class ejp:Organisation; 
+        sh:node ejp-s:OrganisationShape ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
     ] .
@@ -95,4 +100,7 @@ ejp-s:DiseaseCodeShape
 
 ejp-s:LocationShape
     a rdfs:Class, sh:NodeShape ;
-    sh:nodeKind sh:IRI .
+    sh:nodeKind sh:IRI ;
+    sh:targetClass ejp:Location ;
+    rdfs:label "Localtion" ;
+    rdfs:subClassOf rdfs:Resource .
