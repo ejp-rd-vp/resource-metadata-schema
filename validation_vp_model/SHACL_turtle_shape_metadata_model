@@ -1,13 +1,15 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ejp: <http://purl.org/ejp-rd/vocabulary#> .
+@prefix ejp-s: <http://purl.org/ejp-rd/metadata/shapes/> .
+@prefix ejp: <http://purl.org/ejp-rd/vocabulary/> .
 @prefix dct: <http://purl.org/dc/terms#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-ejp:CatalogOfRegistriesShape
+ejp-s:CatalogOfRegistriesShape
     a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI;
     sh:targetClass ejp:CatalogOfRegistries ;
     rdfs:label "CatalogOfRegistries" ;
     rdfs:subClassOf rdfs:Resource ;
@@ -26,11 +28,11 @@ ejp:CatalogOfRegistriesShape
         sh:description "A patient registry dataset." ;
         sh:node ejp:PatientRegistryDataset ;
         sh:minCount 1 ;
-    ] ;
-    .
+    ] .
      
-ejp:OrganisationShape
+ejp-s:OrganisationShape
     a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI;
     sh:targetClass ejp:Organisation ;
     rdfs:label "Organisation" ;
     rdfs:subClassOf rdfs:Resource ;
@@ -39,14 +41,14 @@ ejp:OrganisationShape
         sh:path dct:spatial ;
         sh:name "Location" ;
         sh:description "The country where the organisation is situated." ;
-        sh:node ejp:Location ;
+        sh:node ejp-s:LocationShape ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
-    ] ;
-    .
+    ] .
     
-ejp:PatientRegistryDatasetShape
+ejp-s:PatientRegistryDatasetShape
     a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI;
     sh:targetClass ejp:PatientRegistryDataset ;
     rdfs:label "PatientRegistryDataset" ;
     rdfs:subClassOf rdfs:Resource ;
@@ -55,7 +57,7 @@ ejp:PatientRegistryDatasetShape
         sh:path ejp:populationCoverage ;
         sh:name "PopulationCoverage" ;
         sh:description "The country from which the patients in the dataset come from." ;
-        sh:node ejp:Location ;
+        sh:node ejp-s:LocationShape ;
         sh:minCount 1 ;
     ] ;
     sh:property [
@@ -72,11 +74,11 @@ ejp:PatientRegistryDatasetShape
         sh:node ejp:Organisation ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
-    ] ;
-    .
+    ] .
     
-ejp:DiseaseCodeShape
+ejp-s:DiseaseCodeShape
     a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI;
     sh:targetClass ejp:DiseaseCode ;
     rdfs:label "DiseaseCode" ;
     rdfs:subClassOf rdfs:Resource ;
@@ -88,6 +90,9 @@ ejp:DiseaseCodeShape
         sh:node ejp:DiseaseCodeSystem ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
-    ] ;
-    .
+    ] .
 
+
+ejp-s:LocationShape
+    a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI .
