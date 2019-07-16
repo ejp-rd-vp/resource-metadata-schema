@@ -11,3 +11,4 @@ Conversion can be done using any of these (and probably others):
 Validation of RDF can be done using the W3C validator:
 https://www.w3.org/RDF/Validator/
 
+![schema](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/master/resource-metadata-schema/vp-model.gif?raw=true)
