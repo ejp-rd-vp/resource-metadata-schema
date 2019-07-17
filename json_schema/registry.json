@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema to describe a dataset of patients, cohorts or biomaterials from a registry",
+  "required": [
+    "@id",
+    "@type"
+  ],
+  "title": "Rare disease patient or biosample registry",
+  "properties": {
+    "@id": {
+      "description": "a primary identifier for the registry",
+      "type": "string"
+    },
+    "@type": {
+      "description": "the primary type for this registry",
+      "type": "string",
+      "enum": [
+        "PatientRegistryDataset", "BiobankRegistryDataset"
+      ]
+    },
+    "name": {
+      "description": "a name or short description for the registry",
+      "type": "string"
+    },
+    "description": {
+      "description": "A description for the registry",
+      "type": "string"
+    },
+    "homepage": {
+      "description": "The primary URL for the homepage of the registry",
+      "type": "string"
+    },
+    "publisher": {
+      "description": "The primary organisation responsible for publishing and maintaining the registry",
+      "type": "array",
+      "items": {
+        "$ref": "organisation.json"
+      }
+    },
+    "disease_cases": {
+      "description": "Information about the individual cases described in the registry",
+      "type": "array",
+      "items": {
+        "$ref": "case.json"
+      }
+    }
+  }
+}
+
