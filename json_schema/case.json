@@ -1,9 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema block to describe cases or entries in a patient registry or biobank",
-  "required": [
-    "@id"
-  ],
   "properties": {
      "description": {
       "description": "A description for the case",
