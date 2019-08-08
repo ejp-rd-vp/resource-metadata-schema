@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema block to describe cases or entries in a patient registry or biobank",
+  "required": [
+    "@id"
+  ],
+  "properties": {
+     "description": {
+      "description": "A description for the case",
+      "type": "string"
+    },
+    "number_of_cases": {
+      "description": "A number of patients registered for this case",
+      "type": "string"
+    },
+    "inclusion_exclusion_criteria": {
+      "description": "A description of the inclusion or exclusion criteria",
+      "type": "string"
+    },
+    "recruitment_area": {
+      "description": "The region or local covered by the registry",
+      "type": "array",
+      "items": {
+        "$ref": "location.json"
+      }
+    },
+    "disease_code": {
+      "description" : "A primary disease code associated with the case or group of patients",
+      "type" : "array",
+      "items" : {
+       "$ref" : "vocabulary_code.json"
+      }
+    }
+  }
+}
+

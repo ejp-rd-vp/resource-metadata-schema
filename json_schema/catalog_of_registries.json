@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Schema to describe a resource that catalogs registries such as Orphanet",
+  "required": [
+    "@id",
+    "@type"
+  ],
+  "title": "Rare disease catalog",
+  "properties": {
+    "@id": {
+      "description": "a primary identifier for the catalog",
+      "type": "string"
+    },
+    "@type": {
+      "description": "the primary type for this catalog",
+      "type": "string",
+      "enum": [
+          "CatalogOfRegistries"
+      ]
+    },
+    "name": {
+      "description": "a name or short description for the catalog",
+      "type": "string"
+    },
+    "description": {
+      "description": "A description for the catalog",
+      "type": "string"
+    },
+    "homepage": {
+      "description": "The primary URL for the homepage of the catalog",
+      "type": "string"
+    },
+    "datasets" : {
+      "type": "array",
+      "items": {
+        "$ref": "registry.json"
+      }
+    },
+    "organisation" : {
+      "type": "array",
+      "items": {
+        "$ref": "organisation.json"
+      }
+    }
+  }
+}
+
