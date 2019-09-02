@@ -14,7 +14,7 @@ All the JSON schema files can be found in the [json_schema](json_schema/) direct
 * [registry.json](json_schema/registry.json) - describes a patient or biosample registry dataset
 * [catalog_of_registries.json](json_schema/catalog_of_registries.json) - describes a catalog or registries that links to individual registry datasets
 
-There are also a number of re-usable schema modules
+There are also a number of reusable schema modules
 
 * [organisation.json](json_schema/organisation.json) - describes an organisation assoicated to the registry
 * [location.json](json_schema/location.json) - describes a location or region that could be associated to an organisation or may be used to describe a recruitment region
