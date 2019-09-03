@@ -32,8 +32,9 @@
     },
     "datasets" : {
       "type": "array",
+      "descripton": "List of dataset identifiers"
       "items": {
-        "$ref": "registry.json"
+        "type" : "string"
       }
     },
     "organisation" : {
@@ -44,4 +45,3 @@
     }
   }
 }
-
