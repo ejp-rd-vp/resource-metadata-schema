@@ -9,7 +9,9 @@ The core model is designed to represent data about a rare disease patient and bi
 
 ## JSON Schema overview
 
-All the JSON schema files can be found in the [json_schema](json_schema/) directory. The core schema types are:
+You can browse the published schema files at https://ejp-rd-vp.github.io/resource-metadata-schema/.
+
+All the raw JSON schema files can also be found in the [json_schema](json_schema/) directory. The core schema types are:
 
 * [registry.json](json_schema/registry.json) - describes a patient or biosample registry dataset
 * [catalog_of_registries.json](json_schema/catalog_of_registries.json) - describes a catalog or registries that links to individual registry datasets
@@ -91,7 +93,7 @@ RDF turtle format is in [erdri_registry_1.ttl](examples/rdf/erdri_registry_1.ttl
 ## Use cases
 
 * Provide minimal metadata to describe a rare disease registry or biobank, or a catalog of registries or biobanks. The metadata should
-be sufficent to expose data about these resource through the virtual platform
+be sufficient to expose data about these resource through the virtual platform
 * Provide a uniform way for resources to expose the primary disease using a Orphanet code so that resources can be searched by disease in the virtual platform
 * Provide a mechanism to identify resources and harmonise duplicate resources across catalogs
 * Provide geographical information so resources can be filtered by country in the VP
