@@ -1,0 +1,34 @@
+{
+    "$id": "organisation.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A schema to describe an organisation",
+    "required": [
+        "@id"
+    ],
+    "title": "Rare disease resource",
+    "properties": {
+        "@id": {
+            "description": "a primary identifier for the registry",
+            "type": "string"
+        },
+        "name": {
+            "description": "a name or short description for the organisation",
+            "type": "string"
+        },
+        "description": {
+            "description": "A description for the organiation",
+            "type": "string"
+        },
+        "homepage": {
+            "description": "The primary URL for the homepage of the organisation",
+            "type": "string"
+        },
+        "location": {
+            "description": "Information about the location associated with the organisation",
+            "type": "array",
+            "items": {
+                "$ref": "location.json"
+            }
+        }
+    }
+}
