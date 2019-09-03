@@ -1,11 +1,12 @@
 {
+  "$id" : "catalog_of_registries.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Rare disease catalog",
   "description": "Schema to describe a resource that catalogs registries such as Orphanet",
   "required": [
     "@id",
     "@type"
   ],
-  "title": "Rare disease catalog",
   "properties": {
     "@id": {
       "description": "a primary identifier for the catalog",
@@ -32,9 +33,11 @@
     },
     "datasets" : {
       "type": "array",
-      "descripton": "List of dataset identifiers"
+      "descripton": "List of dataset urls",
       "items": {
-        "type" : "string"
+        "type" : "string",
+        "format" : "url"
+
       }
     },
     "organisation" : {
