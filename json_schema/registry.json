@@ -37,6 +37,13 @@
         "$ref": "organisation.json"
       }
     },
+    "theme": {
+      "description": "The primary diseases associated with the dataset",
+      "type": "array",
+      "items": {
+        "$ref": "vocabulary_code.json"
+      }
+    },
     "disease_cases": {
       "description": "Information about the individual cases described in the registry",
       "type": "array",
@@ -46,4 +53,3 @@
     }
   }
 }
-
