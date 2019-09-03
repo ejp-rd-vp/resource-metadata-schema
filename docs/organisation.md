@@ -1,4 +1,4 @@
-# Rare disease resource Schema
+# Organisation Schema
 
 ```
 organisation.json
@@ -10,16 +10,16 @@ A schema to describe an organisation
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | -------------------------------------- |
 | Can be instantiated | No         | Experimental | No           | Forbidden         | Permitted             | [organisation.json](organisation.json) |
 
-# Rare disease resource Properties
+# Organisation Properties
 
-| Property                    | Type                                       | Required     | Nullable | Defined by                                 |
-| --------------------------- | ------------------------------------------ | ------------ | -------- | ------------------------------------------ |
-| [@id](#id)                  | `string`                                   | **Required** | No       | Rare disease resource (this schema)        |
-| [description](#description) | `string`                                   | Optional     | No       | Rare disease resource (this schema)        |
-| [homepage](#homepage)       | `string`                                   | Optional     | No       | Rare disease resource (this schema)        |
-| [location](#location)       | Rare disease patient or biosample registry | Optional     | No       | Rare disease resource (this schema)        |
-| [name](#name)               | `string`                                   | Optional     | No       | Rare disease resource (this schema)        |
-| `*`                         | any                                        | Additional   | Yes      | this schema _allows_ additional properties |
+| Property                    | Type     | Required     | Nullable | Defined by                                 |
+| --------------------------- | -------- | ------------ | -------- | ------------------------------------------ |
+| [@id](#id)                  | `string` | **Required** | No       | Organisation (this schema)                 |
+| [description](#description) | `string` | Optional     | No       | Organisation (this schema)                 |
+| [homepage](#homepage)       | `string` | Optional     | No       | Organisation (this schema)                 |
+| [location](#location)       | Location | Optional     | No       | Organisation (this schema)                 |
+| [name](#name)               | `string` | Optional     | No       | Organisation (this schema)                 |
+| `*`                         | any      | Additional   | Yes      | this schema _allows_ additional properties |
 
 ## @id
 
@@ -70,16 +70,16 @@ Information about the location associated with the organisation
 `location`
 
 - is optional
-- type: Rare disease patient or biosample registry
+- type: Location
 - defined in this schema
 
 ### location Type
 
-Array type: Rare disease patient or biosample registry
+Array type: Location
 
 All items must be of the type:
 
-- [Rare disease patient or biosample registry](location.md) – `location.json`
+- [Location](location.md) – `location.json`
 
 ## name
 

@@ -1,25 +1,25 @@
-# Schema
+# Case or observation Schema
 
 ```
 case.json
 ```
 
-A schema block to describe cases or entries in a patient registry or biobank
+Metadata about a dataset in a patient registry or biobank
 
 | Abstract            | Extensible | Status       | Identifiable | Custom Properties | Additional Properties | Defined In             |
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | ---------------------- |
 | Can be instantiated | No         | Experimental | No           | Forbidden         | Permitted             | [case.json](case.json) |
 
-# Properties
+# Case or observation Properties
 
-| Property                                                      | Type                                       | Required   | Nullable | Defined by                                 |
-| ------------------------------------------------------------- | ------------------------------------------ | ---------- | -------- | ------------------------------------------ |
-| [description](#description)                                   | `string`                                   | Optional   | No       | (this schema)                              |
-| [disease_code](#disease_code)                                 | vocabulary_code                            | Optional   | No       | (this schema)                              |
-| [inclusion_exclusion_criteria](#inclusion_exclusion_criteria) | `string`                                   | Optional   | No       | (this schema)                              |
-| [number_of_cases](#number_of_cases)                           | `string`                                   | Optional   | No       | (this schema)                              |
-| [recruitment_area](#recruitment_area)                         | Rare disease patient or biosample registry | Optional   | No       | (this schema)                              |
-| `*`                                                           | any                                        | Additional | Yes      | this schema _allows_ additional properties |
+| Property                                                      | Type     | Required   | Nullable | Defined by                                 |
+| ------------------------------------------------------------- | -------- | ---------- | -------- | ------------------------------------------ |
+| [description](#description)                                   | `string` | Optional   | No       | Case or observation (this schema)          |
+| [disease_code](#disease_code)                                 | Code     | Optional   | No       | Case or observation (this schema)          |
+| [inclusion_exclusion_criteria](#inclusion_exclusion_criteria) | `string` | Optional   | No       | Case or observation (this schema)          |
+| [number_of_cases](#number_of_cases)                           | `string` | Optional   | No       | Case or observation (this schema)          |
+| [recruitment_area](#recruitment_area)                         | Location | Optional   | No       | Case or observation (this schema)          |
+| `*`                                                           | any      | Additional | Yes      | this schema _allows_ additional properties |
 
 ## description
 
@@ -42,16 +42,16 @@ A primary disease code associated with the case or group of patients
 `disease_code`
 
 - is optional
-- type: vocabulary_code
+- type: Code
 - defined in this schema
 
 ### disease_code Type
 
-Array type: vocabulary_code
+Array type: Code
 
 All items must be of the type:
 
-- [vocabulary_code](vocabulary_code.md) – `vocabulary_code.json`
+- [Code](vocabulary_code.md) – `vocabulary_code.json`
 
 ## inclusion_exclusion_criteria
 
@@ -88,13 +88,13 @@ The region or local covered by the registry
 `recruitment_area`
 
 - is optional
-- type: Rare disease patient or biosample registry
+- type: Location
 - defined in this schema
 
 ### recruitment_area Type
 
-Array type: Rare disease patient or biosample registry
+Array type: Location
 
 All items must be of the type:
 
-- [Rare disease patient or biosample registry](location.md) – `location.json`
+- [Location](location.md) – `location.json`

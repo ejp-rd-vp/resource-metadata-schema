@@ -1,4 +1,4 @@
-# Schema
+# Coding system Schema
 
 ```
 vocabulary_code_system.json
@@ -10,12 +10,12 @@ A code system, controlled vocabulary or ontology
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | ---------------------------------------------------------- |
 | Can be instantiated | No         | Experimental | No           | Forbidden         | Permitted             | [vocabulary_code_system.json](vocabulary_code_system.json) |
 
-# Properties
+# Coding system Properties
 
 | Property      | Type     | Required     | Nullable | Defined by                                 |
 | ------------- | -------- | ------------ | -------- | ------------------------------------------ |
-| [@id](#id)    | `string` | **Required** | No       | (this schema)                              |
-| [name](#name) | `string` | Optional     | No       | (this schema)                              |
+| [@id](#id)    | `string` | **Required** | No       | Coding system (this schema)                |
+| [name](#name) | `string` | Optional     | No       | Coding system (this schema)                |
 | `*`           | any      | Additional   | Yes      | this schema _allows_ additional properties |
 
 ## @id

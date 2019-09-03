@@ -1,4 +1,4 @@
-# Rare disease patient or biosample registry Schema
+# Rare disease registry dataset Schema
 
 ```
 registry.json
@@ -10,19 +10,19 @@ A schema to describe a dataset of patients, cohorts or biomaterials from a regis
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | ------------------------------ |
 | Can be instantiated | No         | Experimental | No           | Forbidden         | Permitted             | [registry.json](registry.json) |
 
-# Rare disease patient or biosample registry Properties
+# Rare disease registry dataset Properties
 
-| Property                        | Type                  | Required     | Nullable | Defined by                                               |
-| ------------------------------- | --------------------- | ------------ | -------- | -------------------------------------------------------- |
-| [@id](#id)                      | `string`              | **Required** | No       | Rare disease patient or biosample registry (this schema) |
-| [@type](#type)                  | `enum`                | **Required** | No       | Rare disease patient or biosample registry (this schema) |
-| [description](#description)     | `string`              | Optional     | No       | Rare disease patient or biosample registry (this schema) |
-| [disease_cases](#disease_cases) | case                  | Optional     | No       | Rare disease patient or biosample registry (this schema) |
-| [homepage](#homepage)           | `string`              | Optional     | No       | Rare disease patient or biosample registry (this schema) |
-| [name](#name)                   | `string`              | Optional     | No       | Rare disease patient or biosample registry (this schema) |
-| [publisher](#publisher)         | Rare disease resource | Optional     | No       | Rare disease patient or biosample registry (this schema) |
-| [theme](#theme)                 | vocabulary_code       | Optional     | No       | Rare disease patient or biosample registry (this schema) |
-| `*`                             | any                   | Additional   | Yes      | this schema _allows_ additional properties               |
+| Property                        | Type                | Required     | Nullable | Defined by                                  |
+| ------------------------------- | ------------------- | ------------ | -------- | ------------------------------------------- |
+| [@id](#id)                      | `string`            | **Required** | No       | Rare disease registry dataset (this schema) |
+| [@type](#type)                  | `enum`              | **Required** | No       | Rare disease registry dataset (this schema) |
+| [description](#description)     | `string`            | Optional     | No       | Rare disease registry dataset (this schema) |
+| [disease_cases](#disease_cases) | Case or observation | Optional     | No       | Rare disease registry dataset (this schema) |
+| [homepage](#homepage)           | `string`            | Optional     | No       | Rare disease registry dataset (this schema) |
+| [name](#name)                   | `string`            | Optional     | No       | Rare disease registry dataset (this schema) |
+| [publisher](#publisher)         | Organisation        | Optional     | No       | Rare disease registry dataset (this schema) |
+| [theme](#theme)                 | Code                | Optional     | No       | Rare disease registry dataset (this schema) |
+| `*`                             | any                 | Additional   | Yes      | this schema _allows_ additional properties  |
 
 ## @id
 
@@ -78,16 +78,16 @@ Information about the individual cases described in the registry
 `disease_cases`
 
 - is optional
-- type: case
+- type: Case or observation
 - defined in this schema
 
 ### disease_cases Type
 
-Array type: case
+Array type: Case or observation
 
 All items must be of the type:
 
-- [case](case.md) – `case.json`
+- [Case or observation](case.md) – `case.json`
 
 ## homepage
 
@@ -124,16 +124,16 @@ The primary organisation responsible for publishing and maintaining the registry
 `publisher`
 
 - is optional
-- type: Rare disease resource
+- type: Organisation
 - defined in this schema
 
 ### publisher Type
 
-Array type: Rare disease resource
+Array type: Organisation
 
 All items must be of the type:
 
-- [Rare disease resource](organisation.md) – `organisation.json`
+- [Organisation](organisation.md) – `organisation.json`
 
 ## theme
 
@@ -142,13 +142,13 @@ The primary diseases associated with the dataset
 `theme`
 
 - is optional
-- type: vocabulary_code
+- type: Code
 - defined in this schema
 
 ### theme Type
 
-Array type: vocabulary_code
+Array type: Code
 
 All items must be of the type:
 
-- [vocabulary_code](vocabulary_code.md) – `vocabulary_code.json`
+- [Code](vocabulary_code.md) – `vocabulary_code.json`

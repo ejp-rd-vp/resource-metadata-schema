@@ -1,7 +1,8 @@
 {
     "$id": "case.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A schema block to describe cases or entries in a patient registry or biobank",
+    "title": "Case or observation",
+    "description": "Metadata about a dataset in a patient registry or biobank",
     "properties": {
         "description": {
             "description": "A description for the case",

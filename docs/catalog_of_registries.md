@@ -12,16 +12,16 @@ Schema to describe a resource that catalogs registries such as Orphanet
 
 # Rare disease catalog Properties
 
-| Property                      | Type                  | Required     | Nullable | Defined by                                 |
-| ----------------------------- | --------------------- | ------------ | -------- | ------------------------------------------ |
-| [@id](#id)                    | `string`              | **Required** | No       | Rare disease catalog (this schema)         |
-| [@type](#type)                | `enum`                | **Required** | No       | Rare disease catalog (this schema)         |
-| [datasets](#datasets)         | `string[]`            | Optional     | No       | Rare disease catalog (this schema)         |
-| [description](#description)   | `string`              | Optional     | No       | Rare disease catalog (this schema)         |
-| [homepage](#homepage)         | `string`              | Optional     | No       | Rare disease catalog (this schema)         |
-| [name](#name)                 | `string`              | Optional     | No       | Rare disease catalog (this schema)         |
-| [organisation](#organisation) | Rare disease resource | Optional     | No       | Rare disease catalog (this schema)         |
-| `*`                           | any                   | Additional   | Yes      | this schema _allows_ additional properties |
+| Property                      | Type         | Required     | Nullable | Defined by                                 |
+| ----------------------------- | ------------ | ------------ | -------- | ------------------------------------------ |
+| [@id](#id)                    | `string`     | **Required** | No       | Rare disease catalog (this schema)         |
+| [@type](#type)                | `enum`       | **Required** | No       | Rare disease catalog (this schema)         |
+| [datasets](#datasets)         | `string[]`   | Optional     | No       | Rare disease catalog (this schema)         |
+| [description](#description)   | `string`     | Optional     | No       | Rare disease catalog (this schema)         |
+| [homepage](#homepage)         | `string`     | Optional     | No       | Rare disease catalog (this schema)         |
+| [name](#name)                 | `string`     | Optional     | No       | Rare disease catalog (this schema)         |
+| [organisation](#organisation) | Organisation | Optional     | No       | Rare disease catalog (this schema)         |
+| `*`                           | any          | Additional   | Yes      | this schema _allows_ additional properties |
 
 ## @id
 
@@ -116,13 +116,13 @@ a name or short description for the catalog
 `organisation`
 
 - is optional
-- type: Rare disease resource
+- type: Organisation
 - defined in this schema
 
 ### organisation Type
 
-Array type: Rare disease resource
+Array type: Organisation
 
 All items must be of the type:
 
-- [Rare disease resource](organisation.md) – `organisation.json`
+- [Organisation](organisation.md) – `organisation.json`
