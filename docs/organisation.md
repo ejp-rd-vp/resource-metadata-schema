@@ -14,20 +14,20 @@ A schema to describe an organisation
 
 | Property                    | Type     | Required     | Nullable | Defined by                                 |
 | --------------------------- | -------- | ------------ | -------- | ------------------------------------------ |
-| [@id](#id)                  | `string` | **Required** | No       | Organisation (this schema)                 |
+| [@id](#id)                  | `string` | Optional     | No       | Organisation (this schema)                 |
 | [description](#description) | `string` | Optional     | No       | Organisation (this schema)                 |
 | [homepage](#homepage)       | `string` | Optional     | No       | Organisation (this schema)                 |
 | [location](#location)       | Location | Optional     | No       | Organisation (this schema)                 |
-| [name](#name)               | `string` | Optional     | No       | Organisation (this schema)                 |
+| [name](#name)               | `string` | **Required** | No       | Organisation (this schema)                 |
 | `*`                         | any      | Additional   | Yes      | this schema _allows_ additional properties |
 
 ## @id
 
-a primary identifier for the registry
+a primary identifier for the organisation
 
 `@id`
 
-- is **required**
+- is optional
 - type: `string`
 - defined in this schema
 
@@ -87,7 +87,7 @@ a name or short description for the organisation
 
 `name`
 
-- is optional
+- is **required**
 - type: `string`
 - defined in this schema
 

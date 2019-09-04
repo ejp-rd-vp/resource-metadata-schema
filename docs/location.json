@@ -3,9 +3,6 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A schema to describe a location, region or jurisdiction",
     "title": "Location",
-    "required": [
-        "@id"
-    ],
     "properties": {
         "@id": {
             "description": "a primary identifier for the location",

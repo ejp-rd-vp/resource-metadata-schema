@@ -12,13 +12,13 @@ A schema to describe a location, region or jurisdiction
 
 # Location Properties
 
-| Property            | Type     | Required     | Nullable | Defined by                                 |
-| ------------------- | -------- | ------------ | -------- | ------------------------------------------ |
-| [@id](#id)          | `string` | **Required** | No       | Location (this schema)                     |
-| [city](#city)       | `string` | Optional     | No       | Location (this schema)                     |
-| [country](#country) | `string` | Optional     | No       | Location (this schema)                     |
-| [region](#region)   | `enum`   | Optional     | No       | Location (this schema)                     |
-| `*`                 | any      | Additional   | Yes      | this schema _allows_ additional properties |
+| Property            | Type     | Required   | Nullable | Defined by                                 |
+| ------------------- | -------- | ---------- | -------- | ------------------------------------------ |
+| [@id](#id)          | `string` | Optional   | No       | Location (this schema)                     |
+| [city](#city)       | `string` | Optional   | No       | Location (this schema)                     |
+| [country](#country) | `string` | Optional   | No       | Location (this schema)                     |
+| [region](#region)   | `enum`   | Optional   | No       | Location (this schema)                     |
+| `*`                 | any      | Additional | Yes      | this schema _allows_ additional properties |
 
 ## @id
 
@@ -26,7 +26,7 @@ a primary identifier for the location
 
 `@id`
 
-- is **required**
+- is optional
 - type: `string`
 - defined in this schema
 
