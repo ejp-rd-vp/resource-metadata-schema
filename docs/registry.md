@@ -60,7 +60,7 @@ The value of this property **must** be equal to one of the [known values below](
 | Value                    | Description |
 | ------------------------ | ----------- |
 | `PatientRegistryDataset` |             |
-| `BiobankRegistryDataset` |             |
+| `BiobankDataset`         |             |
 
 ## description
 

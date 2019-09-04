@@ -16,7 +16,7 @@
       "description": "the primary type for this registry",
       "type": "string",
       "enum": [
-        "PatientRegistryDataset", "BiobankRegistryDataset"
+        "PatientRegistryDataset", "BiobankDataset"
       ]
     },
     "name": {
