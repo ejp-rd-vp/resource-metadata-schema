@@ -34,10 +34,7 @@
         },
         "publisher": {
             "description": "The primary organisation responsible for publishing and maintaining the registry",
-            "type": "array",
-            "items": {
-                "$ref": "organisation.json"
-            }
+            "$ref": "organisation.json"
         },
         "theme": {
             "description": "The primary diseases associated with the dataset",

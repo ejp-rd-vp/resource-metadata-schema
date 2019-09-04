@@ -10,6 +10,11 @@ A schema to describe a dataset of patients, cohorts or biomaterials from a regis
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | ------------------------------ |
 | Can be instantiated | No         | Experimental | No           | Forbidden         | Permitted             | [registry.json](registry.json) |
 
+## Schema Hierarchy
+
+- Rare disease registry dataset `registry.json`
+  - [Organisation](organisation.md) `organisation.json`
+
 # Rare disease registry dataset Properties
 
 | Property                        | Type                | Required     | Nullable | Defined by                                  |
@@ -128,10 +133,6 @@ The primary organisation responsible for publishing and maintaining the registry
 - defined in this schema
 
 ### publisher Type
-
-Array type: Organisation
-
-All items must be of the type:
 
 - [Organisation](organisation.md) – `organisation.json`
 
