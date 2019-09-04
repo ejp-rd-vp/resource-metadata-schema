@@ -27,11 +27,11 @@ ejp-s:CatalogOfRegistriesShape IRI
          // rdfs:label "homepage"
          // rdfs:comment "The primary URL for the homepage of the catalog"@en
          ;
-    dct:publisher @ejp-s:OrganisationShape ?
+    dct:publisher @ejp-s:OrganisationShape *
          // rdfs:label "Organization"
          // rdfs:comment "The organisation that published a catalog of registries."@en
          ;
-    dcat:dataset @ejp-s:RegistryDatasetShape ?
+    dcat:dataset @ejp-s:RegistryDatasetShape *
          // rdfs:label "datasets"
          // rdfs:comment "Link to the patient registry datasets."@en
          ;
@@ -63,7 +63,7 @@ ejp-s:RegistryDatasetShape IRI
   dcat:theme @ejp-s:DiseaseCodeShape *
     // rdfs:label "DiseaseCode"
     // rdfs:comment "The disease code."@en ;
-  dct:publisher @ejp-s:OrganisationShape ?
+  dct:publisher @ejp-s:OrganisationShape *
     // rdfs:label "Organisation"
     // rdfs:comment "The organisation that published a catalog of registries."@en ;
 }
