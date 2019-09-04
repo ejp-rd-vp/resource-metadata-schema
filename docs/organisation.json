@@ -25,10 +25,7 @@
         },
         "location": {
             "description": "Information about the location associated with the organisation",
-            "type": "array",
-            "items": {
-                "$ref": "location.json"
-            }
+            "$ref": "location.json"
         }
     }
 }

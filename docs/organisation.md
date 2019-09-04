@@ -10,6 +10,11 @@ A schema to describe an organisation
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | -------------------------------------- |
 | Can be instantiated | No         | Experimental | No           | Forbidden         | Permitted             | [organisation.json](organisation.json) |
 
+## Schema Hierarchy
+
+- Organisation `organisation.json`
+  - [Location](location.md) `location.json`
+
 # Organisation Properties
 
 | Property                    | Type     | Required     | Nullable | Defined by                                 |
@@ -74,10 +79,6 @@ Information about the location associated with the organisation
 - defined in this schema
 
 ### location Type
-
-Array type: Location
-
-All items must be of the type:
 
 - [Location](location.md) – `location.json`
 
