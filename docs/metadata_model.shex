@@ -12,7 +12,7 @@ prefix foaf: <http://xmlns.com/foaf/0.1/>
 prefix vcard: <http://www.w3.org/2006/vcard/ns#>
 
 ejp-s:CatalogOfRegistriesShape IRI
-      // rdfs:label "CatalogOfRegistries Shape"
+// rdfs:label "CatalogOfRegistries Shape"
 {
     rdf:type [ejp:CatalogOfRegistries] ? ;
     dct:title xsd:string ?
@@ -68,9 +68,7 @@ ejp-s:RegistryDatasetShape IRI
     // rdfs:comment "The organisation that published a catalog of registries."@en ;
 }
 
-ejp-s:DiseaseCase Bnode
-  // rdfs:label "DiseaseCase"
-  // rdfs:comment "A schema block to describe cases or entries in a patient registry or biobank"
+ejp-s:DiseaseCase
 {
   ejp:numberOfCases xsd:int ?;
   ejp:inclusion_exclusion_criteria xsd:string ? ;
@@ -107,8 +105,7 @@ ejp-s:DiseaseCodeSystem IRI
 }
 
 
-ejp-s:OrganisationShape Bnode
-// rdfs:label "Organization"
+ejp-s:OrganisationShape
 {
   dct:title xsd:string
        // rdfs:label "name"
@@ -129,7 +126,7 @@ ejp-s:OrganisationShape Bnode
         ;
 }
 
-ejp-s:LocationShape Bnode
+ejp-s:LocationShape
 {
   vcard:country-name xsd:string ?
     // rdfs:label "country"
