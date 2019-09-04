@@ -87,9 +87,9 @@ ejp-s:DiseaseCodeShape IRI
   rdf:type [skos:Concept] ? ;
   dct:title xsd:string ?
        // rdfs:label "name"
-       // rdfs:comment "a name or short description for the registry"@en
+       // rdfs:comment "a name for the disease concept"@en
        ;
- skos:inConceptSchema @ejp-s:DiseaseCodeSystem
+ skos:inConceptSchema @ejp-s:DiseaseCodeSystem ?
     // rdfs:label "PopulationCoverage"
     // rdfs:comment "The country from which the patients in the dataset come from."@en
     ;
