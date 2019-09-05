@@ -18,11 +18,14 @@
     },
     "description": {
       "description": "A description for the organiation",
-      "type": "Orphanet is a unique resource, gathering and improving knowledge on rare diseases"
+      "type" : "string",
+      "example": "Orphanet is a unique resource, gathering and improving knowledge on rare diseases"
     },
     "homepage": {
       "description": "The primary URL for the homepage of the organisation",
-      "type": "https://www.orpha.net/consor/cgi-bin/index.php"
+      "type" : "string",
+      "format" : "url",
+      "example": "https://www.orpha.net/consor/cgi-bin/index.php"
     },
     "location": {
       "description": "Information about the location associated with the organisation",

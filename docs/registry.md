@@ -38,6 +38,7 @@ a primary identifier for the registry
 - is **required**
 - type: `string`
 - defined in this schema
+- example: https://www.pcdregistry.eu/
 
 ### @id Type
 
@@ -52,6 +53,7 @@ the primary type for this registry
 - is **required**
 - type: `enum`
 - defined in this schema
+- example: PatientRegistryDataset
 
 The value of this property **must** be equal to one of the [known values below](#type-known-values).
 
@@ -71,6 +73,7 @@ A description for the registry
 - is optional
 - type: `string`
 - defined in this schema
+- example: PDC registry
 
 ### description Type
 
@@ -85,6 +88,7 @@ Information about the individual cases described in the registry
 - is optional
 - type: Case or observation
 - defined in this schema
+- example:
 
 ### disease_cases Type
 
@@ -103,6 +107,7 @@ The primary URL for the homepage of the registry
 - is optional
 - type: `string`
 - defined in this schema
+- example: https://www.pcdregistry.eu/
 
 ### homepage Type
 
@@ -117,6 +122,7 @@ a name or short description for the registry
 - is optional
 - type: `string`
 - defined in this schema
+- example: PDC registry
 
 ### name Type
 
@@ -131,6 +137,7 @@ The primary organisation responsible for publishing and maintaining the registry
 - is optional
 - type: Organisation
 - defined in this schema
+- example:
 
 ### publisher Type
 
@@ -145,6 +152,7 @@ The primary diseases associated with the dataset
 - is optional
 - type: Code
 - defined in this schema
+- example:
 
 ### theme Type
 

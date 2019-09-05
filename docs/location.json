@@ -10,18 +10,21 @@
         },
         "city": {
             "description": "The name of a city",
-            "type": "string"
+            "type": "string",
+            "example": "Paris"
         },
         "country": {
             "description": "The name of a country",
-            "type": "string"
+            "type": "string",
+            "example": "France"
         },
         "region": {
             "description": "A broad description of a region",
             "type": "string",
             "enum": [
                 "international, europe"
-            ]
+            ],
+            "example": "international"
         }
     }
 }

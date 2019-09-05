@@ -10,11 +10,13 @@
     "properties": {
         "@id": {
             "description": "a primary identifier for the registry",
-            "type": "string"
+            "type": "string",
+            "example": "https://www.pcdregistry.eu/"
         },
         "@type": {
             "description": "the primary type for this registry",
             "type": "string",
+            "example": "PatientRegistryDataset",
             "enum": [
                 "PatientRegistryDataset",
                 "BiobankDataset"
@@ -22,15 +24,19 @@
         },
         "name": {
             "description": "a name or short description for the registry",
-            "type": "string"
+            "type": "string",
+            "example": "PDC registry"
         },
         "description": {
             "description": "A description for the registry",
-            "type": "string"
+            "type": "string",
+            "example": "PDC registry"
         },
         "homepage": {
             "description": "The primary URL for the homepage of the registry",
-            "type": "string"
+            "type": "string",
+            "example": "https://www.pcdregistry.eu/",
+            "format": "url"
         },
         "publisher": {
             "description": "The primary organisation responsible for publishing and maintaining the registry",

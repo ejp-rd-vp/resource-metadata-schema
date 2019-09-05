@@ -35,6 +35,7 @@ a primary identifier for the organisation
 - is optional
 - type: `string`
 - defined in this schema
+- example:
 
 ### @id Type
 
@@ -49,6 +50,7 @@ A description for the organiation
 - is optional
 - type: `string`
 - defined in this schema
+- example: Orphanet is a unique resource, gathering and improving knowledge on rare diseases
 
 ### description Type
 
@@ -63,6 +65,7 @@ The primary URL for the homepage of the organisation
 - is optional
 - type: `string`
 - defined in this schema
+- example: https://www.orpha.net/consor/cgi-bin/index.php
 
 ### homepage Type
 
@@ -77,6 +80,7 @@ Information about the location associated with the organisation
 - is optional
 - type: Location
 - defined in this schema
+- example:
 
 ### location Type
 
@@ -91,6 +95,7 @@ a name or short description for the organisation
 - is **required**
 - type: `string`
 - defined in this schema
+- example: Orphanet
 
 ### name Type
 

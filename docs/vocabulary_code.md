@@ -33,6 +33,7 @@ a primary identifier for the code
 - is **required**
 - type: `string`
 - defined in this schema
+- example: http://www.orpha.net/ORDO/Orphanet_137628
 
 ### @id Type
 
@@ -47,6 +48,7 @@ A coding system that defines the code
 - is optional
 - type: Coding system
 - defined in this schema
+- example:
 
 ### code_system Type
 
@@ -61,6 +63,7 @@ A human-readable name for code
 - is optional
 - type: `string`
 - defined in this schema
+- example: Cardiac anomalies-heterotaxy syndrome
 
 ### name Type
 

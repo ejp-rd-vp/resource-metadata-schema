@@ -27,6 +27,7 @@ a primary identifier for the coding system
 - is **required**
 - type: `string`
 - defined in this schema
+- example: http://www.orpha.net/ontology/ORDO.owl
 
 ### @id Type
 
@@ -41,6 +42,9 @@ A human-readable name for coding system
 - is optional
 - type: `string`
 - defined in this schema
+- example: The Orphanet Rare Disease ontology (ORDO) is jointly developed by Orphanet and the EBI to provide a
+  structured vocabulary for rare diseases capturing relationships between diseases, genes and other relevant features
+  which will form a useful resource for the computational analysis of rare diseases
 
 ### name Type
 

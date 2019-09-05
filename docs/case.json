@@ -6,15 +6,18 @@
     "properties": {
         "description": {
             "description": "A description for the case",
-            "type": "string"
+            "type": "string",
+            "example": "number of patients"
         },
         "number_of_cases": {
             "description": "A number of patients registered for this case",
-            "type": "string"
+            "type": "string",
+            "example": "12"
         },
         "inclusion_exclusion_criteria": {
             "description": "A description of the inclusion or exclusion criteria",
-            "type": "string"
+            "type": "string",
+            "example": "none"
         },
         "recruitment_area": {
             "description": "The region or local covered by the registry",

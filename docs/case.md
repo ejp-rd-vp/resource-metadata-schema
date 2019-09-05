@@ -30,6 +30,7 @@ A description for the case
 - is optional
 - type: `string`
 - defined in this schema
+- example: number of patients
 
 ### description Type
 
@@ -44,6 +45,7 @@ A primary disease code associated with the case or group of patients
 - is optional
 - type: Code
 - defined in this schema
+- example:
 
 ### disease_code Type
 
@@ -62,6 +64,7 @@ A description of the inclusion or exclusion criteria
 - is optional
 - type: `string`
 - defined in this schema
+- example: none
 
 ### inclusion_exclusion_criteria Type
 
@@ -76,6 +79,7 @@ A number of patients registered for this case
 - is optional
 - type: `string`
 - defined in this schema
+- example: 12
 
 ### number_of_cases Type
 
@@ -90,6 +94,7 @@ The region or local covered by the registry
 - is optional
 - type: Location
 - defined in this schema
+- example:
 
 ### recruitment_area Type
 

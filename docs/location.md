@@ -29,6 +29,7 @@ a primary identifier for the location
 - is optional
 - type: `string`
 - defined in this schema
+- example:
 
 ### @id Type
 
@@ -43,6 +44,7 @@ The name of a city
 - is optional
 - type: `string`
 - defined in this schema
+- example: Paris
 
 ### city Type
 
@@ -57,6 +59,7 @@ The name of a country
 - is optional
 - type: `string`
 - defined in this schema
+- example: France
 
 ### country Type
 
@@ -71,6 +74,7 @@ A broad description of a region
 - is optional
 - type: `enum`
 - defined in this schema
+- example: international
 
 The value of this property **must** be equal to one of the [known values below](#region-known-values).
 

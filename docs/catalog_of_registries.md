@@ -32,6 +32,7 @@ a primary identifier for the catalog
 - is **required**
 - type: `string`
 - defined in this schema
+- example: http://www.orpha.net
 
 ### @id Type
 
@@ -46,6 +47,7 @@ the primary type for this catalog
 - is **required**
 - type: `enum`
 - defined in this schema
+- example: CatalogOfRegistries
 
 The value of this property **must** be equal to one of the [known values below](#type-known-values).
 
@@ -62,6 +64,7 @@ The value of this property **must** be equal to one of the [known values below](
 - is optional
 - type: `string[]`
 - defined in this schema
+- example: http://www.orpha.net/datasests/1
 
 ### datasets Type
 
@@ -78,6 +81,7 @@ A description for the catalog
 - is optional
 - type: `string`
 - defined in this schema
+- example: Orphanet is a unique resource, gathering and improving knowledge on rare diseases
 
 ### description Type
 
@@ -92,6 +96,7 @@ The primary URL for the homepage of the catalog
 - is optional
 - type: `string`
 - defined in this schema
+- example: http://www.orpha.net
 
 ### homepage Type
 
@@ -106,6 +111,7 @@ a name or short description for the catalog
 - is optional
 - type: `string`
 - defined in this schema
+- example: Orphanet
 
 ### name Type
 
@@ -118,6 +124,7 @@ a name or short description for the catalog
 - is optional
 - type: Organisation
 - defined in this schema
+- example:
 
 ### organisation Type
 

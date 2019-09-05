@@ -9,11 +9,13 @@
     "properties": {
         "@id": {
             "description": "a primary identifier for the coding system",
-            "type": "string"
+            "type": "string",
+            "example": "http://www.orpha.net/ontology/ORDO.owl"
         },
         "name": {
             "description": "A human-readable name for coding system",
-            "type": "string"
+            "type": "string",
+            "example": "The Orphanet Rare Disease ontology (ORDO) is jointly developed by Orphanet and the EBI to provide a structured vocabulary for rare diseases capturing relationships between diseases, genes and other relevant features which will form a useful resource for the computational analysis of rare diseases"
         }
     }
 }
