@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ejp-rd-vp/resource-metadata-schema.svg?branch=master)](https://travis-ci.org/ejp-rd-vp/resource-metadata-schema)
+
 # Metadata for EJP rare disease patient registries, biobanks and catalogs
 
 As part of the [European Joint Programme (EJP) for Rare Disease](http://www.ejprarediseases.org), we are developing standards for rare disease registries to describe their metadata that will imporve the FAIR-ness of these resources.
