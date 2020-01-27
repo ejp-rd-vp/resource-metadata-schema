@@ -1,0 +1,6 @@
+"ID"	"IRI"	"PreferredTerm"	"Description"	"Code"
+"0"	"https://github.com/MIABIS/miabis/wiki/Structured-data-and-lists#sex"	"Unknown"	"A proper value is applicable but not known"	"0"
+"urn:miriam:pato:0000383"	"http://purl.obolibrary.org/obo/PATO_0000383"	"Female"	"A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes."	"0000383"
+"urn:miriam:pato:0000384"	"http://purl.obolibrary.org/obo/PATO_0000384"	"Male"	"A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes."	"0000384"
+"urn:miriam:pato:0001340"	"http://purl.obolibrary.org/obo/PATO_0001340"	"Hermaphrodite"	"A biological sex quality inhering in an organism or a population with both male and female sexual organs in one individual."	"0001340"
+"urn:miriam:pato:0001827"	"http://purl.obolibrary.org/obo/PATO_0001827"	"Pseudohermaphrodite"	"A biological sex quality inhering in an individual or a population by virtue of having internal reproductive organs of one sex and external sexual characteristics of the other sex."	"0001827"
