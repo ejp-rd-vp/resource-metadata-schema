@@ -1,0 +1,31 @@
+@prefix :      <http://purl.org/ejp-rd/vocabulary/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ordo:  <http://www.orpha.net/ORDO/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+
+
+ejp:ErdriDOR_Location
+        a            ejp:Location ;
+        ejp:country  "Italy" .
+
+ejp:ErdriDOR  a      ejp:Organisation ;
+        dct:spatial  ejp:ErdriDOR_Location ;
+        foaf:page    "https://eu-rd-platform.jrc.ec.europa.eu/erdridor/" .
+
+ejp:CatalogOfRegistries_ErdriDOR
+        a                   ejp:CatalogOfRegistries ;
+        dct:publisher       ejp:ErdriDOR ;
+        dct:title           "ERDRI.dor" , "European Directory of Registries" ;
+        dcat:dataset        ejp:PatientRegistryDataset_ErdriDOR_2444 , ejp:PatientRegistryDataset_ErdriDOR_4505 , ejp:PatientRegistryDataset_ErdriDOR_4353 , ejp:PatientRegistryDataset_ErdriDOR_4485 , ejp:PatientRegistryDataset_ErdriDOR_4529 , ejp:PatientRegistryDataset_ErdriDOR_4607 , ejp:PatientRegistryDataset_ErdriDOR_2151 , ejp:PatientRegistryDataset_ErdriDOR_2424 , ejp:PatientRegistryDataset_ErdriDOR_2514 , ejp:PatientRegistryDataset_ErdriDOR_2501 , ejp:PatientRegistryDataset_ErdriDOR_2935 , ejp:PatientRegistryDataset_ErdriDOR_2208 , ejp:PatientRegistryDataset_ErdriDOR_4201 , ejp:PatientRegistryDataset_ErdriDOR_2210 , ejp:PatientRegistryDataset_ErdriDOR_4601 , ejp:PatientRegistryDataset_ErdriDOR_2484 , ejp:PatientRegistryDataset_ErdriDOR_2851 , ejp:PatientRegistryDataset_ErdriDOR_4605 , ejp:PatientRegistryDataset_ErdriDOR_2427 , ejp:PatientRegistryDataset_ErdriDOR_4351 , ejp:PatientRegistryDataset_ErdriDOR_2001 , ejp:PatientRegistryDataset_ErdriDOR_4560 , ejp:PatientRegistryDataset_ErdriDOR_2665 , ejp:PatientRegistryDataset_ErdriDOR_4301 , ejp:PatientRegistryDataset_ErdriDOR_4531 , ejp:PatientRegistryDataset_ErdriDOR_2205 , ejp:PatientRegistryDataset_ErdriDOR_2478 , ejp:PatientRegistryDataset_ErdriDOR_2401 , ejp:PatientRegistryDataset_ErdriDOR_2548 , ejp:PatientRegistryDataset_ErdriDOR_2918 , ejp:PatientRegistryDataset_ErdriDOR_2901 , ejp:PatientRegistryDataset_ErdriDOR_2923 , ejp:PatientRegistryDataset_ErdriDOR_2910 , ejp:PatientRegistryDataset_ErdriDOR_2659 , ejp:PatientRegistryDataset_ErdriDOR_2201 , ejp:PatientRegistryDataset_ErdriDOR_2904 , ejp:PatientRegistryDataset_ErdriDOR_3201 , ejp:PatientRegistryDataset_ErdriDOR_2343 , ejp:PatientRegistryDataset_ErdriDOR_4582 , ejp:PatientRegistryDataset_ErdriDOR_2927 , ejp:PatientRegistryDataset_ErdriDOR_2517 , ejp:PatientRegistryDataset_ErdriDOR_2405 , ejp:PatientRegistryDataset_ErdriDOR_2503 ; 
+		dcat:themeTaxonomy  <http://www.orphadata.org/data/ORDO/ordo_orphanet.owl> .
