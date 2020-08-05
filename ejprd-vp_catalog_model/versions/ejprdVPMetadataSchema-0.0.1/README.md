@@ -5,15 +5,13 @@ Here you will find the *EJPRD Resources Metadata schema* - the JSON schema versi
 
 Production
 ----------
-The metadata has six major schemas for the catalog resource :
+The metadata has seven major schemas for the catalog resource :
 * [catalog_of_registries.json](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/master/docs/catalog_of_registries.json): this describes the catalogs / registries properties of the virtual platform catalogs resource. The catalog properties and description detailed [here](https://ejp-rd-vp.github.io/resource-metadata-schema/catalog_of_registries.html).
 
 
 * [Location](https://ejp-rd-vp.github.io/resource-metadata-schema/location.html).
 
 * [Organisation](https://ejp-rd-vp.github.io/resource-metadata-schema/organisation.html).
-
-* [PatientRegistryDataset]()
 
 * [Code](https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code.html).
 
