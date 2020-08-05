@@ -106,3 +106,30 @@ The metadata has seven major schemas for the catalog resource :
    </td>
   </tr>
 </table>
+
+
+
+# Examples
+
+<table>
+  <tr>
+   <td><strong>Type of Schema</strong>
+   </td>
+   <td><strong>Schema</strong>
+   </td>
+   <td><strong>Example</strong>
+   </td>
+   <td><strong>Comments</strong>
+   </td>
+  </tr>
+  <tr>
+   <td> ERDRI Catalogs
+   </td>
+   <td> https://github.com/ejp-rd-vp/resource-metadata-schema/blob/dev-branch/json_schema/registry.json
+   </td>
+   <td> https://github.com/ejp-rd-vp/resource-metadata-schema/blob/dev-branch/examples/erdri_catalog.json
+   </td>
+   <td> This schema decribes the properties of the ERDRI registries : **ID** , **Type**, **name**, **publisher -- (name of the publisher, location of the publisher, country where the publisher is located)**, **dataset**.
+   </td>
+  </tr>
+ </table>
