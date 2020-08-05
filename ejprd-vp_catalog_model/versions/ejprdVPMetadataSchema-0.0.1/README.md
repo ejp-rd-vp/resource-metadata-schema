@@ -5,25 +5,27 @@ Here you will find the *EJPRD Resources Metadata schema* - the JSON schema versi
 
 Production
 ----------
-The metadata has six major modules for the catalog resource :
+The metadata has six major schemas for the catalog resource :
 * [catalog_of_registries.json](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/master/docs/catalog_of_registries.json): this describes the catalogs / registries properties of the virtual platform catalogs resource. The catalog properties and description detailed [here](https://ejp-rd-vp.github.io/resource-metadata-schema/catalog_of_registries.html).
 
 
-* [Location](https://ejp-rd-vp.github.io/resource-metadata-schema/location.html)
+* [Location](https://ejp-rd-vp.github.io/resource-metadata-schema/location.html).
 
-* [Organisation](https://ejp-rd-vp.github.io/resource-metadata-schema/organisation.html)
+* [Organisation](https://ejp-rd-vp.github.io/resource-metadata-schema/organisation.html).
 
 * [PatientRegistryDataset]()
 
-* [DiseaseCode]()
+* [Code](https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code.html).
 
-* [DiseaseCodeSystem]()
+* [Coding System](https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code_system.html).
+
+* [Case or observation](https://ejp-rd-vp.github.io/resource-metadata-schema/case.html).
+
+* [Rare disease registry dataset](https://ejp-rd-vp.github.io/resource-metadata-schema/registry.html).
 
 
 # Structure
 ---------
-
-
 <table>
   <tr>
    <td><strong>Schema modules</strong>
@@ -70,9 +72,39 @@ The metadata has six major modules for the catalog resource :
    </td>
    <td>Full description https://ejp-rd-vp.github.io/resource-metadata-schema/registry.html
    </td>
-   <td> Organisation in JSON [here](https://ejp-rd-vp.github.io/resource-metadata-schema/registry.json)
+   <td> Registries schema in JSON [here](https://ejp-rd-vp.github.io/resource-metadata-schema/registry.json)
    </td>
    <td> This gives detailed description of the Registries that are discoverable through the EJPRD VP catalogs or resources.
+   </td>
+  </tr>
+  <tr>
+   <td> Code schema in EJPRD metadata resources
+   </td>
+   <td>Full description https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code.html
+   </td>
+   <td> Code in JSON [here](https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code.json)
+   </td>
+   <td> This gives detailed description of a code from a coding system, controlled vocabulary or ontology that are discoverable through the EJPRD VP catalogs or resources.
+   </td>
+  </tr>
+  <tr>
+   <td> Coding system schema in EJPRD metadata resources
+   </td>
+   <td>Full description https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code_system.html
+   </td>
+   <td> Coding system schema in JSON [here](https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code_system.json)
+   </td>
+   <td> This gives detailed description of the systems for coding, controlled vocabulary or ontology that are discoverable through the EJPRD VP catalogs or resources.
+   </td>
+  </tr>
+  <tr>
+   <td> Case or observation Schema schema in EJPRD metadata resources
+   </td>
+   <td>Full description https://ejp-rd-vp.github.io/resource-metadata-schema/case.html
+   </td>
+   <td> Case or observation Schema schema in JSON [here](https://ejp-rd-vp.github.io/resource-metadata-schema/case.json)
+   </td>
+   <td> This gives detailed description of the systems for coding, controlled vocabulary or ontology that are discoverable through the EJPRD VP catalogs or resources.
    </td>
   </tr>
 </table>

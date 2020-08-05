@@ -1,0 +1,55 @@
+{
+    "$id": "catalog_of_registries.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Rare disease catalog",
+    "description": "Schema to describe a resource that catalogs registries such as Orphanet",
+    "required": [
+        "@id",
+        "@type"
+    ],
+    "properties": {
+        "@id": {
+            "description": "a primary identifier for the catalog",
+            "type": "string",
+            "example": "http://www.orpha.net"
+        },
+        "@type": {
+            "description": "the primary type for this catalog",
+            "type": "string",
+            "example": "CatalogOfRegistries",
+            "enum": [
+                "CatalogOfRegistries"
+            ]
+        },
+        "name": {
+            "description": "a name or short description for the catalog",
+            "type": "string",
+            "example": "Orphanet"
+        },
+        "description": {
+            "description": "A description for the catalog",
+            "type": "string",
+            "example": "Orphanet is a unique resource, gathering and improving knowledge on rare diseases"
+        },
+        "homepage": {
+            "description": "The primary URL for the homepage of the catalog",
+            "type": "string",
+            "example": "http://www.orpha.net"
+        },
+        "datasets": {
+            "type": "array",
+            "descripton": "List of dataset urls",
+            "example": "http://www.orpha.net/datasests/1",
+            "items": {
+                "type": "string",
+                "format": "url"
+            }
+        },
+        "organisation": {
+            "type": "array",
+            "items": {
+                "$ref": "organisation.json"
+            }
+        }
+    }
+}

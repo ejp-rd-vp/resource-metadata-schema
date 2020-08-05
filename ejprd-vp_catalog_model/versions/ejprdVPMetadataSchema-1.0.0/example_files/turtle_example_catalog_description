@@ -1,0 +1,44 @@
+@prefix ex: <http://example.org/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ejp: <http://purl.org/ejp-rd/vocabulary/> .
+@prefix dct: <http://purl.org/dc/terms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ 
+ex:OrphanetRegistry
+  a ejp:CatalogOfRegistries ;
+  dct:publisher ex:Orphanet ;
+  dcat:dataset ex:Loom
+.
+ 
+ex:Orphanet
+  a ejp:Organisation ;
+  dct:spatial ex:France ;
+.
+ 
+ex:Loom
+  a ejp:PatientRegistryDataset ;
+  ejp:populationCoverage ex:Europe ;
+  dcat:theme ex:RareDiseases ;
+  dct:publisher ex:Orphanet ;
+.
+ 
+ex:France
+  a ejp:Location
+.
+ 
+ex:Europe
+  a ejp:Location
+.
+ 
+ex:RareDiseases
+  a ejp:DiseaseCode ;
+  skos:inConceptSchema ex:HPO ;
+.
+ 
+ex:HPO
+  a ejp:DiseaseCodeSystem ;
+.

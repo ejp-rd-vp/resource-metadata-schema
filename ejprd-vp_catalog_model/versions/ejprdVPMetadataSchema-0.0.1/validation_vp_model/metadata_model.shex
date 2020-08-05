@@ -1,0 +1,143 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix ejp-s: <http://purl.org/ejp-rd/metadata/shapes/>
+prefix ejp: <http://purl.org/ejp-rd/vocabulary/>
+prefix dct: <http://purl.org/dc/terms/>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix umbel: <http://umbel.org/umbel#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix vcard: <http://www.w3.org/2006/vcard/ns#>
+
+ejp-s:CatalogOfRegistriesShape IRI
+// rdfs:label "CatalogOfRegistries Shape"
+{
+    rdf:type [ejp:CatalogOfRegistries] ? ;
+    dct:title xsd:string ?
+         // rdfs:label "name"
+         // rdfs:comment "a name or short description for the catalog"@en
+         ;
+    dct:description xsd:string ?
+        // rdfs:label "description"
+        // rdfs:comment "A description for the catalog"@en
+        ;
+    foaf:homepage xsd:string ?
+         // rdfs:label "homepage"
+         // rdfs:comment "The primary URL for the homepage of the catalog"@en
+         ;
+    dct:publisher @ejp-s:OrganisationShape *
+         // rdfs:label "Organization"
+         // rdfs:comment "The organisation that published a catalog of registries."@en
+         ;
+    dcat:dataset @ejp-s:RegistryDatasetShape *
+         // rdfs:label "datasets"
+         // rdfs:comment "Link to the patient registry datasets."@en
+         ;
+}
+
+
+ejp-s:RegistryDatasetShape IRI
+// rdfs:label "Patient or biobank Registry Dataset"
+{
+  rdf:type [ejp:PatientRegistryDataset ejp:BiobankRegistryDataset] ?
+    // rdfs:label "@type"
+    // rdfs:comment "the primary type for this registry"
+    ;
+  dct:title xsd:string ?
+       // rdfs:label "name"
+       // rdfs:comment "a name or short description for the registry"@en
+       ;
+  dct:description xsd:string ?
+      // rdfs:label "description"
+      // rdfs:comment "A description for the registry"@en
+      ;
+  foaf:homepage xsd:string ?
+       // rdfs:label "homepage"
+       // rdfs:comment "The primary URL for the homepage of the registry"@en
+       ;
+  ejp:population_coverage @ejp-s:LocationShape *
+    // rdfs:label "PopulationCoverage"
+    // rdfs:comment "The country from which the patients in the dataset come from."@en;
+  dcat:theme @ejp-s:DiseaseCodeShape *
+    // rdfs:label "DiseaseCode"
+    // rdfs:comment "The disease code."@en ;
+  dct:publisher @ejp-s:OrganisationShape *
+    // rdfs:label "Organisation"
+    // rdfs:comment "The organisation that published a catalog of registries."@en ;
+}
+
+ejp-s:DiseaseCase
+{
+  ejp:numberOfCases xsd:int ?;
+  ejp:inclusion_exclusion_criteria xsd:string ? ;
+  ejp:recruitment_area @ejp-s:LocationShape ? ;
+  umbel:relatesToDisease @ejp-s:DiseaseCodeShape *
+    // rdfs:label "DiseaseCode"
+    // rdfs:comment "The disease code."@en ;
+}
+
+
+ejp-s:DiseaseCodeShape IRI
+// rdfs:label "DiseaseCode"
+{
+  rdf:type [skos:Concept] ? ;
+  dct:title xsd:string ?
+       // rdfs:label "name"
+       // rdfs:comment "a name for the disease concept"@en
+       ;
+ skos:inConceptSchema @ejp-s:DiseaseCodeSystem ?
+    // rdfs:label "PopulationCoverage"
+    // rdfs:comment "The country from which the patients in the dataset come from."@en
+    ;
+}
+
+ejp-s:DiseaseCodeSystem IRI
+// rdfs:label "DiseaseCodeSystem"
+{
+  rdf:type [skos:ConceptScheme] ?;
+  dct:title xsd:string ?
+       // rdfs:label "name"
+       // rdfs:comment "a name or short description for the coding system"@en
+       ;
+
+}
+
+
+ejp-s:OrganisationShape
+{
+  dct:title xsd:string
+       // rdfs:label "name"
+       // rdfs:comment "a name or short description for the registry"@en
+       ;
+  dct:description xsd:string ?
+      // rdfs:label "description"
+      // rdfs:comment "A description for the registry"@en
+      ;
+  foaf:homepage xsd:string ?
+       // rdfs:label "homepage"
+       // rdfs:comment "The primary URL for the homepage of the registry"@en
+       ;
+
+  dct:spatial @ejp-s:LocationShape ?
+        // rdfs:label "Location"
+        // rdfs:comment "The country where the organisation is situated."@en
+        ;
+}
+
+ejp-s:LocationShape
+{
+  vcard:country-name xsd:string ?
+    // rdfs:label "country"
+    // rdfs:comment "The name of a country"
+    ;
+  vcard:locality xsd:string ?
+    // rdfs:label "city"
+    // rdfs:comment "The locality (e.g. city or town) associated with the address of the object "
+    ;
+  vcard:region xsd:string ?
+    // rdfs:label "region"
+    // rdfs:comment "The region (e.g. state or province) associated"
+    ;
+}
