@@ -139,7 +139,9 @@ The metadata has seven major schemas for the catalog resource :
    </td>
    <td> https://github.com/ejp-rd-vp/resource-metadata-schema/blob/dev-branch/ejprd-vp_catalog_model/versions/ejprdVPMetadataSchema-0.0.1/examples/registry-1.json
    </td>
-   <td> This schema decribes the properties of the ERDRI registries : **ID** , **Type**, **name**, **publisher -- (name of the publisher, location of the publisher, country where the publisher is located)**.
+   <td> This schema describes the properties of the ERDRI registries : **ID** , **Type**, **name**, **publisher -- (name of the publisher, location of the publisher, country where the publisher is located)**.
    </td>
   </tr>
  </table>
+
+#  
