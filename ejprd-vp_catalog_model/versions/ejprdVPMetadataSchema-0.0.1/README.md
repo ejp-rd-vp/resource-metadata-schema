@@ -65,4 +65,14 @@ The metadata has six major modules for the catalog resource :
    <td> This gives detailed description of the Organisation that is responsible for the EJPRD catalogs or resources e.g. ERDRI
    </td>
   </tr>
+  <tr>
+   <td> Registries in EJPRD metadata resources
+   </td>
+   <td>Full description https://ejp-rd-vp.github.io/resource-metadata-schema/registry.html
+   </td>
+   <td> Organisation in JSON [here](https://ejp-rd-vp.github.io/resource-metadata-schema/registry.json)
+   </td>
+   <td> This gives detailed description of the Registries that are discoverable through the EJPRD VP catalogs or resources.
+   </td>
+  </tr>
 </table>
