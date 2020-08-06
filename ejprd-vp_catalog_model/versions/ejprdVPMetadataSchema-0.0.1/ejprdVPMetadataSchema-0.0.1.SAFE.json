@@ -1,8 +1,5 @@
 # EJPRD VP Catalog metadata schema v 0.1.0
 
-
-```JSON
-
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "type": "object",
@@ -253,4 +250,3 @@
         }
     }
 }
-````
