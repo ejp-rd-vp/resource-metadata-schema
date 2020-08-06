@@ -1,0 +1,256 @@
+# EJPRD VP Catalog metadata schema v 0.1.0
+
+
+```JSON
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "catalog"
+    ],
+    "properties": {
+        "catalog": {
+            "type": "object",
+            "title": "The Catalog Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "alternative": "alternative",
+                    "sameAs": "same name as",
+                    "about": {
+                        "code": {
+                            "description": "description",
+                            "label": "label",
+                            "id": "ID",
+                            "url": "url"
+                        }
+                    },
+                    "location": {
+                        "city": "city",
+                        "street": "street",
+                        "code": "code",
+                        "country": "country"
+                    },
+                    "description": "description",
+                    "name": "name",
+                    "homepage": "homepage",
+                    "identifier": "identifier"
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "identifier",
+                "alternative",
+                "about",
+                "name",
+                "description",
+                "homepage",
+                "sameAs",
+                "location"
+            ],
+            "properties": {
+                "identifier": {
+                    "type": "string",
+                    "title": "The Identifier Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "identifier"
+                    ]
+                },
+                "alternative": {
+                    "type": "string",
+                    "title": "The Alternative Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "alternative"
+                    ]
+                },
+                "about": {
+                    "type": "object",
+                    "title": "The About Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "code": {
+                                "url": "url",
+                                "description": "description",
+                                "label": "label",
+                                "id": "ID"
+                            }
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "required": [
+                        "code"
+                    ],
+                    "properties": {
+                        "code": {
+                            "type": "object",
+                            "title": "The Code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "id": "ID",
+                                    "url": "url",
+                                    "description": "description",
+                                    "label": "label"
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "required": [
+                                "id",
+                                "url",
+                                "label",
+                                "description"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "title": "The Id Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "ID"
+                                    ]
+                                },
+                                "url": {
+                                    "type": "string",
+                                    "title": "The Url Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "url"
+                                    ]
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "title": "The Label Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "label"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "title": "The Description Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "description"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "name": {
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "name"
+                    ]
+                },
+                "description": {
+                    "type": "string",
+                    "title": "The Description Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "description"
+                    ]
+                },
+                "homepage": {
+                    "type": "string",
+                    "title": "The Homepage Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "homepage"
+                    ]
+                },
+                "sameAs": {
+                    "type": "string",
+                    "title": "The Sameas Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "same name as"
+                    ]
+                },
+                "location": {
+                    "type": "object",
+                    "title": "The Location Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "city": "city",
+                            "street": "street",
+                            "code": "code",
+                            "country": "country"
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "required": [
+                        "street",
+                        "city",
+                        "code",
+                        "country"
+                    ],
+                    "properties": {
+                        "street": {
+                            "type": "string",
+                            "title": "The Street Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "street"
+                            ]
+                        },
+                        "city": {
+                            "type": "string",
+                            "title": "The City Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "city"
+                            ]
+                        },
+                        "code": {
+                            "type": "string",
+                            "title": "The Code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "code"
+                            ]
+                        },
+                        "country": {
+                            "type": "string",
+                            "title": "The Country Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "country"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+````
