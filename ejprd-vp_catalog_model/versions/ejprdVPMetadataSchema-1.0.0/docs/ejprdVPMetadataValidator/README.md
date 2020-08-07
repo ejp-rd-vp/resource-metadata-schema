@@ -1,4 +1,9 @@
-This directory contains a couple of examples for validation of data about registries and registry catalogues.
+This directory contains the new EJPRD metadata schema version 1.0.0 which has addressed the EJPRD VP metadata using the new [DCAT2 vocabulary](https://www.w3.org/TR/vocab-dcat-2/) and the changes made can be viewed in the [CHANGEME.log]() file
+
+
+
+
+This directory contains a couple of examples for validation of data about biotools and research papers catalogues.
 Validation of SHACL-files can be done using the SHACL-playground, which can be found here: https://shacl.org/playground/
 
 Notice that in this playground you can use JSON-LD and Turtle-format.
