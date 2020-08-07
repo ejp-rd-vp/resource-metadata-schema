@@ -92,8 +92,8 @@ ejp-s:ResourcesShape
 
     sh:property [
         sh:path dct:hasPart ;
-        sh:name " " ;
-        sh:description "  " ;
+        sh:name "Resources " ;
+        sh:description " The name of the type of the resources " ;
         sh:class ejp:Resource;
         sh:node ejp-s:ResourcesShape ;
         sh:minCount 1 ;
