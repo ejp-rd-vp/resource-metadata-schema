@@ -7,12 +7,12 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-ejp-s:ResourcesShape
+ejp-s:CatalogOfResourcesShape
     a rdfs:Class, sh:NodeShape ;
     sh:nodeKind sh:IRI;
-    sh:targetClass ejp:Resources ;
-    rdfs:label "CatalogOfRegistries" ;
-    rdfs:subClassOf rdfs:Resource ;
+    sh:targetClass ejp:Catalog ;
+    rdfs:label "CatalogOfResources" ;
+    rdfs:subClassOf rdfs:Catalog ;
 
     sh:property [
         sh:path dct:publisher ;
@@ -25,10 +25,10 @@ ejp-s:ResourcesShape
     ] ;
     sh:property [
         sh:path dcat:dataset ;
-        sh:name "patientRegistryDataset" ;
-        sh:description "A patient registry dataset." ;
-        sh:class ejp:PatientRegistryDataset;
-        sh:node ejp-s:PatientRegistryDatasetShape;
+        sh:name "Dataset" ;
+        sh:description "A resource dataset." ;
+        sh:class ejp:Dataset;
+        sh:node ejp-s:DatasetShape;
         sh:minCount 1 ;
     ] .
 
@@ -82,3 +82,19 @@ ejp-s:LocationShape
     sh:targetClass ejp:Location ;
     rdfs:label "Localtion" ;
     rdfs:subClassOf rdfs:Resource .
+
+ejp-s:ResourcesShape
+    a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass ejp:Resources ;
+    rdfs:label "Resources" ;
+    rdfs:subClassOf rdfs:Catalog ;
+
+    sh:property [
+        sh:path dct:hasPart ;
+        sh:name " " ;
+        sh:description "  " ;
+        sh:class ejp:Resource;
+        sh:node ejp-s:ResourcesShape ;
+        sh:minCount 1 ;
+      ] .
