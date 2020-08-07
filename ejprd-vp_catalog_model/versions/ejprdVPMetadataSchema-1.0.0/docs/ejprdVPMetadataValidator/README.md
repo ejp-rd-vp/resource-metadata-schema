@@ -6,10 +6,10 @@ The EJPRD VP catalog helps to discover all resources such as catalogs, biotools,
 
 This revision of the EJPRD metadata schema [v.0.0.1](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/dev-branch/ejprd-vp_catalog_model/versions/ejprdVPMetadataSchema-0.0.1/README.md) has extended the previous version to support use cases and requirements to **welcome the possibility of cataloging other resources in addition to registries, such as BioTools,BioBanks, research papers among [others](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/dev-branch/ejprd-vp_catalog_model/versions/ejprdVPMetadataSchema-1.0.0/docs/ejprdVPMetadataSchema-1.0.0_diagrams/ejprd-resources.png) and datasets.** The revision also supports describing relationships between datasets as well as between datasets and other cataloged resources.
 
-DCAT provides RDF classes and properties to allow datasets and data services to be described and included in a catalog. The use of a standard model and vocabulary facilitates the consumption and aggregation of metadata from multiple catalogs, which can:
+EJPRD metadata schema version 1.0.0 provides classes and properties to allow datasets and resources to be described and included in a catalog. The use of a standard model and vocabulary facilitates the consumption and aggregation of metadata from multiple catalogs, which can:
 
 * increase the discoverability of resources and datasets
-* allow federated search for datasets across catalogs in multiple sites
+* allow federated search for datasets across catalogs/registries in multiple sites
 
 Data described in a catalog can come in many formats, ranging from spreadsheets, through XML and RDF to various specialised formats. DCAT does not make any assumptions about these serialisation formats of the datasets but it does distinguish between the abstract dataset and its different manifestations or distributions.
 
