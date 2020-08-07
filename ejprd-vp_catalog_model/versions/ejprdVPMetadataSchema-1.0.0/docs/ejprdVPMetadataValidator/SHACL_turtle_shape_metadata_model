@@ -12,7 +12,7 @@ ejp-s:CatalogOfResourcesShape
     sh:nodeKind sh:IRI;
     sh:targetClass ejp:Catalog ;
     rdfs:label "CatalogOfResources" ;
-    rdfs:subClassOf rdfs:Catalog ;
+
 
     sh:property [
         sh:path dct:publisher ;
@@ -30,7 +30,19 @@ ejp-s:CatalogOfResourcesShape
         sh:class ejp:Dataset;
         sh:node ejp-s:DatasetShape;
         sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path dcat:hasPart ;
+        sh:name "Resources" ;
+        sh:description "A type resource in the catalog." ;
+        sh:class ejp:Resources;
+        sh:node ejp-s:ResourcesShape;
+        sh:minCount 1 ;
     ] .
+
+
+
 
 ejp-s:OrganisationShape
     a rdfs:Class, sh:NodeShape ;
@@ -84,6 +96,7 @@ ejp-s:LocationShape
     rdfs:subClassOf rdfs:Resource .
 
 ejp-s:ResourcesShape
+
     a rdfs:Class, sh:NodeShape ;
     sh:nodeKind sh:IRI ;
     sh:targetClass ejp:Resources ;
