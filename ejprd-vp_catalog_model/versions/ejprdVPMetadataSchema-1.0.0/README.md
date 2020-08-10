@@ -146,7 +146,7 @@ Validation of RDF can be done using the W3C validator: https://www.w3.org/RDF/Va
 **Note**: This is for validation of data about registries and registry catalogues.
 
 
-The main schema diagram [here](https://raw.githubusercontent.com/ejp-rd-vp/resource-metadata-schema/master/diagrams/vp_model.gif).
+The main schema diagram [here](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/dev-branch/ejprd-vp_catalog_model/versions/ejprdVPMetadataSchema-1.0.0/diagrams/VP_Model.png).
 
 * The ShEx file for validation :
 
