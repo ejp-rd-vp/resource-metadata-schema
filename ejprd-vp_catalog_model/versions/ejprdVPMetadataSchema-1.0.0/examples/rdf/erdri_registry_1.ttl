@@ -1,0 +1,33 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ejp: <http://purl.org/ejp-rd/vocabulary/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.reseau-htap.fr/> a ejp:PatientRegistryDataset ;
+    dct:publisher [ dct:spatial [ ejp:city "94275 Le Kremlin-Bicêtre" ;
+                    ejp:country "France" ] ;
+            dct:title "AP-HP Hôpital Bicêtre Université Paris-Sud" ] ;
+    dct:title "FPHR" ;
+    dcat:theme <http://www.orpha.net/ORDO/Orphanet_182090>,
+        <http://www.orpha.net/ORDO/Orphanet_275766>,
+        <http://www.orpha.net/ORDO/Orphanet_275777>,
+        <http://www.orpha.net/ORDO/Orphanet_275786>,
+        <http://www.orpha.net/ORDO/Orphanet_275791>,
+        <http://www.orpha.net/ORDO/Orphanet_275798>,
+        <http://www.orpha.net/ORDO/Orphanet_275803>,
+        <http://www.orpha.net/ORDO/Orphanet_275808>,
+        <http://www.orpha.net/ORDO/Orphanet_275813>,
+        <http://www.orpha.net/ORDO/Orphanet_275823>,
+        <http://www.orpha.net/ORDO/Orphanet_275828>,
+        <http://www.orpha.net/ORDO/Orphanet_275837>,
+        <http://www.orpha.net/ORDO/Orphanet_275844>,
+        <http://www.orpha.net/ORDO/Orphanet_422>,
+        <http://www.orpha.net/ORDO/Orphanet_431353>,
+        <http://www.orpha.net/ORDO/Orphanet_70591>,
+        <http://www.orpha.net/ORDO/Orphanet_71198> .
+

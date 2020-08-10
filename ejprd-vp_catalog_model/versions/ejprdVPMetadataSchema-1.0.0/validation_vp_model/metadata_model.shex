@@ -11,47 +11,51 @@ prefix umbel: <http://umbel.org/umbel#>
 prefix foaf: <http://xmlns.com/foaf/0.1/>
 prefix vcard: <http://www.w3.org/2006/vcard/ns#>
 
-ejp-s:CatalogShape IRI
-// rdfs:label "Catalog Shape"
+ejp-s:CatalogResourcesShape IRI
+// rdfs:label "CatalogedRessources Shape"
 {
     rdf:type [ejp:Catalog] ? ;
     dct:title xsd:string ?
          // rdfs:label "name"
          // rdfs:comment "a name or short description for the catalog"@en
          ;
+
     dct:description xsd:string ?
         // rdfs:label "description"
         // rdfs:comment "A description for the catalog"@en
         ;
+
     foaf:homepage xsd:string ?
          // rdfs:label "homepage"
          // rdfs:comment "The primary URL for the homepage of the catalog"@en
+         ;
+
+    dcat:dataset @ejp-s:DatasetShape *
+          // rdfs:label "datasets"
+          // rdfs:comment "Link to the EJPRD resource datasets."@en
+          ;
+
+    dct:hasPart @ejp-s:CatalogShape *
+         // rdfs:label "Catalog"
+         // rdfs:comment "Link to the catalog."@en
          ;
     dct:publisher @ejp-s:OrganisationShape *
          // rdfs:label "Organization"
          // rdfs:comment "The organisation that published a catalog of registries."@en
          ;
-    dcat:dataset @ejp-DatasetShape *
-         // rdfs:label "datasets"
-         // rdfs:comment "Link to the resource datasets."@en
-         ;
-    dcat:hasPart @ejp-ResourceShape *
-          // rdfs:label "datasets"
-          // rdfs:comment "Link to the resource datasets."@en
-          ;
+
 }
 
-
 ejp-s:DatasetShape IRI
-// rdfs:label "Patient or biobank Registry or Biotools Dataset"
+// rdfs:label "Patient or biobank Registry Dataset or biotools or research study"
 {
-  rdf:type [ejp:PatientRegistryDataset ejp:BiobankRegistryDataset ejp:BioToolsDataset] ?
+  rdf:type [ejp:PatientDataset ejp:BiobankDataset ejp:Biotools ejp:researchpaper] ?
     // rdfs:label "@type"
-    // rdfs:comment "the primary type for this registry"
+    // rdfs:comment "the primary type for this resources"
     ;
   dct:title xsd:string ?
        // rdfs:label "name"
-       // rdfs:comment "a name or short description for the resources"@en
+       // rdfs:comment "a name or short description for the registry"@en
        ;
   dct:description xsd:string ?
       // rdfs:label "description"
@@ -61,14 +65,15 @@ ejp-s:DatasetShape IRI
        // rdfs:label "homepage"
        // rdfs:comment "The primary URL for the homepage of the registry"@en
        ;
-  ejp:population_coverage @ejp-s:LocationShape *
-    // rdfs:label "PopulationCoverage"
-    // rdfs:comment "The country from which the patients in the dataset come from."@en;
-
-
   dct:publisher @ejp-s:OrganisationShape *
-    // rdfs:label "Organisation"
-    // rdfs:comment "The organisation that published a catalog of registries."@en ;
+      // rdfs:label "Organization"
+      // rdfs:comment "The organisation that published a catalog of registries."@en
+      ;
+
+  ejp:population_coverage @ejp-s:LocationShape *
+       // rdfs:label "PopulationCoverage"
+       // rdfs:comment "The country from which the patients in the dataset come from."@en
+       ;
 }
 
 ejp-s:OrganisationShape
