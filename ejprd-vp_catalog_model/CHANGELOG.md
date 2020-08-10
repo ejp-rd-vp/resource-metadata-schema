@@ -21,7 +21,7 @@ Status: DRAFT - 16th July, 2019. This is currently a strawman proposal intended 
 
 
 ## Added
-This release is focused on the core model designed to represent **data about a rare disease patients and biosample registries**, which is just one of the major resources the EJPRD VP catalogs of registries covers.
+This release is focused on the core model designed to represent **data about the EJPRD VP catalogs covering : a rare disease patients, biosample registries, bioitools, and research projects**, which is just one of the major resources the EJPRD VP catalogs of registries covers.
 
 ## Misc
 
