@@ -30,7 +30,7 @@ Organisation: government agencies or other entities that are responsible for the
 Location: A spatial region or named place.
 
 
-* Class: Catalog
+* **Class: Catalog**
     * 1.1 Property: homepage
     * 1.2 Property: themes
     * 1.3 Property: haspart
@@ -39,7 +39,7 @@ Location: A spatial region or named place.
 
 
 
-* Class: Cataloged Resource
+* **Class: Cataloged Resource**
     * 2.1 Property: resource creator
     * 2.2 Property: description
     * 2.3 Property: title
@@ -51,12 +51,12 @@ Location: A spatial region or named place.
     * 2.9 Property: landing page
 
 
-* Class: Dataset
-    3.1 Property: spatial/geographical coverage
+* **Class: Dataset**
+    * 3.1 Property: spatial/geographical coverage
 
 
 
-* Class: Organization
+* **Class: Organization**
 
 
 * Class: Location
