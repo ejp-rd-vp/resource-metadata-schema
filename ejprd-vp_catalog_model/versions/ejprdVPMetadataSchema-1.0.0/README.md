@@ -8,18 +8,13 @@ Production
 The metadata has seven major schemas for the catalog resource :
 * [Catalog of Registries](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/master/docs/catalog_of_registries.json): this describes the catalogs / registries properties of the virtual platform catalogs resource. The catalog properties and description detailed [here](https://ejp-rd-vp.github.io/resource-metadata-schema/catalog_of_registries.html).
 
-
 * [Location](https://ejp-rd-vp.github.io/resource-metadata-schema/location.html).
 
 * [Organisation](https://ejp-rd-vp.github.io/resource-metadata-schema/organisation.html).
 
-* [Code](https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code.html).
+* [Dataset](https://ejp-rd-vp.github.io/resource-metadata-schema/registry.html).
 
-* [Coding System](https://ejp-rd-vp.github.io/resource-metadata-schema/vocabulary_code_system.html).
-
-* [Case or observation](https://ejp-rd-vp.github.io/resource-metadata-schema/case.html).
-
-* [Rare disease registry dataset](https://ejp-rd-vp.github.io/resource-metadata-schema/registry.html).
+* [CatalogedResources]().
 
 
 # Structure
@@ -169,39 +164,47 @@ prefix umbel: <http://umbel.org/umbel#>
 prefix foaf: <http://xmlns.com/foaf/0.1/>
 prefix vcard: <http://www.w3.org/2006/vcard/ns#>
 
-ejp-s:CatalogOfRegistriesShape IRI
-// rdfs:label "CatalogOfRegistries Shape"
+ejp-s:CatalogResourcesShape IRI
+// rdfs:label "CatalogedRessources Shape"
 {
-    rdf:type [ejp:CatalogOfRegistries] ? ;
+    rdf:type [ejp:Catalog] ? ;
     dct:title xsd:string ?
          // rdfs:label "name"
          // rdfs:comment "a name or short description for the catalog"@en
          ;
+
     dct:description xsd:string ?
         // rdfs:label "description"
         // rdfs:comment "A description for the catalog"@en
         ;
+
     foaf:homepage xsd:string ?
          // rdfs:label "homepage"
          // rdfs:comment "The primary URL for the homepage of the catalog"@en
+         ;
+
+    dcat:dataset @ejp-s:DatasetShape *
+          // rdfs:label "datasets"
+          // rdfs:comment "Link to the EJPRD resource datasets."@en
+          ;
+
+    dct:hasPart @ejp-s:CatalogShape *
+         // rdfs:label "Catalog"
+         // rdfs:comment "Link to the catalog."@en
          ;
     dct:publisher @ejp-s:OrganisationShape *
          // rdfs:label "Organization"
          // rdfs:comment "The organisation that published a catalog of registries."@en
          ;
-    dcat:dataset @ejp-s:RegistryDatasetShape *
-         // rdfs:label "datasets"
-         // rdfs:comment "Link to the patient registry datasets."@en
-         ;
+
 }
 
-
-ejp-s:RegistryDatasetShape IRI
-// rdfs:label "Patient or biobank Registry Dataset"
+ejp-s:DatasetShape IRI
+// rdfs:label "Patient or biobank Registry Dataset or biotools or research study"
 {
-  rdf:type [ejp:PatientRegistryDataset ejp:BiobankRegistryDataset] ?
+  rdf:type [ejp:PatientDataset ejp:BiobankDataset ejp:Biotools ejp:researchpaper] ?
     // rdfs:label "@type"
-    // rdfs:comment "the primary type for this registry"
+    // rdfs:comment "the primary type for this resources"
     ;
   dct:title xsd:string ?
        // rdfs:label "name"
@@ -215,53 +218,16 @@ ejp-s:RegistryDatasetShape IRI
        // rdfs:label "homepage"
        // rdfs:comment "The primary URL for the homepage of the registry"@en
        ;
-  ejp:population_coverage @ejp-s:LocationShape *
-    // rdfs:label "PopulationCoverage"
-    // rdfs:comment "The country from which the patients in the dataset come from."@en;
-  dcat:theme @ejp-s:DiseaseCodeShape *
-    // rdfs:label "DiseaseCode"
-    // rdfs:comment "The disease code."@en ;
   dct:publisher @ejp-s:OrganisationShape *
-    // rdfs:label "Organisation"
-    // rdfs:comment "The organisation that published a catalog of registries."@en ;
-}
+      // rdfs:label "Organization"
+      // rdfs:comment "The organisation that published a catalog of registries."@en
+      ;
 
-ejp-s:DiseaseCase
-{
-  ejp:numberOfCases xsd:int ?;
-  ejp:inclusion_exclusion_criteria xsd:string ? ;
-  ejp:recruitment_area @ejp-s:LocationShape ? ;
-  umbel:relatesToDisease @ejp-s:DiseaseCodeShape *
-    // rdfs:label "DiseaseCode"
-    // rdfs:comment "The disease code."@en ;
-}
-
-
-ejp-s:DiseaseCodeShape IRI
-// rdfs:label "DiseaseCode"
-{
-  rdf:type [skos:Concept] ? ;
-  dct:title xsd:string ?
-       // rdfs:label "name"
-       // rdfs:comment "a name for the disease concept"@en
+  ejp:population_coverage @ejp-s:LocationShape *
+       // rdfs:label "PopulationCoverage"
+       // rdfs:comment "The country from which the patients in the dataset come from."@en
        ;
- skos:inConceptSchema @ejp-s:DiseaseCodeSystem ?
-    // rdfs:label "PopulationCoverage"
-    // rdfs:comment "The country from which the patients in the dataset come from."@en
-    ;
 }
-
-ejp-s:DiseaseCodeSystem IRI
-// rdfs:label "DiseaseCodeSystem"
-{
-  rdf:type [skos:ConceptScheme] ?;
-  dct:title xsd:string ?
-       // rdfs:label "name"
-       // rdfs:comment "a name or short description for the coding system"@en
-       ;
-
-}
-
 
 ejp-s:OrganisationShape
 {
@@ -300,6 +266,7 @@ ejp-s:LocationShape
     ;
 }
 
+
 ```
 
 * The Shex Constrains
@@ -308,7 +275,6 @@ ejp-s:LocationShape
 
 
 ```ShEx
-
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -318,12 +284,12 @@ ejp-s:LocationShape
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-ejp-s:CatalogOfRegistriesShape
+ejp-s:CatalogResourcesShape
     a rdfs:Class, sh:NodeShape ;
     sh:nodeKind sh:IRI;
-    sh:targetClass ejp:CatalogOfRegistries ;
-    rdfs:label "CatalogOfRegistries" ;
-    rdfs:subClassOf rdfs:Resource ;
+    sh:targetClass ejp:CatalogResources ;
+    rdfs:label "CatalogResources" ;
+
 
     sh:property [
         sh:path dct:publisher ;
@@ -336,10 +302,10 @@ ejp-s:CatalogOfRegistriesShape
     ] ;
     sh:property [
         sh:path dcat:dataset ;
-        sh:name "patientRegistryDataset" ;
-        sh:description "A patient registry dataset." ;
-        sh:class ejp:PatientRegistryDataset;
-        sh:node ejp-s:PatientRegistryDatasetShape;
+        sh:name "Dataset" ;
+        sh:description "A resource dataset." ;
+        sh:class ejp:Dataset;
+        sh:node ejp-s:DatasetShape;
         sh:minCount 1 ;
     ] .
 
@@ -360,7 +326,7 @@ ejp-s:OrganisationShape
         sh:minCount 1 ;
     ] .
 
-ejp-s:PatientRegistryDatasetShape
+ejp-s:DatasetShape
     a rdfs:Class, sh:NodeShape ;
     sh:nodeKind sh:IRI;
     sh:targetClass ejp:PatientRegistryDataset ;
@@ -375,35 +341,13 @@ ejp-s:PatientRegistryDatasetShape
         sh:node ejp-s:LocationShape ;
         sh:minCount 1 ;
     ] ;
-    sh:property [
-        sh:path dcat:theme ;
-        sh:name "DiseaseCode" ;
-        sh:description "The disease code." ;
-        sh:node ejp-s:DiseaseCodeShape ;
-        sh:minCount 1 ;
-    ] ;
+
     sh:property [
         sh:path dct:publisher ;
         sh:name "Organisation" ;
         sh:description "The organisation that published a catalog of registries." ;
         sh:class ejp:Organisation;
         sh:node ejp-s:OrganisationShape ;
-        sh:maxCount 1 ;
-        sh:minCount 1 ;
-    ] .
-
-ejp-s:DiseaseCodeShape
-    a rdfs:Class, sh:NodeShape ;
-    sh:nodeKind sh:IRI;
-    sh:targetClass ejp:DiseaseCode ;
-    rdfs:label "DiseaseCode" ;
-    rdfs:subClassOf rdfs:Resource ;
-
-    sh:property [
-        sh:path skos:inConceptSchema ;
-        sh:name "PopulationCoverage" ;
-        sh:description "The country from which the patients in the dataset come from." ;
-        sh:node ejp:DiseaseCodeSystem ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
     ] .
