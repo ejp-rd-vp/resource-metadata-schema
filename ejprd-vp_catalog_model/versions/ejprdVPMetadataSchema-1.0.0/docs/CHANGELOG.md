@@ -38,7 +38,6 @@ Location: A spatial region or named place.
     * 1.6 Property: catalog
 
 
-
 * **Class: Cataloged Resource**
     * 2.1 Property: resource creator
     * 2.2 Property: description
@@ -48,19 +47,17 @@ Location: A spatial region or named place.
     * 2.6 Property: identifier
     * 2.7 Property: theme/category
     * 2.8 Property: type/genre
-    * 2.9 Property: landing page
+    * 2.9 Property: landing page/Url
 
 
 * **Class: Dataset**
     * 3.1 Property: spatial/geographical coverage
 
 
-
 * **Class: Organization**
 
 
 * **Class: Location**
-
 
 
 ## Added
