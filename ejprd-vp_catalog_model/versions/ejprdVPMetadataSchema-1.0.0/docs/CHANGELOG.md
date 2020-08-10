@@ -59,7 +59,7 @@ Location: A spatial region or named place.
 * **Class: Organization**
 
 
-* Class: Location
+* **Class: Location**
 
 
 
