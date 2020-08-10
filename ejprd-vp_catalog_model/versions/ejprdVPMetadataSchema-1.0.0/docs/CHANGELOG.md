@@ -64,7 +64,7 @@ Location: A spatial region or named place.
 
 
 ## Added
-This release is focused on the core model designed to represent **data about the EJPRD VP catalogs covering : a rare disease patients, biosample registries, biotools, and research projects**, which is just one of the major resources the EJPRD VP catalogs of registries covers.
+This release is focused on the core model designed to represent **data about the EJPRD VP catalogs covering : a rare disease patients, biosample registries, biotools, and research projects**, which are some of the major resources the EJPRD VP catalogs covers.
 
 ## Misc
 
