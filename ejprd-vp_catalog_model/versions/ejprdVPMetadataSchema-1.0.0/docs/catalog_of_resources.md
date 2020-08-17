@@ -20,7 +20,7 @@ Schema to describe resource that are discoverable on the EJPRD VP e.g. Orphanet
 | [theme](#theme)               | `string`     | Optional     | No       | Rare disease catalog (this schema)         |
 | [description](#description)   | `string`     | Optional     | No       | Rare disease catalog (this schema)         |
 | [language](#language)         | `enum`       | **Required** | No       | Rare disease catalog (this schema)         |
-| [publisher](#publisher)       | `string`     | Optional     | No       | Rare disease catalog (this schema)         |
+| [publisher](#publisher)       |`organisation`| Optional     | No       | Rare disease catalog (this schema)         |
 | [title](#title)               | `string`     | Optional     | No       | Rare disease catalog (this schema)         |
 | [keyword](#keyword)           | `string`     | Optional     | No       | Rare disease catalog (this schema)         |
 | `*`                           | any          | Additional   | Yes      | this schema _allows_ additional properties |
@@ -130,10 +130,20 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-### publisher
+## publisher
 
-`string`
+The primary organisation responsible for publishing and maintaining the registry
 
+`publisher`
+
+- is optional
+- type: Organisation
+- defined in this schema
+- example:
+
+### publisher Type
+
+- [Organisation](organisation.md) – `organisation.json`
 ## title
 
 A name given to the cataloged resource.

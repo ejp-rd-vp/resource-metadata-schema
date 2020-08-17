@@ -1,14 +1,14 @@
 # Rare disease registry dataset Schema
 
 ```
-registry.json
+catalog.json
 ```
 
-A schema to describe a dataset of patients, cohorts or biomaterials from a registry
+A schema to describe a dataset of patients, cohorts or biomaterials from a catalog
 
 | Abstract            | Extensible | Status       | Identifiable | Custom Properties | Additional Properties | Defined In                     |
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- | ------------------------------ |
-| Can be instantiated | No         | Experimental | No           | Forbidden         | Permitted             | [registry.json](registry.json) |
+| Can be instantiated | No         | Experimental | No           | Forbidden         | Permitted             | [catalog.json](catalog.json) |
 
 ## Schema Hierarchy
 
@@ -20,18 +20,17 @@ A schema to describe a dataset of patients, cohorts or biomaterials from a regis
 | Property                        | Type                | Required     | Nullable | Defined by                                  |
 | ------------------------------- | ------------------- | ------------ | -------- | ------------------------------------------- |
 | [@id](#id)                      | `string`            | **Required** | No       | Rare disease registry dataset (this schema) |
-| [@type](#type)                  | `enum`              | **Required** | No       | Rare disease registry dataset (this schema) |
-| [description](#description)     | `string`            | Optional     | No       | Rare disease registry dataset (this schema) |
-| [disease_cases](#disease_cases) | Case or observation | Optional     | No       | Rare disease registry dataset (this schema) |
 | [homepage](#homepage)           | `string`            | Optional     | No       | Rare disease registry dataset (this schema) |
-| [name](#name)                   | `string`            | Optional     | No       | Rare disease registry dataset (this schema) |
+| [hasPart](#hasPart)             | Resource            | Optional     | No       | Rare disease registry dataset (this schema) |
+| [dataset](#dataset)             | Dataset             | Optional     | No       | Rare disease registry dataset (this schema) |
 | [publisher](#publisher)         | Organisation        | Optional     | No       | Rare disease registry dataset (this schema) |
-| [theme](#theme)                 | Code                | Optional     | No       | Rare disease registry dataset (this schema) |
+| [catalog](#catalog)             | Catalog             | Optional     | No       | Rare disease registry dataset (this schema) |
+| [resource](#resource)           | Resource            | Optional     | No       | Rare disease registry dataset (this schema) |
 | `*`                             | any                 | Additional   | Yes      | this schema _allows_ additional properties  |
 
 ## @id
 
-a primary identifier for the registry
+a primary identifier for the catalog
 
 `@id`
 
@@ -40,67 +39,10 @@ a primary identifier for the registry
 - defined in this schema
 - example: https://www.pcdregistry.eu/
 
-### @id Type
-
-`string`
-
-## @type
-
-the primary type for this registry
-
-`@type`
-
-- is **required**
-- type: `enum`
-- defined in this schema
-- example: PatientRegistryDataset
-
-The value of this property **must** be equal to one of the [known values below](#type-known-values).
-
-### @type Known Values
-
-| Value                    | Description |
-| ------------------------ | ----------- |
-| `PatientRegistryDataset` |             |
-| `BiobankDataset`         |             |
-
-## description
-
-A description for the registry
-
-`description`
-
-- is optional
-- type: `string`
-- defined in this schema
-- example: PDC registry
-
-### description Type
-
-`string`
-
-## disease_cases
-
-Information about the individual cases described in the registry
-
-`disease_cases`
-
-- is optional
-- type: Case or observation
-- defined in this schema
-- example:
-
-### disease_cases Type
-
-Array type: Case or observation
-
-All items must be of the type:
-
-- [Case or observation](case.md) – `case.json`
 
 ## homepage
 
-The primary URL for the homepage of the registry
+The primary URL for the homepage of the catalog
 
 `homepage`
 
@@ -113,20 +55,22 @@ The primary URL for the homepage of the registry
 
 `string`
 
-## name
+## hasPart
 
-a name or short description for the registry
+An item that is listed in the cataloged resources
 
-`name`
+`hasPart`
 
 - is optional
-- type: `string`
+- type: resource
 - defined in this schema
-- example: PDC registry
+- example:
 
-### name Type
+### hasPart Type
 
-`string`
+- [catalog_of_resources](catalog_of_resources.md) – `catalog_of_resources.json`
+
+
 
 ## publisher
 
@@ -143,21 +87,36 @@ The primary organisation responsible for publishing and maintaining the registry
 
 - [Organisation](organisation.md) – `organisation.json`
 
-## theme
 
-The primary diseases associated with the dataset
+## dataset
 
-`theme`
+An item that is listed in the cataloged resources
+
+`dataset`
 
 - is optional
-- type: Code
+- type: dataset
 - defined in this schema
 - example:
 
-### theme Type
+### dataset Type
 
-Array type: Code
+- [dataset](dataset.md) – `dataset.json`
 
-All items must be of the type:
 
-- [Code](vocabulary_code.md) – `vocabulary_code.json`
+
+
+## resource
+
+An item that is listed in the cataloged resources
+
+`resource`
+
+- is optional
+- type: dataset
+- defined in this schema
+- example:
+
+### resource Type
+
+- [catalog_of_resources](catalog_of_resources.md) – `catalog_of_resources.json`
