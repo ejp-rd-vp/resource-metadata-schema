@@ -102,6 +102,27 @@ The metadata has seven major schemas for the catalog resource :
   </tr>
 </table>
 
+# EJPRD Metadata Schema specification
+
+## RDF representation
+
+---------
+<table>
+  <tr>
+   <td><strong>Schema modules/Classes</strong>
+   </td>
+   <td><strong>Definition </strong>
+   </td>
+   <td><strong> SubClassOf: </strong>
+   </td>
+   <td><strong> Usage Note </strong>
+   </td>
+   <td><strong> Properties </strong>
+   </td>
+   <td> catalogs as describe in EJPRD Virtual Platform
+   </td>
+  </tr>
+</table>
 
 
 # Examples
