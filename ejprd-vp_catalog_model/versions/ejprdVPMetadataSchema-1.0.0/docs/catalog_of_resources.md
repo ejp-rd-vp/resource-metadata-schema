@@ -74,7 +74,7 @@ The primary URL for the homepage of the catalog
 - defined in this schema
 - example: http://www.orpha.net
 
-### landingPage Type
+## landingPage Type
 
 `string`
 
@@ -174,7 +174,6 @@ Array type: location
 All items must be of the type:
 
 - [Location](location.md) – `location.json`
-
 
 
 ## organisation
