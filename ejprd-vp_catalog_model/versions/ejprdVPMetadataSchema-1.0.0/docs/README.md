@@ -14,7 +14,7 @@ The core model is designed to represent data about a rare disease patient and bi
 The schema can be serialised as JSON documents. We provide JSON schema documents  for the following objects:
 
 
-- [Rare disease catalog](./catalog_of_registries.md) – `catalog_of_registries.json`
+- [Rare disease resource](./catalog_of_resources.md) – `catalog_of_registries.json`
 - [Rare disease registry dataset](./registry.md) – `registry.json`
 - [Case or observation](./case.md) – `case.json`
 - [Code](./vocabulary_code.md) – `vocabulary_code.json`
