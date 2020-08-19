@@ -144,6 +144,8 @@ The primary organisation responsible for publishing and maintaining the registry
 ### publisher Type
 
 - [Organisation](organisation.md) – `organisation.json`
+
+
 ## title
 
 A name given to the cataloged resource.
