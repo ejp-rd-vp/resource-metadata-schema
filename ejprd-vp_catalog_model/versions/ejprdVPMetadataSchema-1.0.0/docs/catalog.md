@@ -1,4 +1,5 @@
-# Rare disease registry dataset Schema
+# EJPRD VP discoverable Catalogs Schema
+
 
 ```
 catalog.json
@@ -15,7 +16,7 @@ A schema to describe a dataset of patients, cohorts or biomaterials from a catal
 - Rare disease registry dataset `registry.json`
   - [Organisation](organisation.md) `organisation.json`
 
-# Rare disease registry dataset Properties
+# Rare disease catalogs dataset Properties
 
 | Property                        | Type                | Required     | Nullable | Defined by                                  |
 | ------------------------------- | ------------------- | ------------ | -------- | ------------------------------------------- |
@@ -24,7 +25,6 @@ A schema to describe a dataset of patients, cohorts or biomaterials from a catal
 | [hasPart](#hasPart)             | Resource            | Optional     | No       | Rare disease registry dataset (this schema) |
 | [dataset](#dataset)             | Dataset             | Optional     | No       | Rare disease registry dataset (this schema) |
 | [publisher](#publisher)         | Organisation        | Optional     | No       | Rare disease registry dataset (this schema) |
-| [catalog](#catalog)             | Catalog             | Optional     | No       | Rare disease registry dataset (this schema) |
 | [resource](#resource)           | Resource            | Optional     | No       | Rare disease registry dataset (this schema) |
 | `*`                             | any                 | Additional   | Yes      | this schema _allows_ additional properties  |
 
@@ -102,7 +102,6 @@ An item that is listed in the cataloged resources
 ### dataset Type
 
 - [dataset](dataset.md) – `dataset.json`
-
 
 
 
