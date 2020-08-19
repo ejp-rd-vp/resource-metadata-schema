@@ -6,7 +6,7 @@ Here you will find the *EJPRD Resources Metadata schema* - the JSON schema versi
 Production
 ----------
 The metadata has seven major schemas for the catalog resource :
-* [Catalog of Registries](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/dev-branch/ejprd-vp_catalog_model/versions/ejprdVPMetadataSchema-1.0.0/docs/catalog_of_resources.json): this describes the catalogs / registries properties of the virtual platform catalogs resource. The catalog properties and description detailed [here](https://ejp-rd-vp.github.io/resource-metadata-schema/catalog_of_resources.html).
+* [Catalog of Resources](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/dev-branch/ejprd-vp_catalog_model/versions/ejprdVPMetadataSchema-1.0.0/docs/catalog_of_resources.json): this describes the catalogs / registries properties of the virtual platform catalogs resource. The catalog properties and description detailed [here](https://ejp-rd-vp.github.io/resource-metadata-schema/catalog_of_resources.html).
 
 * [Location](https://ejp-rd-vp.github.io/resource-metadata-schema/location.html).
 
