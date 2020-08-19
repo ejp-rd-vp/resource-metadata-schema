@@ -15,10 +15,8 @@ The schema can be serialised as JSON documents. We provide JSON schema documents
 
 
 - [Rare disease resource](./catalog_of_resources.md) – `catalog_of_resources.json`
-- [Rare disease catalog dataset](./catalog.md) – `catalog.json`
-- [Case or observation](./case.md) – `case.json`
-- [Code](./vocabulary_code.md) – `vocabulary_code.json`
-- [Coding system](./vocabulary_code_system.md) – `vocabulary_code_system.json`
+- [Rare disease catalog](./catalog.md) – `catalog.json`
+- [Rare diseases catalog dataset](./dataset.md) -dataset.json
 - [Location](./location.md) – `location.json`
 - [Organisation](./organisation.md) – `organisation.json`
 
