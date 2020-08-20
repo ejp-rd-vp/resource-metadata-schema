@@ -2,7 +2,7 @@
 
 As part of the [European Joint Programme (EJP) for Rare Disease](http://www.ejprarediseases.org), we are developing standards for rare disease registries to describe their metadata that will imporve the FAIR-ness of these resources.
 
-![schema](ejp.jpg){: .center-image }
+![schema](ejp.jpg)
 
 
 The core model is designed to represent data about a rare disease patient and biosample registry. The model is currently small and intended to address basic use-cases for registry discovery. An abstract view of the model is depicted below.
