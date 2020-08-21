@@ -22,6 +22,7 @@ ejp-s:CatalogResourcesShape
         sh:maxCount 1 ;
         sh:minCount 1 ;
     ] ;
+
     sh:property [
         sh:path dcat:dataset ;
         sh:name "Dataset" ;
@@ -65,7 +66,7 @@ ejp-s:DatasetShape
     rdfs:subClassOf rdfs:Resource ;
 
     sh:property [
-        sh:path ejp:populationCoverage ;
+        sh:path dcat:spatial ;
         sh:name "PopulationCoverage" ;
         sh:description "The country from which the patients in the dataset come from." ;
         sh:class ejp:Location;
@@ -87,7 +88,7 @@ ejp-s:LocationShape
         a rdfs:Class, sh:NodeShape ;
         sh:nodeKind sh:IRI ;
         sh:targetClass ejp:Location ;
-        rdfs:label "Localtion" ;
+        rdfs:label "Location" ;
         rdfs:subClassOf rdfs:Resource .
 
 ejp-s:ResourcesShape
