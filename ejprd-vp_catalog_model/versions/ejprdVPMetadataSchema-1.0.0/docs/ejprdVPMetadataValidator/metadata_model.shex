@@ -11,26 +11,54 @@ prefix umbel: <http://umbel.org/umbel#>
 prefix foaf: <http://xmlns.com/foaf/0.1/>
 prefix vcard: <http://www.w3.org/2006/vcard/ns#>
 
-ejp-s:CatalogShape IRI
-// rdfs:label "Catalog Shape"
+ejp-s:CatalogOfResourcesShape IRI
+// rdfs:label "CatalogOfResourcesShape"
+
+
+dcat:dataset @ejp-DatasetShape *
+     // rdfs:label "datasets"
+     // rdfs:comment "Link to the resource datasets."@en
+     ;
+
 {
-    rdf:type [ejp:Catalog] ? ;
+    rdf:type [dcat:Resources] ? ;
     dct:title xsd:string ?
          // rdfs:label "name"
-         // rdfs:comment "a name or short description for the catalog"@en
+         // rdfs:comment "a name or short description for the resource"@en
          ;
     dct:description xsd:string ?
         // rdfs:label "description"
-        // rdfs:comment "A description for the catalog"@en
+        // rdfs:comment "A description for the resource"@en
         ;
-    foaf:homepage xsd:string ?
-         // rdfs:label "homepage"
-         // rdfs:comment "The primary URL for the homepage of the catalog"@en
+    dct:landingPage xsd:string ?
+         // rdfs:label "landingPage"
+         // rdfs:comment "The primary URL for the homepage of the resource"@en
          ;
+    dct:language xsd:string ?
+        // rdfs:label "language"
+        // rdfs:comment "This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a resource (i.e. dataset)"@en
+        ;
+
+    dct:theme xsd:string ?
+        // rdfs:label "theme"
+        // rdfs:comment "A main category of the resource. A resource can have multiple themes."@en
+        ;
+
     dct:publisher @ejp-s:OrganisationShape *
          // rdfs:label "Organization"
          // rdfs:comment "The organisation that published a catalog of registries."@en
          ;
+
+    dct:title xsd:string ?
+         // rdfs:label "title"
+         // rdfs:comment "A name given to the item / resource"@en
+         ;
+
+   dcat:keyword xsd:string ?
+         // rdfs:label "keyword"
+         // rdfs:comment "A keyword or tag describing the resource."@en
+         ;
+
     dcat:dataset @ejp-DatasetShape *
          // rdfs:label "datasets"
          // rdfs:comment "Link to the resource datasets."@en
@@ -39,6 +67,11 @@ ejp-s:CatalogShape IRI
           // rdfs:label "datasets"
           // rdfs:comment "Link to the resource datasets."@en
           ;
+    locn:location @ejp-LocationShape *
+          // rdfs:label "Location"
+         // rdfs:comment "Location of the resource."@en
+          ;
+
 }
 
 
@@ -61,7 +94,7 @@ ejp-s:DatasetShape IRI
        // rdfs:label "homepage"
        // rdfs:comment "The primary URL for the homepage of the registry"@en
        ;
-  ejp:population_coverage @ejp-s:LocationShape *
+  dct:spatial @ejp-s:LocationShape *
     // rdfs:label "PopulationCoverage"
     // rdfs:comment "The country from which the patients in the dataset come from."@en;
 
