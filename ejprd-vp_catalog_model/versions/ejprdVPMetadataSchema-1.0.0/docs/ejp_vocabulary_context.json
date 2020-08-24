@@ -10,14 +10,14 @@
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "vcard": "http://www.w3.org/ns/dcat#",
-    "foaf" : "<http://xmlns.com/foaf/0.1/>",
-    "umbel" : "<http://umbel.org/umbel#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "umbel": "<http://umbel.org/umbel#>",
     "id": "dc:identifier",
     "name": "dct:title",
     "city": "vcard:locality",
     "country": "vcard:country-name",
     "description": "dct:description",
-    "region" : "vcard:region",
+    "region": "vcard:region",
     "datasets": {
       "@id": "dcat:dataset",
       "@type": "@id"
