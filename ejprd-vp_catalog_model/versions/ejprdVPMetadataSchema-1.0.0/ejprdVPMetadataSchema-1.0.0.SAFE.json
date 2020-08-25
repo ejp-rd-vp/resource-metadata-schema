@@ -24,55 +24,25 @@
         "CatalogOfBioTools"
       ]
     },
-    "landingPage": {
-      "description": "The primary URL for the homepage of the resource",
-      "type": "string",
-      "example": "http://www.orpha.net"
-    },
-    "theme": {
-      "description": "a name or short description for the resource",
-      "type": "string",
-      "example": ""
-    },
-    "description": {
-      "description": "A description for the resource",
-      "type": "string",
-      "example": "Orphanet is a unique resource, gathering and improving knowledge on rare diseases"
-    },
-    "language": {
-      "description": "This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a resource (i.e. dataset)",
-      "type": "string",
-      "example": "English",
-      "enum": [
-        "English",
-        "French",
-        "Germany"
-      ]
-    },
-    "publisher": {
-      "description": "This refers to the organisation that is responsible for the publishing of a resource (i.e. dataset)",
-      "type": "string",
-      "example": ""
-    },
-    "title": {
-      "description": "A name given to the cataloged resource.",
-      "type": "string",
-      "example": ""
-    },
-    "keyword": {
-      "description": "This refers to the keyword or tag describing the resource.",
-      "type": "string",
-      "example": ""
-    },
     "location": {
       "description": "Information about the location associated with the organisation",
       "$ref": "location.json"
     },
-    "organisation": {
-      "type": "array",
-      "items": {
-        "$ref": "organisation.json"
-      }
+    "catalog": {
+      "description": "A catalog whose contents are of interest in the context of this catalog.",
+      "$ref": "catalog.json"
     }
+  },
+  "organisation": {
+    "description": "Person and / or Organization for government agencies or other entities that is responsible for the publication of the catalog.",
+    "$ref": "organisation.json"
+  },
+  "dataset": {
+    "description": "A collection of data, published or curated by a single agent, and available for access or download in one or more representations.",
+    "$ref": "datasets.json"
+  },
+  "resources": {
+    "description": "A collection of data, published or curated by a single agent, and available for access or download in one or more representations.",
+    "$ref": "catalog_of_resources.json"
   }
 }
