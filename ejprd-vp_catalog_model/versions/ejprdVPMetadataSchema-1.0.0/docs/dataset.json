@@ -18,7 +18,7 @@
       "$ref": "location.json"
     },
     "resource": {
-      "description": "The geographical area covered by the dataset.",
+      "description": "Resource published or curated by a single agent.",
       "$ref": "catalog_of_resources.json"
     }
   }
