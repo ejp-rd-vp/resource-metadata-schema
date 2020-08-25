@@ -1,0 +1,36 @@
+{
+  "$id" : "organisation.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema to describe an organisation",
+  "required": [
+    "name"
+  ],
+  "title": "Organisation",
+  "properties": {
+    "@id": {
+      "description": "a primary identifier for the organisation",
+      "type": "string"
+    },
+    "name": {
+      "description": "a name or short description for the organisation",
+      "type": "string",
+      "example" : "Orphanet"
+    },
+    "description": {
+      "description": "A description for the organiation",
+      "type" : "string",
+      "example": "Orphanet is a unique resource, gathering and improving knowledge on rare diseases"
+    },
+    "homepage": {
+      "description": "The primary URL for the homepage of the organisation",
+      "type" : "string",
+      "format" : "url",
+      "example": "https://www.orpha.net/consor/cgi-bin/index.php"
+    },
+    "location": {
+      "description": "Information about the location associated with the organisation",
+      "$ref": "location.json"
+    }
+  }
+}
+

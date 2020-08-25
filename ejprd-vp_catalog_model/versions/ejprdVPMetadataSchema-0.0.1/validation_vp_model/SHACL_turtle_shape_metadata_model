@@ -1,0 +1,106 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ejp-s: <http://purl.org/ejp-rd/metadata/shapes/> .
+@prefix ejp: <http://purl.org/ejp-rd/vocabulary/> .
+@prefix dct: <http://purl.org/dc/terms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ejp-s:CatalogOfRegistriesShape
+    a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI;
+    sh:targetClass ejp:CatalogOfRegistries ;
+    rdfs:label "CatalogOfRegistries" ;
+    rdfs:subClassOf rdfs:Resource ;
+
+    sh:property [
+        sh:path dct:publisher ;
+        sh:name "Organisation" ;
+        sh:description "The organisation that published a catalog of registries." ;
+        sh:class ejp:Organisation; 
+        sh:node ejp-s:OrganisationShape ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dcat:dataset ;
+        sh:name "patientRegistryDataset" ;
+        sh:description "A patient registry dataset." ;
+        sh:class ejp:PatientRegistryDataset; 
+        sh:node ejp-s:PatientRegistryDatasetShape;
+        sh:minCount 1 ;
+    ] .
+     
+ejp-s:OrganisationShape
+    a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI;
+    sh:targetClass ejp:Organisation ;
+    rdfs:label "Organisation" ;
+    rdfs:subClassOf rdfs:Resource ;
+
+    sh:property [
+        sh:path dct:spatial ;
+        sh:name "Location" ;
+        sh:description "The country where the organisation is situated." ;
+        sh:class ejp:Location;
+        sh:node ejp-s:LocationShape ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] .
+    
+ejp-s:PatientRegistryDatasetShape
+    a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI;
+    sh:targetClass ejp:PatientRegistryDataset ;
+    rdfs:label "PatientRegistryDataset" ;
+    rdfs:subClassOf rdfs:Resource ;
+
+    sh:property [
+        sh:path ejp:populationCoverage ;
+        sh:name "PopulationCoverage" ;
+        sh:description "The country from which the patients in the dataset come from." ;
+        sh:class ejp:Location;
+        sh:node ejp-s:LocationShape ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dcat:theme ;
+        sh:name "DiseaseCode" ;
+        sh:description "The disease code." ;
+        sh:node ejp-s:DiseaseCodeShape ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dct:publisher ;
+        sh:name "Organisation" ;
+        sh:description "The organisation that published a catalog of registries." ;
+        sh:class ejp:Organisation; 
+        sh:node ejp-s:OrganisationShape ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] .
+    
+ejp-s:DiseaseCodeShape
+    a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI;
+    sh:targetClass ejp:DiseaseCode ;
+    rdfs:label "DiseaseCode" ;
+    rdfs:subClassOf rdfs:Resource ;
+
+    sh:property [
+        sh:path skos:inConceptSchema ;
+        sh:name "PopulationCoverage" ;
+        sh:description "The country from which the patients in the dataset come from." ;
+        sh:node ejp:DiseaseCodeSystem ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] .
+
+
+ejp-s:LocationShape
+    a rdfs:Class, sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass ejp:Location ;
+    rdfs:label "Localtion" ;
+    rdfs:subClassOf rdfs:Resource .
