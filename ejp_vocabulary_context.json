@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@base": "http://purl.org/ejp-rd/vocabulary/",
+    "ejp": "http://purl.org/ejp-rd/vocabulary/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dct": "http://purl.org/dc/terms/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "vcard": "http://www.w3.org/ns/dcat#",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "umbel" : "http://umbel.org/umbel#",
+    "id": "dc:identifier",
+    "name": "dct:title",
+    "city": "vcard:locality",
+    "country": "vcard:country-name",
+    "description": "dct:description",
+    "region" : "vcard:region",
+    "datasets": {
+      "@id": "dcat:dataset",
+      "@type": "@id"
+    },
+    "theme": {
+      "@id": "dcat:theme",
+      "@type": "@id"
+    },
+    "disease_code": {
+      "@id": "umbel:relatesToDisease",
+      "@type": "@id"
+    },
+    "themeTaxonomy": {
+      "@id": "dcat:themeTaxonomy",
+      "@type": "@id"
+    },
+    "location": "dct:spatial",
+    "publisher": "dct:publisher",
+    "type": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    }
+  }
+}

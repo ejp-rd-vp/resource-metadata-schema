@@ -1,0 +1,4 @@
+"value"	"label"	"description"
+"FALSE"	"No"	"The datum has been asked and is not available"
+"TRUE"	"Yes"	"The datum has been asked and is available"
+"UNK"	"Unknown"	"A proper value is not known"

@@ -1,0 +1,35 @@
+{
+  "$id": "registry.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Rare disease resources",
+  "description": "A schema to describe a dataset of patients, cohorts or biomaterials from a registry",
+  "required": [
+    "@id",
+    "@type"
+  ],
+  "properties": {
+    "@id": {
+      "description": "a primary identifier for the registry",
+      "type": "string",
+      "example": "https://www.pcdregistry.eu/"
+    },
+    "homepage": {
+      "description": "The primary URL for the homepage of the registry",
+      "type": "string",
+      "example": "https://www.pcdregistry.eu/",
+      "format": "url"
+    },
+    "hasPart": {
+      "description": " An item that is listed in the catalog.",
+      "$ref": "catalog_of_resources.json"
+    },
+    "publisher": {
+      "description": "The entity responsible for making the item available.",
+      "$ref": "organisation.json"
+    },
+    "resource": {
+      "description": " ",
+      "$ref": "catalog_of_resources.json"
+    }
+  }
+}

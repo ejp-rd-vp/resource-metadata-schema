@@ -1,0 +1,9 @@
+isodate
+pyparsing
+rdflib
+rdflib-jsonld
+six
+requests
+SPARQLWrapper
+jsonschema
+PyShEx

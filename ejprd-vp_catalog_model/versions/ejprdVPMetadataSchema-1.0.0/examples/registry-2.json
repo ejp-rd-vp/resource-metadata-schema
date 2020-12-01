@@ -1,0 +1,37 @@
+{
+  "@id": "http://www.reseau-htap.fr/",
+  "@type": "PatientRegistryDataset",
+  "name": "FPHR",
+   "disease_cases": [
+    {
+      "disease_code": [
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_70591"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275786"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275777"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_422"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275766"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_182090"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275791"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275828"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275803"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275798"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275808"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275813"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275823"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275837"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275844"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_431353"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_71198"}
+      ]
+    }
+  ],
+  "publisher": [
+    {
+      "name": "AP-HP Hôpital Bicêtre Université Paris-Sud",
+      "location": {
+        "city": "94275 Le Kremlin-Bicêtre",
+        "country": "France"
+      }
+    }
+   ]
+}

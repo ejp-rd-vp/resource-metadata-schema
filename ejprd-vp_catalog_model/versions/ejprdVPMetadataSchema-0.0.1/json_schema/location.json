@@ -1,0 +1,32 @@
+{
+  "$id" : "location.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema to describe a location, region or jurisdiction",
+  "title": "Location",
+  "properties": {
+    "@id": {
+      "description": "a primary identifier for the location",
+      "type": "string"
+    },
+    "city": {
+      "description": "The name of a city",
+      "type": "string",
+      "example" : "Paris"
+
+    },
+    "country": {
+      "description": "The name of a country",
+      "type": "string",
+      "example" : "France"
+
+    },
+    "region": {
+      "description" : "A broad description of a region",
+      "type" : "string",
+      "enum" : ["international, europe"],
+      "example" : "international"
+    }
+
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+  "@id": "https://www.pcdregistry.eu/",
+  "@type": "PatientRegistryDataset",
+  "name": "PCD Registry",
+  "disease_cases": [
+    {
+      "disease_code": [
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_137628"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_363250"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_275742"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_244"},
+        {"@id": "http://www.orpha.net/ORDO/Orphanet_98861"}
+      ]
+    }
+  ],
+  "publisher": [
+    {
+      "name": "University Hospital Muenster of the Westfalian University of Muenster (WWU)",
+      "location": {
+        "city": "D-48149 Muenster",
+        "country": "Germany"
+      }
+    }
+   ]
+}

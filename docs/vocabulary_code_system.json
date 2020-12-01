@@ -1,0 +1,21 @@
+{
+    "$id": "vocabulary_code_system.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Coding system",
+    "description": "A code system, controlled vocabulary or ontology",
+    "required": [
+        "@id"
+    ],
+    "properties": {
+        "@id": {
+            "description": "a primary identifier for the coding system",
+            "type": "string",
+            "example": "http://www.orpha.net/ontology/ORDO.owl"
+        },
+        "name": {
+            "description": "A human-readable name for coding system",
+            "type": "string",
+            "example": "The Orphanet Rare Disease ontology (ORDO) is jointly developed by Orphanet and the EBI to provide a structured vocabulary for rare diseases capturing relationships between diseases, genes and other relevant features which will form a useful resource for the computational analysis of rare diseases"
+        }
+    }
+}

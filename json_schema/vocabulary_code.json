@@ -1,0 +1,26 @@
+{
+  "$id" : "vocabulary_code.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Code",
+  "description": "A code from a coding system, controlled vocabulary or ontology",
+  "required": [
+    "@id"
+  ],
+  "properties": {
+    "@id": {
+      "description": "a primary identifier for the code",
+      "type": "string",
+      "example": "http://www.orpha.net/ORDO/Orphanet_137628"
+    },
+    "name": {
+      "description": "A human-readable name for code",
+      "type": "string",
+      "example": "Cardiac anomalies-heterotaxy syndrome"
+    },
+    "code_system": {
+      "description" : "A coding system that defines the code",
+      "type" : "string",
+      "$ref" : "vocabulary_code_system.json"
+    }
+  }
+}

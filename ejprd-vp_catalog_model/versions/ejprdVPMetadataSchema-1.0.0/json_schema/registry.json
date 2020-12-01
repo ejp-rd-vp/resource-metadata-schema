@@ -1,0 +1,59 @@
+{
+  "$id" : "registry.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Rare disease registry dataset",
+  "description": "A schema to describe a dataset of patients, cohorts or biomaterials from a registry",
+  "required": [
+    "@id",
+    "@type"
+  ],
+  "properties": {
+    "@id": {
+      "description": "a primary identifier for the registry",
+      "type": "string",
+      "example": "https://www.pcdregistry.eu/"
+    },
+    "@type": {
+      "description": "the primary type for this registry",
+      "type": "string",
+      "example" : "PatientRegistryDataset",
+      "enum": [
+        "PatientRegistryDataset", "BiobankDataset"
+      ]
+    },
+    "name": {
+      "description": "a name or short description for the registry",
+      "type": "string",
+      "example" : "PDC registry"
+    },
+    "description": {
+      "description": "A description for the registry",
+      "type": "string",
+      "example" : "PDC registry"
+    },
+    "homepage": {
+      "description": "The primary URL for the homepage of the registry",
+      "type": "string",
+      "example" : "https://www.pcdregistry.eu/",
+      "format" :"url"
+    },
+    "publisher": {
+      "description": "The primary organisation responsible for publishing and maintaining the registry",
+      "$ref": "organisation.json"
+    },
+    "theme": {
+      "description": "The primary diseases associated with the dataset",
+      "type": "array",
+      "items": {
+        "$ref": "vocabulary_code.json"
+      }
+    },
+    "disease_cases": {
+      "description": "Information about the individual cases described in the registry",
+      "type": "array",
+      "items": {
+        "$ref": "case.json"
+      }
+    }
+  }
+}

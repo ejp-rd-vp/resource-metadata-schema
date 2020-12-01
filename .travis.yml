@@ -1,0 +1,9 @@
+jobs:
+  include:
+  - stage: Schema tester
+    language: python
+    python: 3.6
+    script:
+       - cd tests
+       - pip install -r requirements.txt
+       - python json_schema_tests.py
