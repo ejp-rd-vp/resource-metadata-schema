@@ -1,8 +1,8 @@
 ### Metadata model figure
 
 <p align="center"> 
-    <a href="https://github.com/EBISPOT/ejprd-metadata-models/blob/master/images/vp_model.gif" target="_blank">
-        <img src="images/turtle/catalog.png"> 
+    <a href="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/turtle/catalog.png" target="_blank">
+        <img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/turtle/catalog.png"> 
     </a>
 </p>
 
@@ -39,8 +39,8 @@
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="https://github.com/EBISPOT/ejprd-metadata-models/blob/master/images/vp_model.gif" target="_blank">
-        <img src="images/shex/catalog.png"> 
+    <a href="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/shex/catalog.png" target="_blank">
+        <img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/shex/catalog.png"> 
     </a>
 </p>
 
