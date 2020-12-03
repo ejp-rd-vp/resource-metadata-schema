@@ -67,7 +67,7 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 :patientRegistryShape IRI {
   a [ejp:PatientRegistry];
   dct:title xsd:string;
-  ejp:populationCoverage @:populationCoverageShape;
+  ejp:populationCoverage @:populationCoverageShape*;
   dcat:theme IRI+;
   dct:publisher @:organisationShape;
   foaf:page IRI*
@@ -87,6 +87,6 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
 :populationCoverageShape IRI {
   a [sio:SIO_001166];
-  rdfs:label xsd:string;
+  rdfs:label ["National" "International"]
 }
 ```
