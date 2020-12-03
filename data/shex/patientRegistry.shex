@@ -30,5 +30,5 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
 :populationCoverageShape IRI {
   a [sio:SIO_001166];
-  rdfs:label ["National" "International"]
+  rdfs:label ["National" "International" "Regional"]
 }

@@ -22,18 +22,18 @@
 @prefix ordo: <http://www.orpha.net/ORDO/> .
 
 :patientRegistry a ejp:PatientRegistry ;
-  dct:publisher :2478_organisation ;        
-  dct:title "PCD Registry" ;
+  dct:publisher :organisation ;        
+  dct:title "Von Hippel-Lindau registry" ;
   ejp:populationCoverage  :population_coverage ;
-  dcat:theme  ordo:Orphanet_137628 , ordo:Orphanet_244 ;
-  foaf:page <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/register/2478> .
+  dcat:theme  ordo:Orphanet_892 ;
+  foaf:page <https://www.uniklinik-freiburg.de/medizin4.html> .
 
-:2478_organisation a foaf:Organisation ;
-  dct:title "ErdriDOR_2478_Organisation" ;
+:organisation a foaf:Organisation ;
+  dct:title "EKlinik für Innere Medizin IV" ;
   dct:spatial  :location .
 
 :population_coverage  a sio:SIO_001166 ;
-  rdfs:label  "International" .
+  rdfs:label  "Regional" .
 
 :location a dct:Location ;
   dct:title  "Germany" .
@@ -87,6 +87,6 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
 :populationCoverageShape IRI {
   a [sio:SIO_001166];
-  rdfs:label ["National" "International"]
+  rdfs:label ["National" "International" "Regional"]
 }
 ```
