@@ -1,0 +1,16 @@
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+
+:guideline a ejp:Guideline ;
+  dct:publisher :organisation ;        
+  dct:title "Biomarker Development Manual" ;
+  dcat:theme  obo:NCIT_C17564 ;
+  foaf:page <https://www.uniklinik-freiburg.de/medizin4.html> .
+
+:organisation a foaf:Organisation ;
+  dct:title "EATRIS" .

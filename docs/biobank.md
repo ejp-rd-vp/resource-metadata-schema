@@ -64,7 +64,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
-:patientRegistryShape IRI {
+:biobankShape IRI {
   a [ejp:Biobank];
   dct:title xsd:string;
   ejp:populationCoverage @:populationCoverageShape*;
@@ -87,6 +87,6 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
 :populationCoverageShape IRI {
   a [sio:SIO_001166];
-  rdfs:label ["National" "International"]
+  rdfs:label ["National" "International" "Regional"]
 }
 ```
