@@ -1,0 +1,25 @@
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sio:  <http://semanticscience.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ordo: <http://www.orpha.net/ORDO/> .
+
+:biobank a ejp:Biobank ;
+  dct:publisher :organisation ;        
+  dct:title "Austrian Bone Marrow Donor Registry" ;
+  ejp:populationCoverage  :population_coverage ;
+  dcat:theme  ordo:Orphanet_171895 ;
+  foaf:page <http://www.stammzellspende.at> .
+
+:organisation a foaf:Organisation ;
+  dct:title "Fonds Österreichisches Stammzellregister" ;
+  dct:spatial  :location .
+
+:population_coverage  a sio:SIO_001166 ;
+  rdfs:label  "National" .
+
+:location a dct:Location ;
+  dct:title  "Austria" .
