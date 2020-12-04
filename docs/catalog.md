@@ -77,7 +77,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 ```
 
 #### Note
-The properties `ejp:patientRegistry`, `ejp:biobank`, `ejp:guideline` are mentioned as `optional` in the ShEx. It is because these properties are need to be used based on the child resources represented in the catalog. See the example RDF below to get an idea how to use these properties.
+The properties `ejp:patientRegistry`, `ejp:biobank`, `ejp:guideline` are mentioned as `optional` in the ShEx. It is because these properties are need to be used based on the children resources represented in the catalog. See the example RDF below to get an idea how to use these properties.
 
 ##### Example rdf for biobanks (turtle)
 
