@@ -30,7 +30,7 @@ To describe different metadata modules listed above we used various exiting onto
 
 Concepts to describe resources that we use in the Rare diseases domain such as biobank and patient registry are <b>not</b> defined in resource description vocabulary as a DCAT. To overcome this issue we have extended DCAT with by added missing concepts to DCAT vocabulary.
 
-* [Data Catalog Vocabulary extension](data/ontology/dcat-extension.ttl)
+* [Data Catalog Vocabulary extension](docs/dcat-extension.md)
 
  
 
