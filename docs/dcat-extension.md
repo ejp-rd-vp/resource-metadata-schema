@@ -1,6 +1,6 @@
 ### Data Catalog Vocabulary extension
 
-The DCAT vocabulary is primary focused on describing `datasets`. However in [DCAT version 2](https://www.w3.org/TR/vocab-dcat/) a generic concept [dcat:Resource](https://www.w3.org/TR/vocab-dcat/#Class:Resource) has been introduced. This new concept provided a option for us to extend DCAT vocabulary with `EJP-RD` specific concepts like `Biobank`, `Patient registry` etc. The images below shows the extension we made to DCAT vocabulary.
+The DCAT vocabulary is primary focused on describing `datasets`. However in [DCAT version 2](https://www.w3.org/TR/vocab-dcat/) a generic concept [dcat:Resource](https://www.w3.org/TR/vocab-dcat/#Class:Resource) has been introduced. This new concept provides an option for us to extend DCAT vocabulary with `EJP-RD` specific concepts like `Biobank`, `Patient registry` etc. The images below shows the extension we made to DCAT vocabulary.
 
 
 #### Classes extension
