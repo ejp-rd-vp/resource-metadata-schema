@@ -18,18 +18,17 @@
 @prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-:ErdriDORLocation a dct:Location ;
-  dct:title  "Italy" .
+:location a dct:Location ;
+  dct:title  "Germany" .
 
 :ErdriDOR  a  foaf:Organisation ;
   dct:title "ErdriDOR";
-  dct:spatial  :ErdriDORLocation ;
+  dct:spatial  :location ;
   foaf:page    <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/> .
 
-:CatalogErdriDOR a dcat:Catalog ;
+:catalog a dcat:Catalog ;
   dct:publisher :ErdriDOR ;
-  dct:title "European Directory of Registries" ;
-  ejp:PatientRegistry :PatientRegistry_ErdriDOR_2444, :PatientRegistry_ErdriDOR_4505 .
+  dct:title "European directory of resources" .
 ```
 
 ***
@@ -59,7 +58,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   a [dcat:Catalog];
   dct:title xsd:string;
   dct:publisher @:organisationShape;
-  ejp:PatientRegistry IRI*
+  ejp:patientRegistry IRI*;
+  ejp:biobank IRI*;
+  ejp:guideline IRI*
 }
 
 :locationShape IRI {
@@ -73,4 +74,79 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:spatial @:locationShape;
   foaf:page IRI
 }
+```
+
+#### Note
+The properties `ejp:patientRegistry`, `ejp:biobank`, `ejp:guideline` are mentioned as `optional` in the ShEx. It is because these properties are need to be used based on the child resources represented in the catalog. See the example RDF below to get an idea how to use these properties.
+
+##### Example rdf for biobanks (turtle)
+
+```ttl
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+:location a dct:Location ;
+  dct:title  "Germany" .
+
+:ErdriDOR  a  foaf:Organisation ;
+  dct:title "ErdriDOR";
+  dct:spatial  :location ;
+  foaf:page    <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/> .
+
+:catalog a dcat:Catalog ;
+  dct:publisher :ErdriDOR ;
+  dct:title "European directory of biobanks" ;
+  ejp:biobank :biobank1, :biobank2 .
+```
+
+
+##### Example rdf for patient registries (turtle)
+
+```ttl
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+:location a dct:Location ;
+  dct:title  "Germany" .
+
+:ErdriDOR  a  foaf:Organisation ;
+  dct:title "ErdriDOR";
+  dct:spatial  :location ;
+  foaf:page    <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/> .
+
+:catalog a dcat:Catalog ;
+  dct:publisher :ErdriDOR ;
+  dct:title "European directory of patient registries" ;
+  ejp:patientRegistry :patientRegistry1, :patientRegistry2 .
+```
+
+
+
+##### Example rdf for guidelines (turtle)
+
+```ttl
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+:location a dct:Location ;
+  dct:title  "Germany" .
+
+:ErdriDOR  a  foaf:Organisation ;
+  dct:title "ErdriDOR";
+  dct:spatial  :location ;
+  foaf:page    <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/> .
+
+:catalog a dcat:Catalog ;
+  dct:publisher :ErdriDOR ;
+  dct:title "European directory of patient guidelines" ;
+  ejp:guideline :guideline1, :guideline2 .
 ```

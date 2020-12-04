@@ -9,7 +9,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   a [dcat:Catalog];
   dct:title xsd:string;
   dct:publisher @:organisationShape;
-  ejp:PatientRegistry IRI*
+  ejp:patientRegistry IRI*;
+  ejp:biobank IRI*;
+  ejp:guideline IRI*
 }
 
 :locationShape IRI {

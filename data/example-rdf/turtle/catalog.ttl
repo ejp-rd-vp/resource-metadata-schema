@@ -4,15 +4,14 @@
 @prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-:ErdriDORLocation a dct:Location ;
-  dct:title  "Italy" .
+:location a dct:Location ;
+  dct:title  "Germany" .
 
 :ErdriDOR  a  foaf:Organisation ;
   dct:title "ErdriDOR";
-  dct:spatial  :ErdriDORLocation ;
+  dct:spatial  :location ;
   foaf:page    <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/> .
 
-:CatalogErdriDOR a dcat:Catalog ;
+:catalog a dcat:Catalog ;
   dct:publisher :ErdriDOR ;
-  dct:title "European Directory of Registries" ;
-  ejp:PatientRegistry :PatientRegistry_ErdriDOR_2444, :PatientRegistry_ErdriDOR_4505 .
+  dct:title "European directory of resources" .
