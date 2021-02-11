@@ -10,6 +10,7 @@
 :biobank a ejp:Biobank ;
   dct:publisher :organisation ;        
   dct:title "Austrian Bone Marrow Donor Registry" ;
+  dct:description "Donor resistry";
   ejp:populationCoverage  :population_coverage ;
   dcat:theme  ordo:Orphanet_171895 ;
   foaf:page <http://www.stammzellspende.at> .
