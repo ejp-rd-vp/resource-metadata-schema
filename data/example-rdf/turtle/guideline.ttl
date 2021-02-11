@@ -9,6 +9,7 @@
 :guideline a ejp:Guideline ;
   dct:publisher :organisation ;        
   dct:title "Biomarker Development Manual" ;
+  dct:description "Biomarker guildeline";
   dcat:theme  obo:NCIT_C17564 ;
   foaf:page <https://www.uniklinik-freiburg.de/medizin4.html> .
 
