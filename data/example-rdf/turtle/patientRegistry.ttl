@@ -10,6 +10,7 @@
 :patientRegistry a ejp:PatientRegistry ;
   dct:publisher :organisation ;        
   dct:title "Von Hippel-Lindau registry" ;
+  dct:description "Registry from Von Hippel-Lindau";
   ejp:populationCoverage  :population_coverage ;
   dcat:theme  ordo:Orphanet_892 ;
   foaf:page <https://www.uniklinik-freiburg.de/medizin4.html> .
