@@ -1,8 +1,8 @@
 ### Metadata model figure
 
 <p align="center"> 
-    <a href="images/turtle/biobank.png" target="_blank">
-        <img src="images/turtle/biobank.png"> 
+    <a href="../images/turtle/biobank.png" target="_blank">
+        <img src="../images/turtle/biobank.png"> 
     </a>
 </p>
 
@@ -46,8 +46,8 @@
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="images/shex/biobank.png" target="_blank">
-        <img src="images/shex/biobank.png"> 
+    <a href="../images/shex/biobank.png" target="_blank">
+        <img src="../images/shex/biobank.png"> 
     </a>
 </p>
 
