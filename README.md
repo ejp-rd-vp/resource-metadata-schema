@@ -11,6 +11,12 @@ The core model is designed to represent data about a rare disease patient and bi
 
 ## Metadata modules overview
 
+The figure below gives an overview of upper level concepts and properties used in our metadata model.
+
+<p align="center"> 
+	<img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/resourceSematicMetadataModel.png"> 
+</p> 
+
 You can browse different metadata modules by visiting the links below.
 
 * [Organisation](docs/organisation.md) - describes a organisation
