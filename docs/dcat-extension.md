@@ -6,7 +6,7 @@ The DCAT vocabulary is primary focused on describing `datasets`. However in [DCA
 #### Classes extension
 
 <p align="center"> 
-	<img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/dcat-extension/classes.png"> 
+	<img src="../images/dcat-extension/classes.png"> 
 </p>
 
 
@@ -15,14 +15,14 @@ The DCAT vocabulary is primary focused on describing `datasets`. However in [DCA
 Wherever possible we added mapping annotation to the classes we added to the DCAT vocabulary.
 
 <p align="center"> 
-	<img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/dcat-extension/classes-annotation.png"> 
+	<img src="../images/dcat-extension/classes-annotation.png"> 
 </p>
 
 
 #### Properties extension
 
 <p align="center"> 
-	<img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/dcat-extension/properties.png"> 
+	<img src="../images/dcat-extension/properties.png"> 
 </p> 
 
 If you want to learn more about our dcat extension work please visit our DCAT2 extension [github repo] (https://github.com/LUMC-BioSemantics/dcat-extension).
