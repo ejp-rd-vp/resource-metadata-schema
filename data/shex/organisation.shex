@@ -1,0 +1,16 @@
+PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
+PREFIX dct:   <http://purl.org/dc/terms/>
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:organisationShape IRI {
+  a [foaf:Organisation];
+  dct:title xsd:string;
+  dct:spatial @:locationShape;
+  foaf:page IRI
+}
+
+:locationShape IRI {
+  a [dct:Location];
+  dct:title xsd:string;
+}

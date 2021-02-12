@@ -2,102 +2,56 @@
 
 # Metadata for EJP rare disease patient registries, biobanks and catalogs
 
-As part of the [European Joint Programme (EJP) for Rare Disease](http://www.ejprarediseases.org), we are developing standards for rare disease registries to describe their metadata that will imporve the FAIR-ness of these resources.
+As part of the [European Joint Programme (EJP) for Rare Disease](http://www.ejprarediseases.org), we are developing standards for rare disease registries to describe their metadata that will improve the FAIR-ness of these resources.
 
-The core model is designed to represent data about a rare disease patient and biosample registries. The model is based on and builds on existing standards, such as the [European Rare Disease Registry Infrastructure](https://eu-rd-platform.jrc.ec.europa.eu) and the [Common Data Elements](http://www.erare.eu/sites/default/files/SetCommonData-EU%20RD%20Platform_CDS%20_final.pdf) from the rare disease community and other more generalised standards for data sharing such as the W3C [DCAT vocabulary](https://www.w3.org/TR/vocab-dcat/). We are also working to align with similar schema standarisation efforts such as [RD connect semantic model](https://github.com/LUMC-BioSemantics/Rare-Disease-Semantic-Model), [schema.org](https://schema.org), [bioschemas](https://bioschemas.org), [MIABIS](https://github.com/MIABIS/miabis/wiki) and [GA4GH](https://www.ga4gh.org) (see also [schema blocks](https://schemablocks.org) and [phenopackets](http://phenopackets.org). A proposed semantic model for the Common Data Elements can be found [here](https://github.com/LUMC-BioSemantics/ERN-common-data-elements).
-
-
-> Status: DRAFT - 16th July, 2019. This is currently a strawman proposal intended to generate discussion and help in developing an early demonstrator.
-
-## JSON Schema overview
-
-You can browse the published schema files at https://ejp-rd-vp.github.io/resource-metadata-schema/.
-
-All the raw JSON schema files can also be found in the [json_schema](json_schema/) directory. The core schema types are:
-
-* [registry.json](json_schema/registry.json) - describes a patient or biosample registry dataset
-* [catalog_of_registries.json](json_schema/catalog_of_registries.json) - describes a catalog or registries that links to individual registry datasets
-
-There are also a number of reusable schema modules
-
-* [organisation.json](json_schema/organisation.json) - describes an organisation assoicated to the registry
-* [location.json](json_schema/location.json) - describes a location or region that could be associated to an organisation or may be used to describe a recruitment region
-* [case.json](json_schema/case.json) - describes a set of patient/cohort cases. This will include information about the number of cases for a given disease and information about the recruitment and inclusiojn criteria
-* [vocabulay_code.json](json_schema/vocabulay_code.json) - Used to capture a standard vocabulary code such as Orpha code or ICD code
-* [vocabulary_code_system.json](json_schema/vocabulary_code_system.json) - describes a entire coding system such as Orpha or ICD
+The core model is designed to represent data about a rare disease patient and biosample registries. The model is based on and builds on existing standards, such as the [European Rare Disease Registry Infrastructure](https://eu-rd-platform.jrc.ec.europa.eu) and the [Common Data Elements](http://www.erare.eu/sites/default/files/SetCommonData-EU%20RD%20Platform_CDS%20_final.pdf) from the rare disease community and other more generalised standards for data sharing such as the W3C [DCAT vocabulary](https://www.w3.org/TR/vocab-dcat/). We are also working to align with similar schema standarisation efforts such as [RD connect semantic model](https://github.com/LUMC-BioSemantics/Rare-Disease-Semantic-Model), [schema.org](https://schema.org), [bioschemas](https://bioschemas.org), [MIABIS](https://github.com/MIABIS/miabis/wiki) and [GA4GH](https://www.ga4gh.org) (see also [schema blocks](https://schemablocks.org) and [phenopackets](http://phenopackets.org). A proposed semantic model for the Common Data Elements can be found [here](https://github.com/ejp-rd-vp/CDE-semantic-model).
 
 
-This diagram illustrates the basic idea of a schema block. Blocks are reusable components and new blocks can be defined that inherit from parent blocks.
+> Status: This is version 1.0.0 of metadata model.
 
-![schema](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/master/diagrams/EJP%20schema%20blocks.png?raw=true)
+## Metadata modules overview
 
-### Example data
+The figure below gives an overview of upper level concepts and properties used in our metadata model.
 
-An example of the "PCD Registry" entry from the [ERDRI directory of registries](https://eu-rd-platform.jrc.ec.europa.eu/erdridor/) can be seen in [registry-1.json](examples/registry-1.json). Our schema captures the identifier, type and name of the registry. A registry can contain a number of cases that should describe the disease using a fully qualified Orphat code for the disease. Additional information about the organisation who publish and/or maintain the registry can also be caotured.
+<p align="center"> 
+	<img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/resourceSematicMetadataModel.png"> 
+</p> 
 
+You can browse different metadata modules by visiting the links below.
 
-```
-{
-  "@id": "https://www.pcdregistry.eu/",
-  "@type": "PatientRegistryDataset",
-  "name": "PCD Registry",
-  "disease_cases": [
-    {
-      "disease_code": [
-        {"@id": "http://www.orpha.net/ORDO/Orphanet_137628"},
-        {"@id": "http://www.orpha.net/ORDO/Orphanet_363250"},
-        {"@id": "http://www.orpha.net/ORDO/Orphanet_275742"},
-        {"@id": "http://www.orpha.net/ORDO/Orphanet_244"},
-        {"@id": "http://www.orpha.net/ORDO/Orphanet_98861"}
-      ]
-    }
-  ],
-  "publisher": [
-    {
-      "name": "University Hospital Muenster of the Westfalian University of Muenster (WWU)",
-      "location": {
-        "city": "D-48149 Muenster",
-        "country": "Germany"
-      }
-    }
-   ]
-}
-```
+* [Organisation](docs/organisation.md) - describes a organisation
+* [Location](docs/location.md) - describes a location
+* [Catalog](docs/catalog.md) - describes a resource catalog
+* [Patient Registry](docs/patient-registry.md) - describes a patient registry
+* [Biobank](docs/biobank.md) - describes a biobank
+* [Guideline](docs/guideline.md) - describes a guideline
 
+### Ontologies used in the metadata model
 
-We dan also describe a catalog of registries like the [ERDRI directory of registries](https://eu-rd-platform.jrc.ec.europa.eu/erdridor/) that links down to individual patient registry records using the `datasets` property.
+To describe different metadata modules listed above we used various exiting ontologies and vocabularies which are listed below.
 
-```
-{
-  "@id": "https://eu-rd-platform.jrc.ec.europa.eu/erdridor/",
-  "@type": "CatalogOfRegistries",
-  "name": "European Directory of Registries",
-  "publisher": [
-    {
-      "name": "European Platform on Rare Disease Registration",
-      "location": {
-        "country": "Germany"
-      }
-    }
-  ],
-  "datasets" : [
-    "https://www.pcdregistry.eu/", "http://www.reseau-htap.fr/"
-  ]
-}
-```
+* [DCMI Metadata Terms (DCT)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
+* [Data Catalog Vocabulary (DCAT) - Version 2](https://www.w3.org/TR/vocab-dcat-2)
+* [FOAF Vocabulary (FOAF)](http://xmlns.com/foaf/spec/)
 
+Concepts to describe resources that we use in the Rare diseases domain such as biobank and patient registry are <b>not</b> defined in resource description vocabulary as a DCAT. To overcome this issue we have extended DCAT with by added missing concepts to DCAT vocabulary.
+
+* [Data Catalog Vocabulary extension](docs/dcat-extension.md)
+
+ 
 
 ### RDF + JSON-LD
 
-You can apply the JSON-LD context from [ejp_vocabulary.jsonld](ejp_vocabulary_context.jsonld) to any JSON document to generate an RDF representation. An example of a resource entry in
-RDF turtle format is in [erdri_registry_1.ttl](examples/rdf/erdri_registry_1.ttl)
+The current version of metadata ontological model is based on RDF. The metadata modules above also provides implementation examples in RDF (turtle) and RDF validation artifacts. However you can also get resources metadata descriptions as JSON by serializing the RDF to the JSON-LD.
 
 ## Use cases
+
+Below you can find some use cases which can be addressed by proposed metadata modules. 
 
 * Provide minimal metadata to describe a rare disease registry or biobank, or a catalog of registries or biobanks. The metadata should
 be sufficient to expose data about these resource through the virtual platform
 * Provide a uniform way for resources to expose the primary disease using a Orphanet code so that resources can be searched by disease in the virtual platform
-* Provide a mechanism to identify resources and harmonise duplicate resources across catalogs
+* Provide a mechanism to identify resources and harmonies duplicate resources across catalogs
 * Provide geographical information so resources can be filtered by country in the VP
 * Expose if resources provide metrics about individuals, such as number of cases
 * Expose if a resource has access to biological samples, such as tissue or cell ines.

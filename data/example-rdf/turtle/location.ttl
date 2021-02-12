@@ -1,0 +1,5 @@
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+  
+:ErdriDORLocation a dct:Location ;
+  dct:title  "Italy" .

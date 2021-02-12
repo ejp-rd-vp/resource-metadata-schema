@@ -1,0 +1,11 @@
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+:ErdriDOR  a  foaf:Organisation ;
+  dct:title "ErdriDOR";
+  dct:spatial  :ErdriDORLocation ;
+  foaf:page    <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/> .
+  
+:ErdriDORLocation a dct:Location ;
+  dct:title  "Italy" .
