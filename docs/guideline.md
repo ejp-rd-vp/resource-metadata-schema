@@ -1,8 +1,8 @@
 ### Metadata model figure
 
 <p align="center"> 
-    <a href="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/turtle/guideline.png" target="_blank">
-        <img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/turtle/guideline.png"> 
+    <a href="../images/turtle/guideline.png" target="_blank">
+        <img src="../images/turtle/guideline.png"> 
     </a>
 </p>
 
@@ -37,8 +37,8 @@
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/shex/guideline.png" target="_blank">
-        <img src="https://github.com/rajaram5/resource-metadata-schema/blob/develop/images/shex/guideline.png"> 
+    <a href="../images/shex/guideline.png" target="_blank">
+        <img src="../images/shex/guideline.png"> 
     </a>
 </p>
 
