@@ -1,3 +1,6 @@
+`ejp:Biobank` concept is a custom extension we added to the DCAT2 vocabuary. In our extension we defined `ejp:Biobank` is a subclass of `dcat:Resource`.
+
+
 ### Metadata model figure
 
 <p align="center"> 
