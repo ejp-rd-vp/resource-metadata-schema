@@ -22,9 +22,10 @@ You can browse different metadata modules by visiting the links below.
 * [Organisation](docs/organisation.md) - describes a organisation
 * [Location](docs/location.md) - describes a location
 * [Catalog](docs/catalog.md) - describes a resource catalog
-* [Patient Registry](docs/patient-registry.md) - describes a patient registry
-* [Biobank](docs/biobank.md) - describes a biobank
-* [Guideline](docs/guideline.md) - describes a guideline
+* [Resource](docs/resource.md) - describes any digtial resource
+	* [Patient Registry](docs/patient-registry.md) - describes a patient registry
+	* [Biobank](docs/biobank.md) - describes a biobank
+	* [Guideline](docs/guideline.md) - describes a guideline
 
 ### Ontologies used in the metadata model
 
