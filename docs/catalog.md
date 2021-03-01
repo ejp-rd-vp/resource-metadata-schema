@@ -57,6 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :catalogShape IRI {
   a [dcat:Catalog];
   dct:title xsd:string;
+  dct:description xsd:string*;
   dct:publisher @:organisationShape;
   ejp:patientRegistry IRI*;
   ejp:biobank IRI*;
@@ -66,12 +67,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :locationShape IRI {
   a [dct:Location];
   dct:title xsd:string;
+  dct:description xsd:string*;
 }
 
 :organisationShape IRI {
   a [foaf:Organisation];
   dct:title xsd:string;
-  dct:spatial @:locationShape;
+  dct:description xsd:string*;
+  dct:spatial @:locationShape*;
   foaf:page IRI
 }
 ```

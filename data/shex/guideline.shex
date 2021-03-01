@@ -18,5 +18,6 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 :organisationShape IRI {
   a [foaf:Organisation];
   dct:title xsd:string;
+  dct:description xsd:string*;
   foaf:page IRI*
 }

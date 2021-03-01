@@ -70,6 +70,7 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 :biobankShape IRI {
   a [ejp:Biobank];
   dct:title xsd:string;
+  dct:description xsd:string*;
   ejp:populationCoverage @:populationCoverageShape*;
   dcat:theme IRI+;
   dct:publisher @:organisationShape;
@@ -79,11 +80,13 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 :locationShape IRI {
   a [dct:Location];
   dct:title xsd:string;
+  dct:description xsd:string*;
 }
 
 :organisationShape IRI {
   a [foaf:Organisation];
   dct:title xsd:string;
+  dct:description xsd:string*;
   dct:spatial @:locationShape;
   foaf:page IRI*
 }
