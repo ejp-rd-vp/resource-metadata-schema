@@ -1,4 +1,4 @@
-`ejp:PatientRegistry` concept is a custom extension we added to the DCAT2 vocabuary. In our extension we defined `ejp:PatientRegistry` is a subclass of `dcat:Resource`.
+`ejp:PatientRegistry` concept is a custom extension we added to the DCAT2 vocabulary. In our extension we defined `ejp:PatientRegistry` is a subclass of `dcat:Resource`.
 
 ### Metadata model figure
 
@@ -69,6 +69,7 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 :patientRegistryShape IRI {
   a [ejp:PatientRegistry];
   dct:title xsd:string;
+  dct:description xsd:string*;
   ejp:populationCoverage @:populationCoverageShape*;
   dcat:theme IRI+;
   dct:publisher @:organisationShape;
@@ -78,12 +79,14 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 :locationShape IRI {
   a [dct:Location];
   dct:title xsd:string;
+  dct:description xsd:string*;
 }
 
 :organisationShape IRI {
   a [foaf:Organisation];
   dct:title xsd:string;
-  dct:spatial @:locationShape;
+  dct:description xsd:string*;
+  dct:spatial @:locationShape*;
   foaf:page IRI*
 }
 

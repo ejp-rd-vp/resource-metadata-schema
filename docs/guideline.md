@@ -1,4 +1,4 @@
-`ejp:Guideline` concept is a custom extension we added to the DCAT2 vocabuary. In our extension we defined `ejp:Guideline` is a subclass of `dcat:Resource`.
+`ejp:Guideline` concept is a custom extension we added to the DCAT2 vocabulary. In our extension we defined `ejp:Guideline` is a subclass of `dcat:Resource`.
 
 ### Metadata model figure
 
@@ -59,6 +59,7 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 :guidelineShape IRI {
   a [ejp:Guideline];
   dct:title xsd:string;
+  dct:description xsd:string*;
   dcat:theme IRI+;
   dct:publisher @:organisationShape;
   foaf:page IRI*
@@ -67,6 +68,7 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 :organisationShape IRI {
   a [foaf:Organisation];
   dct:title xsd:string;
+  dct:description xsd:string*;
   foaf:page IRI*
 }
 ```

@@ -41,9 +41,9 @@ Concepts to describe resources that we use in the Rare diseases domain such as b
 
  
 
-### RDF + JSON-LD
+### Implementation of metadata model
 
-The current version of metadata ontological model is based on RDF. The metadata modules above also provides implementation examples in RDF (turtle) and RDF validation artifacts. However you can also get resources metadata descriptions as JSON by serializing the RDF to the JSON-LD.
+The metadata modules described in this repository are provided with RDF examples and RDF validation artifacts. You get more benefits if you implement metadata model in RDF. However implementation of our metadata model is not limited only to RDF.
 
 ## Use cases
 
