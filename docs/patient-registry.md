@@ -1,3 +1,5 @@
+`ejp:PatientRegistry` concept is a custom extension we added to the DCAT2 vocabuary. In our extension we defined `ejp:PatientRegistry` is a subclass of `dcat:Dataset`.
+
 ### Metadata model figure
 
 <p align="center"> 
