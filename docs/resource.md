@@ -76,7 +76,7 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
   a [foaf:Organisation];
   dct:title xsd:string;
   dct:description xsd:string*;
-  dct:spatial @:locationShape;
+  dct:spatial @:locationShape*;
   foaf:page IRI*
 }
 
