@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/ejp-rd-vp/resource-metadata-schema.svg?branch=master)](https://travis-ci.org/ejp-rd-vp/resource-metadata-schema)
+![GitHub](https://img.shields.io/github/license/ejp-rd-vp/resource-metadata-schema)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ejp-rd-vp/resource-metadata-schema)
+![GitHub tag (funder)](https://img.shields.io/badge/funder-EJP%20RD-brightgreen)
 
 # Metadata for EJP rare disease patient registries, biobanks and catalogs
 
