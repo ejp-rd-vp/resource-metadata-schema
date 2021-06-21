@@ -1,0 +1,28 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#> .
+PREFIX dc11: <http://purl.org/dc/elements/1.1/> .
+PREFIX dc: <http://purl.org/dc/terms/> .
+PREFIX prov: <http://www.w3.org/ns/prov#> .
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/> .
+
+<http://example.org/EBI09394092020>
+    a dcat:Resource ;
+    dcat:contactPoint "<mailto:contact.orphanet@inserm.fr> " ;
+    dc11:isPartOf "<https://ejprd.fair-dtls.surf-hosted.nl/orphanet-catalog-fdp/catalog/33f4999d-4852-4d87-ad15-5e29aba4f6dd>" ;
+    dc:conformsTo "OPEN Rule" ;
+    dc:description "A multicenter registry for nasopharyngeal cancer in children, adolescents and young adults" ;
+    dc:title "A multicenter registry for nasopharyngeal cancer in children, adolescents and young adults" ;
+    dc:modified "2020-09-11T12:15:26.736Z" ;
+    dc:language "<http://id.loc.gov/vocabulary/iso639-1/en>" ;
+    dc:identifier "" ;
+    dcat:theme "<http://edamontology.org/topic_3337>" ;
+    dc:type "" ;
+    dc:relation "" ;
+    dcat:qualifiedRelation "" ;
+    dcat:keyword "Biobank" ;
+    dcat:landingPage "<https://tinyurl.com/y573uezs>" ;
+    prov:qualifiedAttribution "" ;
+    dc:license "<http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0>" ;
+    dc:rights "" ;
+    odrl:hasPolicy "" ;
+    dc:isReferencedBy "" ;
+    dc:issued "2020-09-11T12:15:26.736Z" .

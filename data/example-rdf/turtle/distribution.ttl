@@ -1,0 +1,19 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dc11: <http://purl.org/dc/elements/1.1/>
+PREFIX ns0: <http://edamontology.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+
+<http://example.org/D78768>
+    a dcat:Distribution ;
+    dc11:conformsTo "" ;
+    ns0:media_type "" ;
+    dc11:description "the you web" ;
+    dc:title "mr you " ;
+    dcat:downloadURL "" ;
+    dcat:accessURL "" ;
+    odrl:hasPolicy "" ;
+    dc:rights "" ;
+    ns0:data_0968 "" ;
+    dc11:license "" ;
+    dc:modified "11-09-2021" .

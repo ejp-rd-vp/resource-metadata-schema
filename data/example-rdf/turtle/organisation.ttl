@@ -1,11 +1,21 @@
-@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
-@prefix dct:   <http://purl.org/dc/terms/> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
+PREFIX ns0: <http://semanticscience.org/resource/> .
+PREFIX dc: <http://purl.org/dc/terms/> .
+PREFIX schema: <http://schema.org/> .
+PREFIX ns1: <http://purl.obolibrary.org/obo/> .
 
-:ErdriDOR  a  foaf:Organisation ;
-  dct:title "ErdriDOR";
-  dct:spatial  :ErdriDORLocation ;
-  foaf:page    <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/> .
-  
-:ErdriDORLocation a dct:Location ;
-  dct:title  "Italy" .
+<http://example.org/ORG_0190>
+    a foaf:Agent ;
+    ns0:SIO_000185 "Organisation for rare disease " ;
+    ns0:SIO_000116 "European Union on Rare Diseases" ;
+    ns0:SIO_000136 "A website that collects information of rare diseases" ;
+    foaf:homepage "www.rarediseases.org" ;
+    dc:spatial <http://purl.org/ejp-rd/vocabulary/Location> .
+
+<http://purl.org/ejp-rd/vocabulary/Location>
+    a <dc:spatial> ;
+    schema:streetAddress "" ;
+    ns0:SIO_000665 "Brussels" ;
+    ns0:SIO_000664 "Germany" ;
+    ns1:NCIT_C76349 " EU" ;
+    ns1:NCIT_C45674 "international , Europe " .
