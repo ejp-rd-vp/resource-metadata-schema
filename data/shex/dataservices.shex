@@ -1,0 +1,58 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX ns0: <http://example.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX ns1: <http://semanticscience.org/resource/>
+PREFIX ns2: <http://purl.obolibrary.org/obo/>
+PREFIX ns3: <http://purl.allotrope.org/ontologies/result#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
+PREFIX ejp: <http://purl.org/ejp-rd/vocabulary/>
+
+<Dataservice> IRI {
+    a                   [dcat:DataService] ;
+    dcat:endpointURL IRI;
+    dcat:endpointDescription xsd:string ;
+    dcat:Resource @<Resource> ;
+    dcat:servesDataset xsd:string ;
+}
+<Resource> IRI {
+    a                   [dcat:Resource] ;
+    ns0:publisher @<Organisation> ;
+    ns0:resourceCreator @<Organisation> ;
+    dcat:contactPoint xsd:string ;
+    dc:conformsTo xsd:string ;
+    dc:description xsd:string ;
+    dc:title xsd:string ;
+    dc:modified xsd:string ;
+    dc:language xsd:string ;
+    dc:type xsd:string ;
+    dc:relation xsd:string ;
+    dcat:qualifiedRelation xsd:string ;
+    dcat:keyword xsd:string ;
+    dcat:landingPage xsd:string ;
+    prov:qualifiedAttribution xsd:string ;
+    dc:license xsd:string ;
+    dc:rights xsd:string ;
+    odrl:hasPolicy xsd:string ;
+    dc:isReferencedBy xsd:string ;
+    dc:issued xsd:date
+    }
+<Organisation> IRI  {
+    a              [foaf:Agent] ;
+    ns1:SIO_000185 xsd:string ;
+    ns1:SIO_000116 xsd:string ;
+    ns1:SIO_000136 xsd:string ;
+    foaf:homepage xsd:string ;
+    dc:spatial @<location>
+}
+<location> IRI {
+    a          [ejp:location] ;
+    schema:streetAddress xsd:string ;
+    ns1:SIO_000665 xsd:string ;
+    ns1:SIO_000664 xsd:string ;
+    ns2:NCIT_C76349 xsd:string ;
+    ns2:NCIT_C45674 xsd:string ;
+        }

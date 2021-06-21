@@ -1,0 +1,23 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX ns0: <http://purl.obolibrary.org/obo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX ns1: <http://semanticscience.org/resource/>
+PREFIX ejp: <http://purl.org/ejp-rd/vocabulary/>
+PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
+<Dataset> IRI {
+    a dcat:Dataset ;
+    ns0:NCIT_C45674 xsd:string;
+    prov:wasGeneratedBy xsd:string;
+    dcat:distribution xsd:string;
+    dc:spatial @<location>
+}
+<location> IRI {
+    a               [ejp:location] ;
+    schema:streetAddress xsd:string;
+    ns1:SIO_000665 xsd:string;
+    ns1:SIO_000664 xsd:string;
+    ns0:NCIT_C76349 xsd:string;
+    ns0:NCIT_C45674 xsd:string;
+}

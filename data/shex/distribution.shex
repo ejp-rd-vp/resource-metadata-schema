@@ -1,0 +1,20 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dc11: <http://purl.org/dc/elements/1.1/>
+PREFIX ns0: <http://edamontology.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
+<Distribution> IRI {
+    a               [dcat:Distribution] ;
+    dc11:conformsTo xsd:string;
+    ns0:media_type xsd:string;
+    dc11:description xsd:string;
+    dc:title xsd:string;
+    dcat:downloadURL xsd:string;
+    dcat:accessURL xsd:string;
+    odrl:hasPolicy xsd:string;
+    dc:rights xsd:string;
+    ns0:data_0968 xsd:string;
+    dc11:license xsd:string;
+    dc:modified xsd:date
+}

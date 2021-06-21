@@ -1,30 +1,80 @@
-PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
-PREFIX dcat:  <http://www.w3.org/ns/dcat#>
-PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
-PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX ns0: <http://example.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX ns1: <http://purl.org/ejp-rd/vocabulary/>
+PREFIX ns2: <http://purl.obolibrary.org/obo/>
+PREFIX ns3: <http://semanticscience.org/resource/>
+prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
 
-:catalogShape IRI {
-  a [dcat:Catalog];
-  dct:title xsd:string;
-  dct:description xsd:string*;
-  dct:publisher @:organisationShape;
-  ejp:patientRegistry IRI*;
-  ejp:biobank IRI*;
-  ejp:guideline IRI*
+<Catalog>   IRI{
+        a           [dcat:Catalog] ;
+    dcat:dataset @<dcat:Datasets> ;
+    foaf:homepage xsd:string ;
+    dcat:service @<dcat:service> ;
+    dcat:themeTaxonomy @<dcat:themes> ;
+    dcat:hasPart <dcat:Resource>
 }
 
-:locationShape IRI {
-  a [dct:Location];
-  dct:title xsd:string;
-  dct:description xsd:string*;
-}
+<dcat:Datasets> IRI {
+    a           [dcat:Dataset] ;
+    ns0:Spatial @<dct:Spatial> ;
+    foaf:type xsd:string ;
+    foaf:wasGeneratedBy xsd:string ;
+    foaf:distribution xsd:string
+    }
 
-:organisationShape IRI {
-  a [foaf:Organisation];
-  dct:title xsd:string;
-  dct:description xsd:string*;
-  dct:spatial @:locationShape*;
-  foaf:page IRI
+<dcat:service> IRI {
+    a dcat:DataService ;
+    ns0:catalogedResource dcat:Resource ;
+    ns0:type xsd:string ;
+    ns0:endpointURL xsd:string ;
+    ns0:endpointDescription xsd:string ;
+    ns0:servesDataset xsd:string
 }
+<dcat:themes> IRI {
+    a               [skos:Concept] ;
+    skos:inScheme xsd:string
+}
+<dcat:Resource>  IRI {
+    a               [dcat:Resources] ;
+    dc:publisher  @<foaf:organisation> ;
+    dc:resourceCreator   @<foaf:organisation> ;
+    ns0:accessRight xsd:string ;
+    ns0:contactPoint xsd:string ;
+    ns0:conformsTo xsd:string ;
+    ns0:description xsd:string ;
+    ns0:title xsd:string ;
+    ns0:modificationDate xsd:date ;
+    ns0:language xsd:string ;
+    ns0:identifier xsd:string ;
+    ns0:theme xsd:string ;
+    ns0:type xsd:string ;
+    ns0:resourceRelation xsd:string ;
+    ns0:qualifiedRelation xsd:string ;
+    ns0:keyword xsd:string ;
+    ns0:landingPage xsd:string ;
+    ns0:qualifiedAttribution xsd:string ;
+    ns0:license xsd:string ;
+    ns0:rights xsd:string ;
+    ns0:hasPolicy xsd:string ;
+    ns0:isReferencedBy xsd:string ;
+    ns0:releaseDate xsd:date
+}
+<foaf:organisation> IRI {
+    a                       [foaf:Agent] ;
+    foaf:OrgTitle xsd:string;
+    foaf:OrgName xsd:string;
+    foaf:OrgInfoHomepage xsd:string;
+    ns1:location <dct:Spatial> ;
+    foaf:OrgAddress xsd:string
+}
+        <dct:Spatial> IRI {
+    a                   [ns1:Location] ;
+    dcat:continent  xsd:string;
+    foaf:OrgAddress  xsd:string;
+    ns2:streetAddress  xsd:string;
+    ns2:city  xsd:string;
+    ns3:country  xsd:string
+        }
