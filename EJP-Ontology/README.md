@@ -16,7 +16,7 @@ More information can be found in [docs](https://github.com/ejp-rd-vp/resource-me
 ### Stable release versions
 
 The latest version of the ontology can always be found at:
-[EJP-Ontology latest release](https://github.com/EBISPOT/EJP-Ontology/releases/tag/19-11-2019)
+[EJP-Ontology latest release](https://github.com/ejp-rd-vp/resource-metadata-schema/releases/tag/v1.1.0)
 
 
 ### Editors' version
