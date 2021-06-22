@@ -25,7 +25,7 @@ Editors of this ontology should use the edit version, [src/ontology/ejp-rd-edit.
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/ejp-rd-vp/EJP-Ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/ejp-rd-vp/resource-metadata-schema/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
