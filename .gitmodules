@@ -1,3 +1,3 @@
 [submodule "data/eJP-Ontology"]
-	path = data/eJP-Ontology
+	path = data/EJP-Ontology
 	url = https://github.com/EBISPOT/EJP-Ontology
