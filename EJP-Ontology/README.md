@@ -9,19 +9,19 @@ To run from docker : sh run.sh make
 This ontology is designed to support data search, retrieval and information identification in the EJP-RD catalogs which covers the registries and biobanks for rare diseases.
 
 
-More information can be found at https://github.com/ejp-rd-vp/resource-metadata-schema/tree/master/EJP-Ontology/docs
+More information can be found in [docs](https://github.com/ejp-rd-vp/resource-metadata-schema/tree/master/EJP-Ontology/docs)
 
 ## Versions
 
 ### Stable release versions
 
 The latest version of the ontology can always be found at:
-https://github.com/EBISPOT/EJP-Ontology/releases/tag/19-11-2019
+[EJP-Ontology latest release](https://github.com/EBISPOT/EJP-Ontology/releases/tag/19-11-2019)
 
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/ejp-rd-edit.owl](src/ontology/ejp-rd-edit.owl) or see the notes for how to add new terms to the ontology-https://github.com/ejp-rd-vp/resource-metadata-schema/blob/master/EJP-Ontology/docs/Adding_new_terms.md
+Editors of this ontology should use the edit version, [src/ontology/ejp-rd-edit.owl](src/ontology/ejp-rd-edit.owl) or see the notes for how to add new terms to the ontology [add new terms](https://github.com/ejp-rd-vp/resource-metadata-schema/blob/master/EJP-Ontology/docs/Adding_new_terms.md)
 
 ## Contact
 
