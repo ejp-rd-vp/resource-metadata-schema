@@ -1,0 +1,842 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ejp-rd/imports/edam_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ejp-rd/imports/edam_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:edam="http://purl.obolibrary.org/obo/edam#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:edamontology="http://edamontology.org/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ejp-rd/imports/edam_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ejp-rd/releases/2020-03-02/imports/edam_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/created_in -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/created_in"/>
+    
+
+
+    <!-- http://edamontology.org/isdebtag -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/isdebtag"/>
+    
+
+
+    <!-- http://edamontology.org/notRecommendedForAnnotation -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/notRecommendedForAnnotation"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/is_anti_symmetric -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/is_anti_symmetric"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/is_reflexive -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/is_reflexive"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/is_symmetric -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/is_symmetric"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/transitive_over -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/transitive_over"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/edam#data -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#data">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/edam#edam -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#edam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/edam#events -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#events">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/edam#identifiers -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#identifiers">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/edam#operations -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#operations">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/edam#topics -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#topics">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasHumanReadableId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasHumanReadableId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#isCyclic -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#isCyclic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/has_identifier -->
+
+    <owl:ObjectProperty rdf:about="http://edamontology.org/has_identifier">
+        <owl:inverseOf rdf:resource="http://edamontology.org/is_identifier_of"/>
+        <rdfs:domain rdf:resource="http://edamontology.org/data_0006"/>
+        <rdfs:range rdf:resource="http://edamontology.org/data_0842"/>
+        <obo:is_anti_symmetric>false</obo:is_anti_symmetric>
+        <obo:is_reflexive>false</obo:is_reflexive>
+        <obo:is_symmetric>false</obo:is_symmetric>
+        <obo:transitive_over>OBO_REL:is_a</obo:transitive_over>
+        <oboInOwl:hasDefinition>&apos;A has_identifier B&apos; defines for the subject A, that it has the object B as its identifier.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>edam</oboInOwl:inSubset>
+        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:isCyclic>false</oboInOwl:isCyclic>
+        <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is an &apos;Identifier&apos;, or an entity outside of an ontology that is an &apos;Identifier&apos; or is in the role of an &apos;Identifier&apos;. In EDAM, &apos;has_identifier&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;is_identifier_of&apos;.</rdfs:comment>
+        <rdfs:label>has identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/has_topic -->
+
+    <owl:ObjectProperty rdf:about="http://edamontology.org/has_topic">
+        <owl:inverseOf rdf:resource="http://edamontology.org/is_topic_of"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edamontology.org/data_0006"/>
+                    <rdf:Description rdf:about="http://edamontology.org/operation_0004"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://edamontology.org/topic_0003"/>
+        <obo:is_anti_symmetric>false</obo:is_anti_symmetric>
+        <obo:is_reflexive>false</obo:is_reflexive>
+        <obo:is_symmetric>false</obo:is_symmetric>
+        <obo:transitive_over>OBO_REL:is_a</obo:transitive_over>
+        <oboInOwl:hasDefinition>&apos;A has_topic B&apos; defines for the subject A, that it has the object B as its topic (A is in the scope of a topic B).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>edam</oboInOwl:inSubset>
+        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:isCyclic>true</oboInOwl:isCyclic>
+        <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is a &apos;Topic&apos;, or in unexpected cases an entity outside of an ontology that is a &apos;Topic&apos; or is in the role of a &apos;Topic&apos;. In EDAM, only &apos;has_topic&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; or &apos;Data&apos; &apos;has_topic&apos; &apos;Topic&apos;). The inverse, &apos;is_topic_of&apos;, is not explicitly defined.</rdfs:comment>
+        <rdfs:label>has topic</rdfs:label>
+        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000136&quot;</rdfs:seeAlso>
+        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/OBI_0000298&quot;</rdfs:seeAlso>
+        <rdfs:seeAlso>http://annotation-ontology.googlecode.com/svn/trunk/annotation-core.owl#hasTopic</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/has_topic"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#isCyclic"/>
+        <owl:annotatedTarget>true</owl:annotatedTarget>
+        <rdfs:comment>In very unusual cases.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edamontology.org/is_identifier_of -->
+
+    <owl:ObjectProperty rdf:about="http://edamontology.org/is_identifier_of">
+        <rdfs:domain rdf:resource="http://edamontology.org/data_0842"/>
+        <rdfs:range rdf:resource="http://edamontology.org/data_0006"/>
+        <obo:is_anti_symmetric>false</obo:is_anti_symmetric>
+        <obo:is_reflexive>false</obo:is_reflexive>
+        <obo:is_symmetric>false</obo:is_symmetric>
+        <obo:transitive_over>OBO_REL:is_a</obo:transitive_over>
+        <oboInOwl:hasDefinition>&apos;A is_identifier_of B&apos; defines for the subject A, that it is an identifier of the object B.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>edam</oboInOwl:inSubset>
+        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:isCyclic>false</oboInOwl:isCyclic>
+        <rdfs:comment>Subject A can either be a concept that is an &apos;Identifier&apos;, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is an &apos;Identifier&apos; or is in the role of an &apos;Identifier&apos;. Object B can be any concept or entity outside of an ontology. In EDAM, only &apos;is_identifier_of&apos; is explicitly defined between EDAM concepts (only &apos;Identifier&apos; &apos;is_identifier_of&apos; &apos;Data&apos;). The inverse, &apos;has_identifier&apos;, is not explicitly defined.</rdfs:comment>
+        <rdfs:label>is identifier of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/is_topic_of -->
+
+    <owl:ObjectProperty rdf:about="http://edamontology.org/is_topic_of">
+        <rdfs:domain rdf:resource="http://edamontology.org/topic_0003"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edamontology.org/data_0006"/>
+                    <rdf:Description rdf:about="http://edamontology.org/operation_0004"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <obo:is_anti_symmetric>false</obo:is_anti_symmetric>
+        <obo:is_reflexive>false</obo:is_reflexive>
+        <obo:is_symmetric>false</obo:is_symmetric>
+        <obo:transitive_over>OBO_REL:is_a</obo:transitive_over>
+        <oboInOwl:hasDefinition>&apos;A is_topic_of B&apos; defines for the subject A, that it is a topic of the object B (a topic A is the scope of B).</oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>OBO_REL:quality_of</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset>edam</oboInOwl:inSubset>
+        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:isCyclic>true</oboInOwl:isCyclic>
+        <rdfs:comment>Subject A can either be a concept that is a &apos;Topic&apos;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &apos;Topic&apos; or is in the role of a &apos;Topic&apos;. Object B can be any concept or entity outside of an ontology. In EDAM, &apos;is_topic_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_topic&apos;.</rdfs:comment>
+        <rdfs:label>is topic of</rdfs:label>
+        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#inherent-in</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/is_topic_of"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>OBO_REL:quality_of</owl:annotatedTarget>
+        <rdfs:comment>Is defined anywhere? Not in the &apos;unknown&apos; version of RO. &apos;OBO_REL:quality_of&apos; might be seen narrower in the sense that it only relates subjects that are a &apos;quality&apos; (snap:Quality) with objects that are an &apos;independent_continuant&apos; (snap:IndependentContinuant), and is broader in the sense that it relates any qualities of the object.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/is_topic_of"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#isCyclic"/>
+        <owl:annotatedTarget>true</owl:annotatedTarget>
+        <rdfs:comment>In very unusual cases.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/data_0006 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0006">
+        <owl:disjointWith rdf:resource="http://edamontology.org/operation_0004"/>
+        <owl:disjointWith rdf:resource="http://edamontology.org/topic_0003"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>Information, represented in an information artefact (data record) that is &apos;understandable&apos; by dedicated computational tools that can use the data as input or produce it as output.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Data record</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Data set</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Datum</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Data</rdfs:label>
+        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000027&quot;</rdfs:seeAlso>
+        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000030&quot;</rdfs:seeAlso>
+        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#DigitalEntity</rdfs:seeAlso>
+        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000069</rdfs:seeAlso>
+        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000088</rdfs:seeAlso>
+        <rdfs:seeAlso>http://wsio.org/data_002</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/data_0006"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Data record</owl:annotatedTarget>
+        <rdfs:comment>EDAM does not distinguish a data record (a tool-understandable information artefact) from data or datum (its content, the tool-understandable encoding of an information).</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/data_0006"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Data set</owl:annotatedTarget>
+        <rdfs:comment>EDAM does not distinguish the multiplicity of data, such as one data item (datum) versus a collection of data (data set).</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/data_0006"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Datum</owl:annotatedTarget>
+        <rdfs:comment>EDAM does not distinguish the multiplicity of data, such as one data item (datum) versus a collection of data (data set).</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edamontology.org/data_0842 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0842">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_identifier_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edamontology.org/data_2048"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>Identifier</rdfs:label>
+        <rdfs:seeAlso>&quot;http://purl.org/dc/elements/1.1/identifier&quot;</rdfs:seeAlso>
+        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000115</rdfs:seeAlso>
+        <rdfs:seeAlso>http://wsio.org/data_005</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/data_0842"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <rdfs:comment>Almost exact but limited to identifying resources.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edamontology.org/data_0883 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0883">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0081"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <oboInOwl:hasDefinition>3D coordinate and associated data for a macromolecular tertiary (3D) structure or part of a structure.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Coordinate model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Structure data</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:comment>The coordinate data may be predicted or real.</rdfs:comment>
+        <rdfs:label>Structure</rdfs:label>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D015394</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_0962 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0962">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2085"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0154"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a specific chemical compound.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Chemical compound annotation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Chemical structure report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Small molecule annotation</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Small molecule report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_0976 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0976">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0842"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>An identifier that identifies a particular type of data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Identifier (typed)</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:comment>This concept exists only to assist EDAM maintenance and navigation in graphical browsers.  It does not add semantic information.  This branch provides an alternative organisation of the concepts nested under &apos;Accession&apos; and &apos;Name&apos;. All concepts under here are already included under &apos;Accession&apos; or &apos;Name&apos;.</rdfs:comment>
+        <rdfs:label>Identifier (by type of data)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_0982 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0982">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0976"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>Name or other identifier of a molecule.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>Molecule identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_0993 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0993">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_identifier_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2851"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>Identifier of a drug.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>Drug identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_1086 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_1086">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0982"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_identifier_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0962"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>Identifier of an entry from a database of chemicals.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Chemical compound identifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Compound ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Small molecule identifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>Compound identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_1463 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_1463">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0883"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0154"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <oboInOwl:hasDefinition>3D coordinate and associated data for the (3D) structure of a small molecule, such as any common chemical compound.</oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>CHEBI:23367</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Small molecule structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_2048 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_2048">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information including annotation on a biological entity or phenomena, computer-generated reports of analysis of primary data (e.g. sequence or structural), and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Document</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Record</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:comment>You can use this term by default for any textual report, in case you can&apos;t find another, more specific term. Reports may be generated automatically or collated by hand and can include metadata on the origin, source, history, ownership or location of some thing.</rdfs:comment>
+        <rdfs:label>Report</rdfs:label>
+        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000148</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_2085 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_2085">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information about one or more molecular tertiary (3D) structures.  It might include annotation on the structure, a computer-generated report of analysis of structural data, and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Structure-derived report</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Structure report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_2091 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_2091">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0842"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>A persistent (stable) and unique identifier, typically identifying an object (entry) from a database.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>Accession</rdfs:label>
+        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000675</rdfs:seeAlso>
+        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000731</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_2851 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_2851">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1463"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <oboInOwl:hasDefinition>3D coordinate and associated data for the (3D) structure of a drug.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Drug structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_2895 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_2895">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0993"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>Accession of a drug.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>Drug accession</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3103 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3103">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2895"/>
+        <edamontology:created_in>beta13</edamontology:created_in>
+        <oboInOwl:hasDefinition>Unique identifier of a drug conforming to the Anatomical Therapeutic Chemical (ATC) Classification System, a drug classification system controlled by the WHO Collaborating Centre for Drug Statistics Methodology (WHOCC).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>ATC code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_0004 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_0004">
+        <owl:disjointWith rdf:resource="http://edamontology.org/topic_0003"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasBroadSynonym>Function</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDefinition>A function that processes a set of inputs and results in a set of outputs, or associates arguments (inputs) with values (outputs).</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Computational method</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Computational operation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Computational procedure</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Computational subroutine</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Function (programming)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Lambda abstraction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Mathematical function</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Mathematical operation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>Computational tool</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sumo:Function</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>Special cases are: a) An operation that consumes no input (has no input arguments). Such operation is either a constant function, or an operation depending only on the underlying state. b) An operation that may modify the underlying state but has no output. c) The singular-case operation with no input or output, that still may modify the underlying state.</rdfs:comment>
+        <rdfs:label>Operation</rdfs:label>
+        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Function_(computer_science)</rdfs:seeAlso>
+        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Function_(mathematics)</rdfs:seeAlso>
+        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Subroutine</rdfs:seeAlso>
+        <rdfs:seeAlso>http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method</rdfs:seeAlso>
+        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Function</rdfs:seeAlso>
+        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000017</rdfs:seeAlso>
+        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000649</rdfs:seeAlso>
+        <rdfs:seeAlso>http://wsio.org/operation_001</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.ebi.ac.uk/swo/SWO_0000003</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Function</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Quality</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/span#Process</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Function</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Process</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/operation_0004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>Function</owl:annotatedTarget>
+        <rdfs:comment>Operation is a function that is computational. It typically has input(s) and output(s), which are always data.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/operation_0004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Computational tool</owl:annotatedTarget>
+        <rdfs:comment>Computational tool provides one or more operations.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/operation_0004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Process</owl:annotatedTarget>
+        <rdfs:comment>Process can have a function (as its quality/attribute), and can also perform an operation with inputs and outputs.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edamontology.org/topic_0003 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_0003">
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <oboInOwl:hasDefinition>A category denoting a rather broad domain or field of interest, of study, application, work, data, or technology. Topics have no clearly defined borders between each other.</oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>sumo:FieldOfStudy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Topic</rdfs:label>
+        <rdfs:seeAlso>http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research</rdfs:seeAlso>
+        <rdfs:seeAlso>http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method</rdfs:seeAlso>
+        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Quality</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Quality</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Category</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_0081 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_0081">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDefinition>The curation, processing, analysis and prediction of data about the structure of biological molecules, typically proteins and nucleic acids and other macromolecules.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Biomolecular structure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Structural bioinformatics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Structure_analysis</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Computational structural biology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Molecular structure</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Structure data resources</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Structure databases</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Structures</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>This includes related concepts such as structural properties, alignments and structural motifs.</rdfs:comment>
+        <rdfs:label>Structure analysis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Structural_bioinformatics"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D015394</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_0154 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_0154">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDefinition>Small molecules of biological significance, typically archival, curation, processing and analysis of structural information.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Small_molecules</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Amino acids</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Chemical structures</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Drug structures</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Drug targets</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Drugs and target structures</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolite structures</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Peptides</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Peptides and amino acids</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Target structures</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Targets</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Toxins</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Toxins and targets</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>CHEBI:23367</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>Small molecules include organic molecules, metal-organic compounds, small polypeptides, small polysaccharides and oligonucleotides.  Structural data is usually included.</rdfs:comment>
+        <rdfs:comment>This concept excludes macromolecules such as proteins and nucleic acids.</rdfs:comment>
+        <rdfs:comment>This includes the structures of drugs, drug target, their interactions and binding affinities.  Also the structures of reactants or products of metabolism, for example small molecules such as including vitamins, polyols, nucleotides and amino acids.  Also the physicochemical, biochemical or structural properties of amino acids or peptides.  Also structural and associated data for toxic chemical substances.</rdfs:comment>
+        <rdfs:label>Small molecules</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabolite"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Small_molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3307 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3307">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <edamontology:created_in>1.3</edamontology:created_in>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDbXref>VT 1.5.12 Computational biology</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VT 1.5.19 Mathematical biology</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VT 1.5.26 Theoretical biology</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>The development and application of theory, analytical methods, mathematical models and computational simulation of biological systems.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Computational_biology</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Biomathematics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Mathematical biology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Theoretical biology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>This includes the modeling and treatment of biological processes and systems in mathematical terms (theoretical biology).</rdfs:comment>
+        <rdfs:label>Computational biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_biology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3361 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3361">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <edamontology:created_in>1.4</edamontology:created_in>
+        <oboInOwl:hasDefinition>The procedures used to conduct an experiment.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Experimental techniques</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lab method</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lab techniques</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Laboratory method</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Laboratory_techniques</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Experiments</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Laboratory experiments</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Laboratory techniques</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3382 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3382">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <edamontology:created_in>1.4</edamontology:created_in>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDefinition>The visual representation of an object.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Imaging</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Diffraction experiment</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Microscopy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Microscopy imaging</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Optical super resolution microscopy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Photonic force microscopy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Photonic microscopy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>This includes diffraction experiments that are based upon the interference of waves, typically electromagnetic waves such as  X-rays or visible light, by some object being studied, typical in order to produce an image of the object or determine its structure.</rdfs:comment>
+        <rdfs:label>Imaging</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,37 @@
+[ <https://www.ebi.ac.uk/ejprd/#$id>
+          "vocabulary_code.json" ;
+  <https://www.ebi.ac.uk/ejprd/#$schema>
+          "http://json-schema.org/draft-07/schema#" ;
+  <https://www.ebi.ac.uk/ejprd/#description>
+          "A code from a coding system, controlled vocabulary or ontology" ;
+  <https://www.ebi.ac.uk/ejprd/#properties>
+          [ <https://www.ebi.ac.uk/ejprd/#@id>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "a primary identifier for the code" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "http://www.orpha.net/ORDO/Orphanet_137628" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#code_system>
+                    [ <https://www.ebi.ac.uk/ejprd/#$ref>
+                              "vocabulary_code_system.json" ;
+                      <https://www.ebi.ac.uk/ejprd/#description>
+                              "A coding system that defines the code" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#name>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "A human-readable name for code" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "Cardiac anomalies-heterotaxy syndrome" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ]
+          ] ;
+  <https://www.ebi.ac.uk/ejprd/#required>
+          "@id" ;
+  <https://www.ebi.ac.uk/ejprd/#title>
+          "Code"
+] .

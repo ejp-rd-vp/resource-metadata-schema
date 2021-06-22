@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ejp-rd
+
+idspace: EJP-RD
+base_url: /obo/ejp-rd
+
+products:
+- ejp-rd.owl: https://raw.githubusercontent.com/EBISPOT/ejp-rd_ontology/master/ejp-rd.owl
+- ejp-rd.obo: https://raw.githubusercontent.com/EBISPOT/ejp-rd_ontology/master/ejp-rd.obo
+
+term_browser: ontobee
+example_terms:
+- ejp-rd_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/EBISPOT/ejp-rd_ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/EBISPOT/ejp-rd_ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/EJP-RD?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/EBISPOT/ejp-rd_ontology/master/

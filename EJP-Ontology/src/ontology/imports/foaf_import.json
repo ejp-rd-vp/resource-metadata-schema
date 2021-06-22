@@ -1,0 +1,17 @@
+{
+  "graphs" : [ {
+    "nodes" : [ ],
+    "edges" : [ ],
+    "id" : "http://purl.obolibrary.org/obo/ejp-rd/imports/foaf_import.owl",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ ],
+      "version" : "http://purl.obolibrary.org/obo/ejp-rd/releases/2020-03-02/imports/foaf_import.owl"
+    },
+    "equivalentNodesSets" : [ ],
+    "logicalDefinitionAxioms" : [ ],
+    "domainRangeAxioms" : [ ],
+    "propertyChainAxioms" : [ ]
+  } ]
+}

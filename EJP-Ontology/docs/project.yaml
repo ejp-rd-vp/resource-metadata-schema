@@ -1,0 +1,178 @@
+allow_equivalents: all
+catalog_file: catalog-v001.xml
+components:
+  directory: components
+  filename: null
+  products:
+  - filename: fbbt.owl
+    source: null
+  - filename: cl.owl
+    source: null
+  source: null
+contact: null
+contributors: null
+creators: null
+description: None
+dosdp_tools_options: --obo-prefixes=true
+edit_format: owl
+export_formats:
+- owl
+- obo
+- json
+git_user: ''
+github_org: EBISPOT
+gzip_main: false
+id: scatlas
+import_group:
+  directory: imports/
+  disabled: false
+  ids: null
+  products:
+  - description: null
+    id: bto
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: cl
+    mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: chebi
+    mirror_from: http://purl.obolibrary.org/obo/chebi.owl.gz
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: go
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: peco
+    mirror_from: http://purl.obolibrary.org/obo/peco.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: pato
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: fbbt
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: to
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: po
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: wbls
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ncit
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: uberon
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: rs
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: fbdv
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: omit
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ordo
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: obi
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ordo
+    mirror_from: https://www.ebi.ac.uk/ols/ontologies/ordo/download
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: uberon-bridge-to-fbbt
+    mirror_from: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-fbbt.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ncbitaxon
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: efo
+    mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: cl-bridge-to-fbbt
+    mirror_from: http://purl.obolibrary.org/obo/uberon/bridge/cl-bridge-to-fbbt.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  rebuild_if_source_changes: true
+import_pattern_ontology: false
+license: Unspecified
+namespaces: null
+obo_format_options: ''
+pattern_group: null
+pattern_pipelines_group: null
+primary_release: full
+public_release: none
+public_release_assets: null
+reasoner: ELK
+release_artefacts:
+- full
+- base
+release_date: false
+repo: scatlas_ontology
+report_fail_on: ERROR
+robot_java_args: -Xmx10G
+robot_settings: null
+robot_version: null
+robotemplate_group: null
+subset_group:
+  directory: subsets/
+  disabled: false
+  ids:
+  - scatlas_slim
+  products:
+  - creators: null
+    description: null
+    id: scatlas_slim
+    rebuild_if_source_changes: true
+    robot_settings: null
+  rebuild_if_source_changes: true
+title: Single Cell Atlas
+travis_emails: null
+uribase: http://purl.obolibrary.org/obo
+use_dosdps: false
+use_external_date: false

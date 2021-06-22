@@ -1,0 +1,76 @@
+[ <https://www.ebi.ac.uk/ejprd/#$id>
+          "catalog_of_registries.json" ;
+  <https://www.ebi.ac.uk/ejprd/#$schema>
+          "http://json-schema.org/draft-07/schema#" ;
+  <https://www.ebi.ac.uk/ejprd/#description>
+          "Schema to describe a resource that catalogs registries such as Orphanet" ;
+  <https://www.ebi.ac.uk/ejprd/#properties>
+          [ <https://www.ebi.ac.uk/ejprd/#@id>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "a primary identifier for the catalog" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "http://www.orpha.net" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#@type>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "the primary type for this catalog" ;
+                      <https://www.ebi.ac.uk/ejprd/#enum>
+                              "CatalogOfRegistries" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "CatalogOfRegistries" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#datasets>
+                    [ <https://www.ebi.ac.uk/ejprd/#descripton>
+                              "List of dataset urls" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "http://www.orpha.net/datasests/1" ;
+                      <https://www.ebi.ac.uk/ejprd/#items>
+                              [ <https://www.ebi.ac.uk/ejprd/#format>
+                                        "url" ;
+                                <https://www.ebi.ac.uk/ejprd/#type>
+                                        "string"
+                              ] ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "array"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#description>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "A description for the catalog" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "Orphanet is a unique resource, gathering and improving knowledge on rare diseases" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#homepage>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "The primary URL for the homepage of the catalog" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "http://www.orpha.net" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#name>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "a name or short description for the catalog" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "Orphanet" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#organisation>
+                    [ <https://www.ebi.ac.uk/ejprd/#items>
+                              [ <https://www.ebi.ac.uk/ejprd/#$ref>
+                                        "organisation.json" ] ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "array"
+                    ]
+          ] ;
+  <https://www.ebi.ac.uk/ejprd/#required>
+          "@type" , "@id" ;
+  <https://www.ebi.ac.uk/ejprd/#title>
+          "Rare disease catalog"
+] .

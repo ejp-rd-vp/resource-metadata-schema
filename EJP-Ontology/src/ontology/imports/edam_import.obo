@@ -1,0 +1,439 @@
+format-version: 1.2
+data-version: ejp-rd/releases/2020-03-02/imports/edam_import.owl
+subsetdef: data ""
+subsetdef: edam ""
+subsetdef: events ""
+subsetdef: identifiers ""
+subsetdef: operations ""
+subsetdef: topics ""
+ontology: ejp-rd/imports/edam_import
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://edamontology.org/data_0006>))\nDeclaration(Class(<http://edamontology.org/operation_0004>))\nDeclaration(ObjectProperty(<http://edamontology.org/is_topic_of>))\n############################\n#   Object Properties\n############################\n\n# Object Property: <http://edamontology.org/is_topic_of> (is topic of)\n\nObjectPropertyRange(<http://edamontology.org/is_topic_of> ObjectUnionOf(<http://edamontology.org/data_0006> <http://edamontology.org/operation_0004>))\n\n\n\n)
+
+[Term]
+id: data:0006
+name: Data
+subset: data
+subset: edam
+synonym: "Data record" EXACT [] {comment="EDAM does not distinguish a data record (a tool-understandable information artefact) from data or datum (its content, the tool-understandable encoding of an information)."}
+synonym: "Data set" NARROW [] {comment="EDAM does not distinguish the multiplicity of data, such as one data item (datum) versus a collection of data (data set)."}
+synonym: "Datum" NARROW [] {comment="EDAM does not distinguish the multiplicity of data, such as one data item (datum) versus a collection of data (data set)."}
+disjoint_from: operation:0004 ! Operation
+disjoint_from: topic:0003 ! Topic
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "Information, represented in an information artefact (data record) that is 'understandable' by dedicated computational tools that can use the data as input or produce it as output." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+property_value: seeAlso "http://purl.obolibrary.org/obo/IAO_0000027" xsd:string
+property_value: seeAlso "http://purl.obolibrary.org/obo/IAO_0000030" xsd:string
+property_value: seeAlso http://purl.org/biotop/biotop.owl#DigitalEntity xsd:string
+property_value: seeAlso http://semanticscience.org/resource/SIO_000069 xsd:string
+property_value: seeAlso http://semanticscience.org/resource/SIO_000088 xsd:string
+property_value: seeAlso http://wsio.org/data_002 xsd:string
+property_value: seeAlso http://www.ifomis.org/bfo/1.1/snap#Continuant xsd:string
+property_value: seeAlso http://www.onto-med.de/ontologies/gfo.owl#Perpetuant xsd:string
+
+[Term]
+id: data:0842
+name: Identifier
+subset: data
+subset: edam
+subset: identifiers
+synonym: "http://purl.org/dc/elements/1.1/identifier" NARROW [] {comment="Almost exact but limited to identifying resources."}
+synonym: "ID" EXACT []
+is_a: data:0006 ! Data
+disjoint_from: data:2048 ! Report
+relationship: http://edamontology.org/is_identifier_of data:0006 ! Data
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things)." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+property_value: seeAlso "http://purl.org/dc/elements/1.1/identifier" xsd:string
+property_value: seeAlso http://semanticscience.org/resource/SIO_000115 xsd:string
+property_value: seeAlso http://wsio.org/data_005 xsd:string
+
+[Term]
+id: data:0883
+name: Structure
+comment: The coordinate data may be predicted or real.
+subset: data
+subset: edam
+synonym: "Coordinate model" EXACT []
+synonym: "Structure data" EXACT []
+is_a: data:0006 ! Data
+relationship: has:topic topic:0081 ! Structure analysis
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "3D coordinate and associated data for a macromolecular tertiary (3D) structure or part of a structure." xsd:string
+property_value: seeAlso http://purl.bioontology.org/ontology/MSH/D015394 xsd:string
+
+[Term]
+id: data:0962
+name: Small molecule report
+subset: data
+subset: edam
+synonym: "Chemical compound annotation" EXACT []
+synonym: "Chemical structure report" EXACT []
+synonym: "Small molecule annotation" EXACT []
+is_a: data:2085 ! Structure report
+relationship: has:topic topic:0154 ! Small molecules
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "A human-readable collection of information about a specific chemical compound." xsd:string
+
+[Term]
+id: data:0976
+name: Identifier (by type of data)
+comment: This concept exists only to assist EDAM maintenance and navigation in graphical browsers.  It does not add semantic information.  This branch provides an alternative organisation of the concepts nested under 'Accession' and 'Name'. All concepts under here are already included under 'Accession' or 'Name'.
+subset: data
+subset: edam
+subset: identifiers
+synonym: "Identifier (typed)" EXACT []
+is_a: data:0842 ! Identifier
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "An identifier that identifies a particular type of data." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+
+[Term]
+id: data:0982
+name: Molecule identifier
+subset: data
+subset: edam
+subset: identifiers
+is_a: data:0976 ! Identifier (by type of data)
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "Name or other identifier of a molecule." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+
+[Term]
+id: data:0993
+name: Drug identifier
+subset: data
+subset: edam
+subset: identifiers
+is_a: data:1086 ! Compound identifier
+relationship: http://edamontology.org/is_identifier_of data:2851 ! Drug structure
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "Identifier of a drug." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+
+[Term]
+id: data:1086
+name: Compound identifier
+subset: data
+subset: edam
+subset: identifiers
+synonym: "Chemical compound identifier" EXACT []
+synonym: "Compound ID" EXACT []
+synonym: "Small molecule identifier" EXACT []
+is_a: data:0982 ! Molecule identifier
+relationship: http://edamontology.org/is_identifier_of data:0962 ! Small molecule report
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "Identifier of an entry from a database of chemicals." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+
+[Term]
+id: data:1463
+name: Small molecule structure
+subset: data
+subset: edam
+synonym: "CHEBI:23367" RELATED []
+is_a: data:0883 ! Structure
+relationship: has:topic topic:0154 ! Small molecules
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "3D coordinate and associated data for the (3D) structure of a small molecule, such as any common chemical compound." xsd:string
+
+[Term]
+id: data:2048
+name: Report
+comment: You can use this term by default for any textual report, in case you can't find another, more specific term. Reports may be generated automatically or collated by hand and can include metadata on the origin, source, history, ownership or location of some thing.
+subset: data
+subset: edam
+synonym: "Document" EXACT []
+synonym: "Record" EXACT []
+is_a: data:0006 ! Data
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "A human-readable collection of information including annotation on a biological entity or phenomena, computer-generated reports of analysis of primary data (e.g. sequence or structural), and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself." xsd:string
+property_value: seeAlso http://semanticscience.org/resource/SIO_000148 xsd:string
+
+[Term]
+id: data:2085
+name: Structure report
+subset: data
+subset: edam
+synonym: "Structure-derived report" EXACT []
+is_a: data:2048 ! Report
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "A human-readable collection of information about one or more molecular tertiary (3D) structures.  It might include annotation on the structure, a computer-generated report of analysis of structural data, and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself." xsd:string
+
+[Term]
+id: data:2091
+name: Accession
+subset: data
+subset: edam
+subset: identifiers
+is_a: data:0842 ! Identifier
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "A persistent (stable) and unique identifier, typically identifying an object (entry) from a database." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+property_value: seeAlso http://semanticscience.org/resource/SIO_000675 xsd:string
+property_value: seeAlso http://semanticscience.org/resource/SIO_000731 xsd:string
+
+[Term]
+id: data:2851
+name: Drug structure
+subset: data
+subset: edam
+is_a: data:1463 ! Small molecule structure
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "3D coordinate and associated data for the (3D) structure of a drug." xsd:string
+
+[Term]
+id: data:2895
+name: Drug accession
+subset: data
+subset: edam
+subset: identifiers
+is_a: data:0993 ! Drug identifier
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "Accession of a drug." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+
+[Term]
+id: data:3103
+name: ATC code
+subset: data
+subset: edam
+subset: identifiers
+is_a: data:2091 ! Accession
+is_a: data:2895 ! Drug accession
+property_value: created:in "beta13" xsd:string
+property_value: hasDefinition "Unique identifier of a drug conforming to the Anatomical Therapeutic Chemical (ATC) Classification System, a drug classification system controlled by the WHO Collaborating Centre for Drug Statistics Methodology (WHOCC)." xsd:string
+
+[Term]
+id: operation:0004
+name: Operation
+comment: Special cases are: a) An operation that consumes no input (has no input arguments). Such operation is either a constant function, or an operation depending only on the underlying state. b) An operation that may modify the underlying state but has no output. c) The singular-case operation with no input or output, that still may modify the underlying state.
+subset: edam
+subset: operations
+synonym: "Computational method" NARROW []
+synonym: "Computational operation" NARROW []
+synonym: "Computational procedure" NARROW []
+synonym: "Computational subroutine" NARROW []
+synonym: "Computational tool" RELATED [] {comment="Computational tool provides one or more operations."}
+synonym: "Function" BROAD [] {comment="Operation is a function that is computational. It typically has input(s) and output(s), which are always data."}
+synonym: "Function (programming)" NARROW []
+synonym: "Lambda abstraction" NARROW []
+synonym: "Mathematical function" NARROW []
+synonym: "Mathematical operation" NARROW []
+synonym: "Process" RELATED [] {comment="Process can have a function (as its quality/attribute), and can also perform an operation with inputs and outputs."}
+synonym: "sumo:Function" RELATED []
+disjoint_from: topic:0003 ! Topic
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "A function that processes a set of inputs and results in a set of outputs, or associates arguments (inputs) with values (outputs)." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+property_value: seeAlso http://en.wikipedia.org/wiki/Function_(computer_science) xsd:string
+property_value: seeAlso http://en.wikipedia.org/wiki/Function_(mathematics) xsd:string
+property_value: seeAlso http://en.wikipedia.org/wiki/Subroutine xsd:string
+property_value: seeAlso http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method xsd:string
+property_value: seeAlso http://purl.org/biotop/biotop.owl#Function xsd:string
+property_value: seeAlso http://semanticscience.org/resource/SIO_000017 xsd:string
+property_value: seeAlso http://semanticscience.org/resource/SIO_000649 xsd:string
+property_value: seeAlso http://wsio.org/operation_001 xsd:string
+property_value: seeAlso http://www.ebi.ac.uk/swo/SWO_0000003 xsd:string
+property_value: seeAlso http://www.ifomis.org/bfo/1.1/snap#Continuant xsd:string
+property_value: seeAlso http://www.ifomis.org/bfo/1.1/snap#Function xsd:string
+property_value: seeAlso http://www.ifomis.org/bfo/1.1/snap#Quality xsd:string
+property_value: seeAlso http://www.ifomis.org/bfo/1.1/span#Process xsd:string
+property_value: seeAlso http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process xsd:string
+property_value: seeAlso http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality xsd:string
+property_value: seeAlso http://www.onto-med.de/ontologies/gfo.owl#Function xsd:string
+property_value: seeAlso http://www.onto-med.de/ontologies/gfo.owl#Perpetuant xsd:string
+property_value: seeAlso http://www.onto-med.de/ontologies/gfo.owl#Process xsd:string
+
+[Term]
+id: topic:0003
+name: Topic
+subset: edam
+subset: topics
+synonym: "sumo:FieldOfStudy" RELATED []
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "A category denoting a rather broad domain or field of interest, of study, application, work, data, or technology. Topics have no clearly defined borders between each other." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+property_value: seeAlso http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research xsd:string
+property_value: seeAlso http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method xsd:string
+property_value: seeAlso http://purl.org/biotop/biotop.owl#Quality xsd:string
+property_value: seeAlso http://www.ifomis.org/bfo/1.1/snap#Continuant xsd:string
+property_value: seeAlso http://www.ifomis.org/bfo/1.1/snap#Quality xsd:string
+property_value: seeAlso http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality xsd:string
+property_value: seeAlso http://www.onto-med.de/ontologies/gfo.owl#Category xsd:string
+property_value: seeAlso http://www.onto-med.de/ontologies/gfo.owl#Perpetuant xsd:string
+
+[Term]
+id: topic:0081
+name: Structure analysis
+comment: This includes related concepts such as structural properties, alignments and structural motifs.
+subset: edam
+subset: events
+subset: topics
+synonym: "Biomolecular structure" EXACT []
+synonym: "Computational structural biology" NARROW []
+synonym: "Molecular structure" NARROW []
+synonym: "Structural bioinformatics" EXACT []
+synonym: "Structure data resources" NARROW []
+synonym: "Structure databases" NARROW []
+synonym: "Structures" NARROW []
+is_a: topic:3307 ! Computational biology
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "The curation, processing, analysis and prediction of data about the structure of biological molecules, typically proteins and nucleic acids and other macromolecules." xsd:string
+property_value: hasHumanReadableId "Structure_analysis" xsd:string
+property_value: http://edamontology.org/isdebtag "true" xsd:string
+property_value: seeAlso http://purl.bioontology.org/ontology/MSH/D015394 xsd:string
+property_value: seeAlso Structural:bioinformatics
+
+[Term]
+id: topic:0154
+name: Small molecules
+comment: Small molecules include organic molecules, metal-organic compounds, small polypeptides, small polysaccharides and oligonucleotides.  Structural data is usually included.
+comment: This concept excludes macromolecules such as proteins and nucleic acids.
+comment: This includes the structures of drugs, drug target, their interactions and binding affinities.  Also the structures of reactants or products of metabolism, for example small molecules such as including vitamins, polyols, nucleotides and amino acids.  Also the physicochemical, biochemical or structural properties of amino acids or peptides.  Also structural and associated data for toxic chemical substances.
+subset: edam
+subset: topics
+synonym: "Amino acids" NARROW []
+synonym: "CHEBI:23367" RELATED []
+synonym: "Chemical structures" NARROW []
+synonym: "Drug structures" NARROW []
+synonym: "Drug targets" NARROW []
+synonym: "Drugs and target structures" NARROW []
+synonym: "Metabolite structures" NARROW []
+synonym: "Peptides" NARROW []
+synonym: "Peptides and amino acids" NARROW []
+synonym: "Target structures" NARROW []
+synonym: "Targets" NARROW []
+synonym: "Toxins" NARROW []
+synonym: "Toxins and targets" NARROW []
+is_a: topic:0081 ! Structure analysis
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "Small molecules of biological significance, typically archival, curation, processing and analysis of structural information." xsd:string
+property_value: hasHumanReadableId "Small_molecules" xsd:string
+property_value: http://edamontology.org/isdebtag "true" xsd:string
+property_value: seeAlso https://en.wikipedia.org/wiki/Metabolite
+property_value: seeAlso Small:molecule
+
+[Term]
+id: topic:3307
+name: Computational biology
+comment: This includes the modeling and treatment of biological processes and systems in mathematical terms (theoretical biology).
+subset: edam
+subset: events
+subset: topics
+synonym: "Biomathematics" NARROW []
+synonym: "Mathematical biology" NARROW []
+synonym: "Theoretical biology" NARROW []
+xref: VT 1.5.12 Computational biology
+xref: VT 1.5.19 Mathematical biology
+xref: VT 1.5.26 Theoretical biology
+is_a: topic:0003 ! Topic
+property_value: created:in "1.3" xsd:string
+property_value: hasDefinition "The development and application of theory, analytical methods, mathematical models and computational simulation of biological systems." xsd:string
+property_value: hasHumanReadableId "Computational_biology" xsd:string
+property_value: http://edamontology.org/isdebtag "true" xsd:string
+property_value: seeAlso Computational:biology
+
+[Term]
+id: topic:3361
+name: Laboratory techniques
+subset: edam
+subset: events
+subset: topics
+synonym: "Experimental techniques" EXACT []
+synonym: "Experiments" NARROW []
+synonym: "Lab method" EXACT []
+synonym: "Lab techniques" EXACT []
+synonym: "Laboratory experiments" NARROW []
+synonym: "Laboratory method" EXACT []
+is_a: topic:0003 ! Topic
+property_value: created:in "1.4" xsd:string
+property_value: hasDefinition "The procedures used to conduct an experiment." xsd:string
+property_value: hasHumanReadableId "Laboratory_techniques" xsd:string
+
+[Term]
+id: topic:3382
+name: Imaging
+comment: This includes diffraction experiments that are based upon the interference of waves, typically electromagnetic waves such as  X-rays or visible light, by some object being studied, typical in order to produce an image of the object or determine its structure.
+subset: edam
+subset: events
+subset: topics
+synonym: "Diffraction experiment" NARROW []
+synonym: "Microscopy" NARROW []
+synonym: "Microscopy imaging" NARROW []
+synonym: "Optical super resolution microscopy" NARROW []
+synonym: "Photonic force microscopy" NARROW []
+synonym: "Photonic microscopy" NARROW []
+is_a: topic:3361 ! Laboratory techniques
+property_value: created:in "1.4" xsd:string
+property_value: hasDefinition "The visual representation of an object." xsd:string
+property_value: hasHumanReadableId "Imaging" xsd:string
+property_value: http://edamontology.org/isdebtag "true" xsd:string
+
+[Typedef]
+id: has:identifier
+name: has identifier
+comment: Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is an 'Identifier', or an entity outside of an ontology that is an 'Identifier' or is in the role of an 'Identifier'. In EDAM, 'has_identifier' is not explicitly defined between EDAM concepts, only the inverse 'is_identifier_of'.
+subset: edam
+subset: relations
+property_value: hasDefinition "'A has_identifier B' defines for the subject A, that it has the object B as its identifier." xsd:string
+property_value: http://purl.obolibrary.org/obo/is_anti_symmetric "false" xsd:string
+property_value: is:reflexive "false" xsd:string
+property_value: is:symmetric "false" xsd:string
+property_value: isCyclic "false" xsd:string
+property_value: transitive:over OBO_REL:is_a xsd:string
+domain: data:0006 ! Data
+range: data:0842 ! Identifier
+inverse_of: http://edamontology.org/is_identifier_of ! is identifier of
+
+[Typedef]
+id: has:topic
+name: has topic
+comment: Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is a 'Topic', or in unexpected cases an entity outside of an ontology that is a 'Topic' or is in the role of a 'Topic'. In EDAM, only 'has_topic' is explicitly defined between EDAM concepts ('Operation' or 'Data' 'has_topic' 'Topic'). The inverse, 'is_topic_of', is not explicitly defined.
+subset: edam
+subset: relations
+property_value: hasDefinition "'A has_topic B' defines for the subject A, that it has the object B as its topic (A is in the scope of a topic B)." xsd:string
+property_value: http://purl.obolibrary.org/obo/is_anti_symmetric "false" xsd:string
+property_value: is:reflexive "false" xsd:string
+property_value: is:symmetric "false" xsd:string
+property_value: isCyclic "true" xsd:string {comment="In very unusual cases."}
+property_value: seeAlso "http://purl.obolibrary.org/obo/IAO_0000136" xsd:string
+property_value: seeAlso "http://purl.obolibrary.org/obo/OBI_0000298" xsd:string
+property_value: seeAlso http://annotation-ontology.googlecode.com/svn/trunk/annotation-core.owl#hasTopic xsd:string
+property_value: seeAlso http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality xsd:string
+property_value: transitive:over OBO_REL:is_a xsd:string
+range: topic:0003 ! Topic
+inverse_of: http://edamontology.org/is_topic_of ! is topic of
+
+[Typedef]
+id: http://edamontology.org/is_identifier_of
+name: is identifier of
+comment: Subject A can either be a concept that is an 'Identifier', or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is an 'Identifier' or is in the role of an 'Identifier'. Object B can be any concept or entity outside of an ontology. In EDAM, only 'is_identifier_of' is explicitly defined between EDAM concepts (only 'Identifier' 'is_identifier_of' 'Data'). The inverse, 'has_identifier', is not explicitly defined.
+subset: edam
+subset: relations
+property_value: hasDefinition "'A is_identifier_of B' defines for the subject A, that it is an identifier of the object B." xsd:string
+property_value: http://purl.obolibrary.org/obo/is_anti_symmetric "false" xsd:string
+property_value: is:reflexive "false" xsd:string
+property_value: is:symmetric "false" xsd:string
+property_value: isCyclic "false" xsd:string
+property_value: transitive:over OBO_REL:is_a xsd:string
+domain: data:0842 ! Identifier
+range: data:0006 ! Data
+
+[Typedef]
+id: http://edamontology.org/is_topic_of
+name: is topic of
+comment: Subject A can either be a concept that is a 'Topic', or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a 'Topic' or is in the role of a 'Topic'. Object B can be any concept or entity outside of an ontology. In EDAM, 'is_topic_of' is not explicitly defined between EDAM concepts, only the inverse 'has_topic'.
+subset: edam
+subset: relations
+synonym: "OBO_REL:quality_of" RELATED [] {comment="Is defined anywhere? Not in the 'unknown' version of RO. 'OBO_REL:quality_of' might be seen narrower in the sense that it only relates subjects that are a 'quality' (snap:Quality) with objects that are an 'independent_continuant' (snap:IndependentContinuant), and is broader in the sense that it relates any qualities of the object."}
+property_value: hasDefinition "'A is_topic_of B' defines for the subject A, that it is a topic of the object B (a topic A is the scope of B)." xsd:string
+property_value: http://purl.obolibrary.org/obo/is_anti_symmetric "false" xsd:string
+property_value: is:reflexive "false" xsd:string
+property_value: is:symmetric "false" xsd:string
+property_value: isCyclic "true" xsd:string {comment="In very unusual cases."}
+property_value: seeAlso http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#inherent-in xsd:string
+property_value: transitive:over OBO_REL:is_a xsd:string
+domain: topic:0003 ! Topic
+

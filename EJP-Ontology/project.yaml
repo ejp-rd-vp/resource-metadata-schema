@@ -1,0 +1,115 @@
+allow_equivalents: all
+catalog_file: catalog-v001.xml
+components: null
+contact: null
+contributors: null
+creators: null
+description: None
+dosdp_tools_options: --obo-prefixes=true
+edit_format: owl
+export_formats:
+- owl
+- obo
+- json
+git_user: ''
+github_org: EBISPOT
+gzip_main: false
+id: ejp-rd
+import_group:
+  directory: imports/
+  disabled: false
+  ids: null
+  products:
+  - description: null
+    id: iao
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ncit
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: obi
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: obib
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ejp-rd
+    mirror_from: https://github.com/EBISPOT/EJP-Ontology/releases/download/23-10-2019/EJP_Ontology.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: efo
+    mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: omiabis
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: hp
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ordo
+    mirror_from: https://www.ebi.ac.uk/ols/ontologies/ordo/download
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: duo
+    mirror_from: https://www.ebi.ac.uk/ols/ontologies/duo/download
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: edam
+    mirror_from: https://www.ebi.ac.uk/ols/ontologies/edam/download
+    rebuild_if_source_changes: true
+    robot_settings: null
+  rebuild_if_source_changes: true
+import_pattern_ontology: false
+license: Unspecified
+namespaces: null
+obo_format_options: ''
+pattern_group: null
+pattern_pipelines_group: null
+primary_release: full
+public_release: none
+public_release_assets: null
+reasoner: ELK
+release_artefacts:
+- full
+- base
+release_date: false
+repo: ejp-rd_ontology
+report_fail_on: ERROR
+robot_java_args: -Xmx10G
+robot_settings: null
+robot_version: null
+robotemplate_group: null
+subset_group:
+  directory: subsets/
+  disabled: false
+  ids:
+  - ejp-rd_slim
+  products:
+  - creators: null
+    description: null
+    id: ejp-rd_slim
+    rebuild_if_source_changes: true
+    robot_settings: null
+  rebuild_if_source_changes: true
+title: European Joint Programme (EJP) for Rare Disease,
+travis_emails: null
+uribase: http://purl.obolibrary.org/obo
+use_dosdps: false
+use_external_date: false

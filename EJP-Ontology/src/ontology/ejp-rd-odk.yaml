@@ -1,0 +1,47 @@
+id: ejp-rd
+title:  European Joint Programme (EJP) for Rare Disease,
+github_org: EBISPOT
+repo: ejp-rd_ontology
+report_fail_on: None
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products:
+    - id: iao
+    - id: ncit
+    - id: obi
+    - id: obib
+    - id: efo
+      mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
+    - id: omiabis
+      mirror_from: https://www.ebi.ac.uk/ols/ontologies/omiabis/download
+    - id: hp
+    - id: foaf
+      mirror_from: http://xmlns.com/foaf/spec/20140114.rdf
+    - id: ordo
+      mirror_from: https://www.ebi.ac.uk/ols/ontologies/ordo/download
+    - id: duo
+      mirror_from: https://www.ebi.ac.uk/ols/ontologies/duo/download
+    - id: edam
+      mirror_from: https://www.ebi.ac.uk/ols/ontologies/edam/download
+subset_group:
+  ids:
+    - ejp-rd_slim
+components:
+  products:
+    - filename: ejp-core.owl
+    - filename: iao.owl
+    - filename: ncit.owl
+    - filename: obi.owl
+    - filename: obib.owl
+    - filename: efo.owl
+    - filename: omiabis.owl
+    - filename: hp.owl
+    - filename: foaf.owl
+    - filename: ordo.owl
+    - filename: duo.owl
+    - filename: edam.owl
+
+robot_java_args: '-Xmx10G'

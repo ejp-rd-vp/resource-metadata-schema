@@ -1,0 +1,81 @@
+[ <https://www.ebi.ac.uk/ejprd/#$id>
+          "registry.json" ;
+  <https://www.ebi.ac.uk/ejprd/#$schema>
+          "http://json-schema.org/draft-07/schema#" ;
+  <https://www.ebi.ac.uk/ejprd/#description>
+          "A schema to describe a dataset of patients, cohorts or biomaterials from a registry" ;
+  <https://www.ebi.ac.uk/ejprd/#properties>
+          [ <https://www.ebi.ac.uk/ejprd/#@id>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "a primary identifier for the registry" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "https://www.pcdregistry.eu/" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#@type>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "the primary type for this registry" ;
+                      <https://www.ebi.ac.uk/ejprd/#enum>
+                              "BiobankDataset" , "PatientRegistryDataset" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "PatientRegistryDataset" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#description>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "A description for the registry" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "PDC registry" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#disease_cases>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "Information about the individual cases described in the registry" ;
+                      <https://www.ebi.ac.uk/ejprd/#items>
+                              [ <https://www.ebi.ac.uk/ejprd/#$ref>
+                                        "../src/main/java/uk/ac/ebi/case.json" ] ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "array"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#homepage>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "The primary URL for the homepage of the registry" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "https://www.pcdregistry.eu/" ;
+                      <https://www.ebi.ac.uk/ejprd/#format>
+                              "url" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#name>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "a name or short description for the registry" ;
+                      <https://www.ebi.ac.uk/ejprd/#example>
+                              "PDC registry" ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "string"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#publisher>
+                    [ <https://www.ebi.ac.uk/ejprd/#$ref>
+                              "organisation.json" ;
+                      <https://www.ebi.ac.uk/ejprd/#description>
+                              "The primary organisation responsible for publishing and maintaining the registry"
+                    ] ;
+            <https://www.ebi.ac.uk/ejprd/#theme>
+                    [ <https://www.ebi.ac.uk/ejprd/#description>
+                              "The primary diseases associated with the dataset" ;
+                      <https://www.ebi.ac.uk/ejprd/#items>
+                              [ <https://www.ebi.ac.uk/ejprd/#$ref>
+                                        "vocabulary_code.json" ] ;
+                      <https://www.ebi.ac.uk/ejprd/#type>
+                              "array"
+                    ]
+          ] ;
+  <https://www.ebi.ac.uk/ejprd/#required>
+          "@type" , "@id" ;
+  <https://www.ebi.ac.uk/ejprd/#title>
+          "Rare disease registry dataset"
+] .
