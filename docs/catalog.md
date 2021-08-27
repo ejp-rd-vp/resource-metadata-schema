@@ -38,8 +38,8 @@
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="../images/shex/catalog.png" target="_blank">
-        <img src="../images/shex/catalog.png"> 
+    <a href="../images/shex/catalog.svg" target="_blank">
+        <img src="../images/shex/catalog.svg"> 
     </a>
 </p>
 

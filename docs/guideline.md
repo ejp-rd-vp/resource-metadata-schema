@@ -39,8 +39,8 @@
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="../images/shex/guideline.png" target="_blank">
-        <img src="../images/shex/guideline.png"> 
+    <a href="../images/shex/guideline.svg" target="_blank">
+        <img src="../images/shex/guideline.svg"> 
     </a>
 </p>
 

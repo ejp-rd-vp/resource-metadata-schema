@@ -49,8 +49,8 @@
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="../images/shex/biobank.png" target="_blank">
-        <img src="../images/shex/biobank.png"> 
+    <a href="../images/shex/biobank.svg" target="_blank">
+        <img src="../images/shex/biobank.svg"> 
     </a>
 </p>
 

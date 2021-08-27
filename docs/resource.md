@@ -47,8 +47,8 @@ Please avoid using `dcat:Resource` typing for your document. Unless the concept 
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="../images/shex/biobank.png" target="_blank">
-        <img src="../images/shex/resource.png"> 
+    <a href="../images/shex/biobank.svg" target="_blank">
+        <img src="../images/shex/resource.svg"> 
     </a>
 </p>
 
