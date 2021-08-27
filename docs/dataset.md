@@ -1,4 +1,4 @@
-DCAT vocabulary has already defined concept `dcat:Dataset` is a concept in DCAT2 which is a sub-class of `dcat:Resource`. We used this concept to describe any Rare disease related dataset. When a dataset is about contain of rare disease resources such as `biobank` and `patient registry` then we recommend using `sio:is related to` property to connect the dataset to its rare disease resource.
+DCAT vocabulary has already has concept `dcat:Dataset` which is a sub-class of `dcat:Resource`. We use this concept to describe any rare disease related dataset. When a dataset is about content of a rare disease resources such as `biobank` and `patient registry` then we recommend using `sio:is related to` property to connect the dataset to its rare disease resource.
 
 ### Metadata model figure
 
@@ -95,7 +95,7 @@ PREFIX sio: <http://semanticscience.org/resource/>
 ```
 
 
-Often a dataset can be made available for use via data dump such RDF,mysql data dump or via service which severs the dataset such as APIs. In this section we describe how one can describe various distributions of dataset.
+Often a dataset can be made available for use via data dump such as RDF,mysql data dump or via services which serves the dataset such as an API. In this section we describe how one can describe various distributions of dataset.
 
 ## How to describe data dump
 
@@ -186,6 +186,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 }
 ```
 
+####Note:
+When you create a distribution entry please make sure that the distribution entry's link is described in the appropriate dataset via `dcat:distribution` predicate. 
 
 ## How to describe data services
 
