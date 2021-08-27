@@ -1,19 +1,21 @@
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dc11: <http://purl.org/dc/elements/1.1/>
-PREFIX ns0: <http://edamontology.org/>
-PREFIX dc: <http://purl.org/dc/terms/>
-PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://example.org/D78768>
-    a dcat:Distribution ;
-    dc11:conformsTo "" ;
-    ns0:media_type "" ;
-    dc11:description "the you web" ;
-    dc:title "mr you " ;
-    dcat:downloadURL "" ;
-    dcat:accessURL "" ;
-    odrl:hasPolicy "" ;
-    dc:rights "" ;
-    ns0:data_0968 "" ;
-    dc11:license "" ;
-    dc:modified "11-09-2021" .
+:distribution a dcat:Distribution ;
+  dct:publisher :publisher ;        
+  dct:title "Distribution 1" ;
+  dct:description "An examplar csv distribution" ;
+  dct:license <https://creativecommons.org/licenses/by/4.0> ;
+  dct:hasVersion "1.0" ;
+  dcat:downloadURL <https://ftp.example.com/test.csv>;
+  dcat:mediaType "text/csv";
+  dct:isPartOf :dataset .
+
+:publisher a foaf:Agent ;
+  dct:title "Some organisation or a person" ;
+  dct:spatial  :location .
+  
+:location a dct:Location ;
+  dct:title  "Germany" .
