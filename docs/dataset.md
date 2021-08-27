@@ -186,7 +186,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 }
 ```
 
-####Note:
+#### Note:
 When you create a distribution entry please make sure that the distribution entry's link is described in the appropriate dataset via `dcat:distribution` predicate. 
 
 ## How to describe data services
