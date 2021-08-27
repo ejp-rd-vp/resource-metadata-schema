@@ -16,7 +16,7 @@ PREFIX sio: <http://semanticscience.org/resource/>
   dct:hasVersion xsd:string;
   dct:keyword xsd:string*;
   dct:publisher @:organisationShape;
-  dcat:landingPage IRI*
+  dcat:landingPage IRI*;
   dcat:distribution IRI*
 }
 
