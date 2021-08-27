@@ -1,66 +1,21 @@
-PREFIX dcat: <http://www.w3.org/ns/dcat#> .
-PREFIX ns0: <http://example.org/> .
-PREFIX dc: <http://purl.org/dc/terms/> .
-PREFIX prov: <http://www.w3.org/ns/prov#> .
-PREFIX odrl: <http://www.w3.org/ns/odrl/2/> .
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
-PREFIX ns1: <http://semanticscience.org/resource/> .
-PREFIX ns2: <http://purl.obolibrary.org/obo/> .
-PREFIX ns3: <http://purl.allotrope.org/ontologies/result#> .
-PREFIX schema: <http://schema.org/> .
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://example.org/DAT_675886>
-    a dcat:DataService ;
-    dcat:endpointURL "www.downloadnow.com" ;
-    dcat:endpointDescription "It is a link to download our data" ;
-    dcat:Resource dcat:Resource ;
-    dcat:servesDataset "Patientregistry" .
-
-dcat:Resource
-    a dcat:Resource ;
-    ns0:publisher ns0:EBI09394092020, ns0:ORG_0190 ;
-    ns0:resourceCreator ns0:EBI09394092020, ns0:ORG_0190 ;
-    dcat:contactPoint "Milerr Jone" ;
-    dc:conformsTo "OPEN Rule" ;
-    dc:description "for rare bone diseases" ;
-    dc:title "Bone Catalog" ;
-    dc:modified "2021-01-00" ;
-    dc:language "English" ;
-    dc:type "" ;
-    dc:relation "" ;
-    dcat:qualifiedRelation "" ;
-    dcat:keyword "" ;
-    dcat:landingPage "" ;
-    prov:qualifiedAttribution "" ;
-    dc:license "" ;
-    dc:rights "" ;
-    odrl:hasPolicy "" ;
-    dc:isReferencedBy "" ;
-    dc:issued "2021-01-00" .
-
-ns0:EBI09394092020
-    a foaf:Person, foaf:Agent ;
-    ns1:SIO_000182 "John" ;
-    ns2:IAO_0000429 "ego@gmail.com" ;
-    ns1:SIO_001324 "+44(0)0124511234" ;
-    ns1:SIO_000087 "Elselvier Journal of Science" ;
-    ns2:NCIT_C19467 "www.dcat.org" ;
-    ns2:NCIT_C40975 "John" ;
-    ns3:AFRL_0000403 "Research Officer" ;
-    dc:spatial ns0:LOC_8697 .
-
-ns0:ORG_0190
-    a foaf:Person, foaf:Agent ;
-    ns1:SIO_000185 "Organisation for rare disease " ;
-    ns1:SIO_000116 "European Union on Rare Diseases" ;
-    ns1:SIO_000136 "A website that collects information of rare diseases" ;
-    foaf:homepage "www.rarediseases.org" ;
-    dc:spatial ns0:LOC_8697 .
-
-ns0:LOC_8697
-    a <http://purl.org/ejp-rd/vocabulary/location> ;
-    schema:streetAddress "" ;
-    ns1:SIO_000665 "Brussels" ;
-    ns1:SIO_000664 "Germany" ;
-    ns2:NCIT_C76349 " EU" ;
-    ns2:NCIT_C45674 "international , Europe " .
+:api-service a dcat:DataService ;
+   dct:publisher :publisher ;        
+   dct:title "An API endpoint" ;
+   dct:description "An examplar api service" ;
+   dct:license <https://creativecommons.org/licenses/by/4.0> ;
+   dct:hasVersion "1.0" ;
+   dct:conformsTo <http://example.org/apispecs> ;
+   dcat:endpointURL <http://example.org/api> ;
+   dcat:servesDataset :dataset .
+   
+:publisher a foaf:Agent ;
+  dct:title "Some organisation or a person" ;
+  dct:spatial  :location .
+  
+:location a dct:Location ;
+  dct:title  "Germany" .
