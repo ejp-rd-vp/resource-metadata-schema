@@ -3,6 +3,7 @@
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix ordo: <http://www.orpha.net/ORDO/> .
+@prefix sio: <http://semanticscience.org/resource/> .
 
 :dataset a dcat:Dataset ;
   dct:publisher :publisher ;        
@@ -12,6 +13,7 @@
   dcat:keyword "Test", "Example" ;
   dct:license <https://creativecommons.org/licenses/by/4.0> ;
   dct:hasVersion "1.0" ;
+  sio:SIO_000001 :patientRegistry;
   dcat:landingPage <http://example.org/CAT01902019> .
 
 :publisher a foaf:Agent ;
