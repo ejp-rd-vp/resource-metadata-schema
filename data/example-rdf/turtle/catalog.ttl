@@ -1,85 +1,18 @@
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns0: <http://example.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix ns1: <http://purl.org/ejp-rd/vocabulary/> .
-@prefix ns2: <http://purl.obolibrary.org/obo/> .
-@prefix ns3: <http://semanticscience.org/resource/> .
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://example.org/CAT562396>
-    a dcat:Catalog ;
-    dcat:dataset dcat:Datasets ;
-    foaf:homepage "www.homeher.org" ;
-    dcat:service dcat:service ;
-    dcat:themeTaxonomy dcat:themes ;
-    dcat:hasPart dcat:Resource .
+:location a dct:Location ;
+  dct:title  "Germany" .
 
-dcat:Datasets
-    a dcat:Dataset ;
-    ns0:Spatial <dct:Spatial> ;
-    foaf:type "Biobank, Registries,Services,Documents" ;
-    foaf:wasGeneratedBy "EJPRD EU" ;
-    foaf:distribution "International" .
+:ErdriDOR  a  foaf:Organisation ;
+  dct:title "ErdriDOR";
+  dct:spatial  :location ;
+  foaf:page    <https://eu-rd-platform.jrc.ec.europa.eu/erdridor/> .
 
-dcat:service
-    a dcat:DataService ;
-    ns0:catalogedResource dcat:Resource ;
-    ns0:type "{enum=Biobank, Registries,Services,Documents}", "Online" ;
-    ns0:endpointURL "www.downloadnow.com" ;
-    ns0:endpointDescription "It is a link to download our data" ;
-    ns0:servesDataset "Patientregistry" .
-
-dcat:themes
-    a skos:Concept ;
-    skos:inScheme "", "Rare Bone diseases" .
-
-dcat:Resource
-    a dcat:Resources ;
-    dc:publisher foaf:person, foaf:organisation ;
-    dc:resourceCreator foaf:person, foaf:organisation ;
-    ns0:accessRight "OpenStack" ;
-    ns0:contactPoint "Milerr Jone" ;
-    ns0:conformsTo "OPEN Rule" ;
-    ns0:description "for rare bone diseases" ;
-    ns0:title "Bone Catalog" ;
-    ns0:modificationDate "2021-01-00" ;
-    ns0:language "English" ;
-    ns0:identifier "", "YUOI" ;
-    ns0:theme "" ;
-    ns0:type "", "Rare Bone diseases" ;
-    ns0:resourceRelation "", "DoD" ;
-    ns0:qualifiedRelation "", "sfds" ;
-    ns0:keyword "", "sfsg" ;
-    ns0:landingPage "", "www.yqhoo.com" ;
-    ns0:qualifiedAttribution "", "sdgfs" ;
-    ns0:license "", "drghdr" ;
-    ns0:rights "", "dfgrd" ;
-    ns0:hasPolicy "", "dh" ;
-    ns0:isReferencedBy "", "dhd" ;
-    ns0:releaseDate "2021-01-00" .
-
-foaf:person
-    a foaf:Agent ;
-    foaf:surname "John" ;
-    foaf:firstname "Mathew" ;
-    foaf:workInfoHomepage "www.dcat.org" ;
-    foaf:emailAddress "ego@gmail.com" ;
-    foaf:contactPhoneNumbe "+44(0)0124511234" ;
-    foaf:officeDesignation "Research Officer" .
-
-foaf:organisation
-    a foaf:Agent ;
-    foaf:OrgTitle "Organisation for rare disease " ;
-    foaf:OrgName "European Union on Rare Diseases" ;
-    foaf:OrgInfoHomepage "A website that collects information of rare diseases" ;
-    ns1:location <dct:Spatial> ;
-    foaf:OrgAddress "www.rarediseases.org" .
-
-<dct:Spatial>
-    a ns1:Location ;
-    dcat:continent " EU" ;
-    foaf:OrgAddress "international , Europe " ;
-    ns2:streetAddress "Hinxton Road", "" ;
-    ns2:city "Brussels" ;
-    ns3:country "Germany" .
+:catalog a dcat:Catalog ;
+  dct:publisher :ErdriDOR ;
+  dct:title "European directory of resources";
+  dct:description "Directory of resources" .

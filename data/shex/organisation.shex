@@ -1,24 +1,18 @@
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX ns0: <http://semanticscience.org/resource/>
-PREFIX dc: <http://purl.org/dc/terms/>
-PREFIX schema: <http://schema.org/>
-PREFIX ns1: <http://purl.obolibrary.org/obo/>
-PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
+PREFIX dct:   <http://purl.org/dc/terms/>
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<Organsiation>IRI {
-    a                   [foaf:Agent];
-    ns0:SIO_000185 xsd:string;
-    ns0:SIO_000116 xsd:string;
-    ns0:SIO_000136 xsd:string;
-    foaf:homepage xsd:string;
-    dc:spatial @<Location>*
+:organisationShape IRI {
+  a [foaf:Organisation];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+  dct:spatial @:locationShape*;
+  foaf:page IRI
 }
 
-<Location> IRI {
-    a               [dc:spatial] ;
-    schema:streetAddress xsd:string;
-    ns0:SIO_000665 xsd:string;
-    ns0:SIO_000664 xsd:string;
-    ns1:NCIT_C76349 xsd:string;
-    ns1:NCIT_C45674 xsd:string
-        }
+:locationShape IRI {
+  a [dct:Location];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+}
