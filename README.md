@@ -28,6 +28,7 @@ You can browse different metadata modules by visiting the links below.
 	* [Patient Registry](docs/patient-registry.md) - describes a patient registry
 	* [Biobank](docs/biobank.md) - describes a biobank
 	* [Guideline](docs/guideline.md) - describes a guideline
+	* [Dataset](docs/dataset.md) - describes a dataset
 
 ### Ontologies used in the metadata model
 
