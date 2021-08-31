@@ -2,7 +2,7 @@ PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX dct:   <http://purl.org/dc/terms/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-BASE <https://raw.githubusercontent.com/ejp-rd-vp/resource-metadata-schema/v1.0/data/shex>
+BASE <https://raw.githubusercontent.com/ejp-rd-vp/resource-metadata-schema/v1.0-branch/data/shex/>
 IMPORT <location.shex>
 
 :organisationShape IRI {
