@@ -6,6 +6,8 @@ PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+BASE <https://raw.githubusercontent.com/ejp-rd-vp/resource-metadata-schema/v1.0-branch/data/shex/>
+IMPORT <organisation.shex>
 
 :patientRegistryShape IRI {
   a [ejp:PatientRegistry];
@@ -17,21 +19,3 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
   foaf:page IRI*
 }
 
-:locationShape IRI {
-  a [dct:Location];
-  dct:title xsd:string;
-  dct:description xsd:string*;
-}
-
-:organisationShape IRI {
-  a [foaf:Organisation];
-  dct:title xsd:string;
-  dct:description xsd:string*;
-  dct:spatial @:locationShape*;
-  foaf:page IRI*
-}
-
-:populationCoverageShape IRI {
-  a [sio:SIO_001166];
-  rdfs:label ["National" "International" "Regional"]
-}

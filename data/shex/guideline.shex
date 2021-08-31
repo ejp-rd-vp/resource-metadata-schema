@@ -5,6 +5,8 @@ PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+BASE <https://raw.githubusercontent.com/ejp-rd-vp/resource-metadata-schema/v1.0-branch/data/shex/>
+IMPORT <organisation.shex>
 
 :guidelineShape IRI {
   a [ejp:Guideline];
@@ -15,9 +17,3 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
   foaf:page IRI*
 }
 
-:organisationShape IRI {
-  a [foaf:Organisation];
-  dct:title xsd:string;
-  dct:description xsd:string*;
-  foaf:page IRI*
-}
