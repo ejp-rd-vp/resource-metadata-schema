@@ -8,6 +8,7 @@ PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 BASE <https://raw.githubusercontent.com/ejp-rd-vp/resource-metadata-schema/v1.0-branch/data/shex/>
 IMPORT <organisation.shex>
+IMPORT <populationCoverage.shex>
 
 :patientRegistryShape IRI {
   a [ejp:PatientRegistry];
