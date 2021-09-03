@@ -1,3 +1,4 @@
+PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
