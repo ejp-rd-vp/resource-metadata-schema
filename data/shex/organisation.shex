@@ -10,6 +10,6 @@ IMPORT <location.shex>
   dct:title xsd:string;
   dct:description xsd:string*;
   dct:spatial @:locationShape*;
-  foaf:page IRI
+  foaf:page IRI*
 }
 
