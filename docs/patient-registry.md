@@ -48,8 +48,8 @@
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="../images/shex/patientRegistry.png" target="_blank">
-        <img src="../images/shex/patientRegistry.png"> 
+    <a href="../images/shex/patientRegistry.svg" target="_blank">
+        <img src="../images/shex/patientRegistry.svg"> 
     </a>
 </p>
 

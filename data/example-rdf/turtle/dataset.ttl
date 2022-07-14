@@ -1,0 +1,50 @@
+@prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+:cellosaurusDataset a dcat:Dataset ;
+  dct:publisher :publisher ;
+  dct:title "Cellosaurus" ;
+  dct:description "A knowledge resource on cell lines" ;
+  dcat:theme  <http://purl.obolibrary.org/obo/CLO_0000031>, <http://purl.obolibrary.org/obo/NCIT_C16403> ;
+  dcat:keyword "cell lines" ;
+  dct:license <https://creativecommons.org/licenses/by/4.0> ;
+  dct:hasVersion "39" ;
+  dcat:distribution :cellosaurusRefsDistribution, :cellosaurusXMLDistribution,  :cellosaurusTextDistribution;
+  dcat:landingPage <https://web.expasy.org/cellosaurus/> .
+
+:cellosaurusRefsDistribution a dcat:Distribution ;
+  dct:title "References file for the Cellosaurus" ;
+  dct:description "References file for the Cellosaurus" ;
+  dcat:downloadURL <https://ftp.expasy.org/databases/cellosaurus/cellosaurus_refs.txt> ;
+  dct:license <https://creativecommons.org/licenses/by/4.0> ;
+  dct:hasVersion "39" ;
+  dcat:mediaType "text/plain" ;
+  dct:publisher :publisher .
+
+:cellosaurusXMLDistribution a dcat:Distribution ;
+  dct:title "Cellosaurus data as XML" ;
+  dct:description "Cellosaurus data as XML" ;
+  dcat:downloadURL <https://ftp.expasy.org/databases/cellosaurus/cellosaurus.xml> ;
+  dct:license <https://creativecommons.org/licenses/by/4.0> ;
+  dct:hasVersion "39" ;
+  dcat:mediaType "text/xml" ;
+  dct:publisher :publisher .
+
+:cellosaurusTextDistribution a dcat:Distribution ;
+  dct:title "Cellosaurus data as plain text" ;
+  dct:description "Cellosaurus data as plain text" ;
+  dcat:downloadURL <https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt> ;
+  dct:license <https://creativecommons.org/licenses/by/4.0> ;
+  dct:hasVersion "39" ;
+  dcat:mediaType "text/plain" ;
+  dct:publisher :publisher .
+
+:publisher a foaf:Agent ;
+  dct:title "Cellosaurus - a knowledge resource on cell lines" ;
+  foaf:page <https://web.expasy.org/cellosaurus/> ;
+  dct:spatial  :location .
+
+:location a dct:Location ;
+  dct:title  "Online Resource" .

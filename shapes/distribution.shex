@@ -1,0 +1,32 @@
+PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
+PREFIX dcat:  <http://www.w3.org/ns/dcat#>
+PREFIX dct:   <http://purl.org/dc/terms/>
+PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:distributionShape IRI {
+  a [dcat:Distribution];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+  (dcat:downloadURL IRI | dcat:accessURL IRI);  
+  dct:license IRI;
+  dct:hasVersion xsd:string;
+  dcat:mediaType xsd:string*;
+  dct:publisher @:organisationShape;
+  dct:isPartOf IRI*
+}
+
+:locationShape IRI {
+  a [dct:Location];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+}
+
+:organisationShape IRI {
+  a [foaf:Agent];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+  dct:spatial @:locationShape*;
+  foaf:page IRI*
+}

@@ -26,8 +26,8 @@
 ##### ShEx figure
 
 <p align="center"> 
-    <a href="../images/shex/location.png" target="_blank">
-        <img src="../images/shex/location.png"> 
+    <a href="../images/shex/location.svg" target="_blank">
+        <img src="../images/shex/location.svg"> 
     </a>
 </p>
 
