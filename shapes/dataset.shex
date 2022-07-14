@@ -9,14 +9,14 @@ PREFIX sio: <http://semanticscience.org/resource/>
 :datasetShape IRI {
   a [dcat:Dataset];
   dct:title xsd:string;
-  dct:description xsd:string*;
-  dcat:theme IRI+;
+  dct:description xsd:string;
+  dcat:theme IRI*;
   dct:license IRI;
-  sio:SIO_000001 IRI;
-  dct:hasVersion xsd:string;
+  sio:SIO_000001 IRI?;
+  dct:hasVersion xsd:string?;
   dct:keyword xsd:string*;
   dct:publisher @:organisationShape;
-  dcat:landingPage IRI*;
+  dcat:landingPage IRI;
   dcat:distribution IRI*
 }
 

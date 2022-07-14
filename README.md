@@ -16,7 +16,7 @@ The core model is designed to represent data about a rare disease patient and bi
 The figure below gives an overview of upper level concepts and properties used in our metadata model.
 
 <p align="center"> 
-	<img src="images/resourceSemanticMetadataModel.png"> 
+	<img src="docs/ResourceMetadataSchema.png"> 
 </p> 
 
 You can browse different metadata modules by visiting the links below.
@@ -40,7 +40,7 @@ To describe different metadata modules listed above we used various exiting onto
 
 Concepts to describe resources that we use in the Rare diseases domain such as biobank and patient registry are <b>not</b> defined in resource description vocabulary as a DCAT. To overcome this issue we have extended DCAT with by added missing concepts to DCAT vocabulary.
 
-* [Data Catalog Vocabulary extension](docs/dcat-extension.md)
+* [Data Catalog Vocabulary extension](https://github.com/ejp-rd-vp/resource-metadata-schema-ontology)
 
  
 

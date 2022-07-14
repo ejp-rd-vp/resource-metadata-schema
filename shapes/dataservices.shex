@@ -8,19 +8,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :dataserviceShape IRI {
   a [dcat:DataService];
   dct:title xsd:string;
-  dct:description xsd:string*;
+  dct:description xsd:string;
+  dct:license IRI;
   dcat:endpointURL IRI;
   dcat:servesDataset IRI;
-  dct:license IRI;
-  dct:hasVersion xsd:string;
+  dct:hasVersion xsd:string?;
   dct:publisher @:organisationShape;
-  dct:conformsTo IRI
+  dct:conformsTo IRI?
 }
 
 :locationShape IRI {
   a [dct:Location];
   dct:title xsd:string;
-  dct:description xsd:string*;
+  dct:description xsd:string*
 }
 
 :organisationShape IRI {
@@ -30,3 +30,4 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:spatial @:locationShape*;
   foaf:page IRI*
 }
+

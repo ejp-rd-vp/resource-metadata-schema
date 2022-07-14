@@ -1,5 +1,0 @@
-# Background Information
-
-```
-
-```
