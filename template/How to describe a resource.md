@@ -2,7 +2,8 @@
 Here we describe the steps to describe a resource.
 
 ## Step 1
-Download or make a copy of the [EJPRD Resource Metadata template](https://docs.google.com/document/d/1I7bZzRDvSPiUy1KNoHN-KRlDQ3SK-tTpnKJ7vyZY084/edit#).
+Download or make a copy of the Google spreadsheet
+[EJPRD Resource Metadata template](https://docs.google.com/spreadsheets/d/1y-x7yf8RLvp9oZS_5fvyH6SFLMNZzP6agTl6Z_wTkx0/edit?usp=sharing).
 
 ## Step 2
 Fill in the different sheets in the spreadsheet using the sections matching the sheet names of the sections below.
@@ -44,6 +45,7 @@ A description of the location. Typically this is the address.
 Anna-Louisa-Karsch Str. 2, 10178 Berlin, Germany
 
 ### Dataset
+
 
 
 ### Distribution
