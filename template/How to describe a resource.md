@@ -6,45 +6,22 @@ Download or make a copy of the Google spreadsheet
 [EJPRD Resource Metadata template](https://docs.google.com/spreadsheets/d/1y-x7yf8RLvp9oZS_5fvyH6SFLMNZzP6agTl6Z_wTkx0/edit?usp=sharing).
 
 ## Step 2
-Fill in the different sheets in the spreadsheet using the sections matching the sheet names of the sections below.
+Fill in the different sheets in the spreadsheet in the order given below.
 
-### Organisation
+1. [Organisation](Organisation.md)
+2. [Biobank](BiobankOrPatientRegistry.md)
+3. [Dataset](Dataset.md)
+
+### Biobank
 #### Title* `Required`, `Unique`
-The name of the organisation. This is a required field and needs to be unique.
+The name of the dataset. This is a required field and needs to be unique.
 
-*Used by:* 
-`Dataset`, `Distribution`, `DataService`
-
-*Example:* 
-Human pluripotent stem cell registry
-
-#### Description* `Required`
-A description of the organisation.
+*Used by:*
+`Dataset.Is related to`
 
 *Example:*
-hPSCreg® offers the research community, legislators, regulators and the general public at large an in-depth overview on 
-the current status of human pluripotent stem cell (hPSC) research.
+hPSC-lines
 
-#### Webpages* `optional` 
-This is a comma separated list of the URLs to webpages with more information regarding the organisation. Each URL has to
-start with http:// or https://.
-
-*Example:*
-https://hpscreg.eu/
-
-#### Location title* `Required`
-The name of the location.
-
-*Example:*
-Fraunhofer-Institut für Biomedizinische Technik (IBMT)
-
-#### Location description `optional`
-A description of the location. Typically this is the address. 
-
-*Example:*
-Anna-Louisa-Karsch Str. 2, 10178 Berlin, Germany
-
-### Dataset
 
 
 
