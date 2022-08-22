@@ -2,7 +2,7 @@
 Here we list the steps to describe the metadata for an EJPRD resource.
 
 ## Step 1
-Download the [Excel spreadsheet](EJPRD Resource Metadata template.xlsx) or make a copy of the Google spreadsheet
+Download the [Excel spreadsheet](EJPRD%20Resource%20Metadata%20template.xlsx) or make a copy of the Google spreadsheet
 [EJPRD Resource Metadata template](https://docs.google.com/spreadsheets/d/1y-x7yf8RLvp9oZS_5fvyH6SFLMNZzP6agTl6Z_wTkx0/edit?usp=sharing).
 
 ## Step 2
