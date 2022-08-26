@@ -37,7 +37,7 @@ start with http:// or https://.
 > **Note** This field is `optional`
 
 ## Type
-Select either "ejp:Biobank" or "ejp:PatientRegistry" depeding on whether this describes a biobank or a patient registry.
+Select either "Biobank" or "Patient registry" depeding on whether this describes a biobank or a patient registry.
 > **Warning** This field is `required`
 
 # Example
