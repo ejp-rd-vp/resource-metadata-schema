@@ -1,7 +1,7 @@
 # Dataset
 Defines all the datasets for this EJP RD resource.
 
-## Title* `required`, `unique`
+## Title `required`, `unique`
 The name of the dataset. This is a required field and needs to be unique in this spreadsheet.
 
 *Used by:*
@@ -10,13 +10,13 @@ The name of the dataset. This is a required field and needs to be unique in this
 *Example:*
 hPSC-lines
 
-## Description* `required`
+## Description `required`
 A description of the dataset.
 
 *Example:*
 hPSCreg is a global registry for human pluripotent stem cell lines (hPSC-lines).
 
-## Theme `optional`
+## Theme `required`
 This property is optional. It consists of IRIs separated by pipes (|). When set, it specifies relevant ontology concepts
 that classify the dataset. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
 
