@@ -61,3 +61,6 @@ be sufficient to expose data about these resource through the virtual platform
 * Expose if a resource has access to biological samples, such as tissue or cell ines.
 * Expose if the resource has further contact information
 * ...
+
+## Steps for defining the metadata of your resource
+Detailed steps and the related Google/Excel spreadsheet template can be found [here](template/How%20to%20describe%20a%20resource.md) 

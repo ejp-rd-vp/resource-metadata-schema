@@ -6,13 +6,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :organisationShape IRI {
   a [foaf:Organisation];
   dct:title xsd:string;
-  dct:description xsd:string*;
-  dct:spatial @:locationShape*;
+  dct:description xsd:string?;
+  dct:spatial @:locationShape?;
   foaf:page IRI
 }
 
 :locationShape IRI {
   a [dct:Location];
   dct:title xsd:string;
-  dct:description xsd:string*;
+  dct:description xsd:string?;
 }
