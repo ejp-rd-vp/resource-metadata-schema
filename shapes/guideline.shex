@@ -1,18 +1,21 @@
 PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
 :guidelineShape IRI {
-  a [ejp:Guideline];
+  a [ejprd:Guideline];
   dct:title xsd:string;
   dct:description xsd:string*;
   dcat:theme IRI+;
+  dcat:keyword xsd:string*;
+  dct:hasVersion xsd:string;
   dct:publisher @:organisationShape;
-  foaf:page IRI*
+  dcat:landingPage IRI*;
+  dct:language xsd:string+
 }
 
 :organisationShape IRI {

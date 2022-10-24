@@ -9,9 +9,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   a [dcat:DataService];
   dct:title xsd:string;
   dct:description xsd:string;
+  dcat:endpointDescription xsd:string*;
   dct:license IRI;
   dcat:endpointURL IRI;
-  dcat:servesDataset IRI;
+  dcat:servesDataset IRI*;
   dct:hasVersion xsd:string?;
   dct:publisher @:organisationShape;
   dct:conformsTo IRI?

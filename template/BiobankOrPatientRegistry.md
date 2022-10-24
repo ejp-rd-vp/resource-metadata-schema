@@ -6,7 +6,7 @@ of a rare disease resources such as biobanks and patient registries.
 The name of the biobank or patient registry. This is a required field and needs to be unique in this spreadsheet.
 
 *Used by:*
-[Dataset](Dataset.md)`Distribution`
+[Catalog](Catalog.md)
 > **Warning** This field is `required`, and should be `unique`
 
 ## Description
@@ -16,14 +16,14 @@ A description of this biobank or patient registry.
 ## PopulationCoverage
 Gives an indication of the part of the population covered by this biobank/patient registry. This field is optional. When 
 supplied it must consist of one or more of the following values: National, International, Regional. When more than one
-value is applicable, it should be separated by pipes (|).
+value is applicable, it should be separated by commas.
 
 *Example:*
 National|International
 > **Note** This field is `optional`
 
 ## Theme
-It consists of 1 or more IRIs separated by pipes (|). When set, it specifies relevant ontology concepts
+It consists of 1 or more IRIs separated by commas. When set, it specifies relevant ontology concepts
 that classify the biobank or patient registry. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
 > **Warning** This field is `required`
 
@@ -32,12 +32,25 @@ The title of an organisation that has been specified on the [Organisation](Organ
 > **Warning** This field is `required`
 
 ## Webpages
-This is a pipe (|) separated list of the URLs to webpages with more information regarding the organisation. Each URL has to
+This is a commas separated list of the URLs to webpages with more information regarding the organisation. Each URL has to
 start with http:// or https://.
 > **Note** This field is `optional`
 
 ## Type
-Select either "Biobank" or "Patient registry" depeding on whether this describes a biobank or a patient registry.
+Select either "Biobank" or "Patient registry" depending on whether this describes a biobank or a patient registry.
+> **Warning** This field is `required`
+
+## Keywords
+The list of keywords applicable to this biobank or patient registry, separated by commas.
+
+> **Note** This field is `optional`
+
+## Language
+A comma separated list of ISO 639-1 two-letter codes for the languages this biobank or patient registry is provided in.
+
+*Example:*
+en,nl indicates that this biobank or patient registry is available in English and Dutch/Flemish.
+
 > **Warning** This field is `required`
 
 # Example

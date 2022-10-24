@@ -45,5 +45,5 @@ on the Organisation sheet.
 
 ## IsPartOf
 Refers to related resources in which this distribution is physically or logically included. This consists of a list of URLs
-separated by pipes (|).
+separated by commas.
 > **Note** This field is `optional`

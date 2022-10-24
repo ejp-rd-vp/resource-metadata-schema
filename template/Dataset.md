@@ -12,18 +12,26 @@ hPSC-lines
 > **Warning** This field is `required`, and should be `unique`
 
 ## Description
-A description of the dataset.
+A description of the dataset. It can consist of multiple strings.
 
 *Example:*
 hPSCreg is a global registry for human pluripotent stem cell lines (hPSC-lines).
 > **Note** This field is `optional`
 
 ## Theme
-This property is optional. It consists of IRIs separated by pipes (|). When set, it specifies relevant ontology concepts
-that classify the dataset. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
+Defines a list of concepts that this dataset deal with. It consists of IRIs separated by commas that specifies 
+relevant ontology concepts that classify the dataset. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
 
 *Example:*
 http://purl.obolibrary.org/obo/CLO_0037308.
+> **Warning** This field is `required`
+
+##VPConnection
+This property tells the EJP RD Virtual Platform whether this dataset is queryable or only discoverable. If the dataset is 
+queryable, it is assumed to be discoverable. The 2 option here are:
+
+- http://purl.org/ejp-rd/vocabulary/VPDiscoverable
+- http://purl.org/ejp-rd/vocabulary/VPQueryable
 > **Warning** This field is `required`
 
 ## License
@@ -43,10 +51,10 @@ Where applicable, it should provide the version as a string of text.
 
 *Example:*
 4.11.2
-> **Note** This field is `optional`
+> **Warning** This field is `required`
 
 ## Keywords
-The list of keywords applicable to this dataset, separated by pipes (|).
+The list of keywords applicable to this dataset, separated by commas.
 
 *Example:* 
 pluripotent|cell lines|stem cell
@@ -65,4 +73,12 @@ The web page from where the dataset can be browsed. The URL has to start with ht
 
 *Example:*
 https://hpscreg.eu/search?q
+> **Note** This field is `optional`.
+
+## Language
+A comma separated list of ISO 639-1 two-letter codes for the languages this dataset is provided in.
+
+*Example:*
+en,nl the indicate that the dataset is available in English and Dutch/Flemish.
+
 > **Warning** This field is `required`

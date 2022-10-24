@@ -10,9 +10,11 @@ Fill in the different sheets in the spreadsheet in the order given below.
 
 1. [Organisation](Organisation.md)
 2. [Biobank or patient registry](BiobankOrPatientRegistry.md)
-3. [Dataset](Dataset.md)
-4. [Distribution](Distribution.md)
-5. [Data Service](DataService.md)
+3. [Guideline](Guideline.md)
+4. [Dataset](Dataset.md)
+5. [Distribution](Distribution.md)
+6. [Data Service](DataService.md)
+7. [Catalog](Catalog.md)
 
 
 ## Step 3

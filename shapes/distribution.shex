@@ -9,10 +9,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   a [dcat:Distribution];
   dct:title xsd:string;
   dct:description xsd:string*;
-  (dcat:downloadURL IRI | dcat:accessURL IRI);  
+  (dcat:downloadURL IRI | dcat:accessURL IRI)?;
   dct:license IRI;
   dct:hasVersion xsd:string;
-  dcat:mediaType xsd:string*;
+  dcat:mediaType xsd:string?;
   dct:publisher @:organisationShape;
   dct:isPartOf IRI*
 }

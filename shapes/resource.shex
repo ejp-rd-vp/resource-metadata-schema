@@ -10,8 +10,12 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
   dct:title xsd:string;
   dct:description xsd:string*;
   dcat:theme IRI+;
+  dct:hasVersion xsd:string?;
+  dcat:keyword xsd:string*;
   dct:publisher @:organisationShape;
-  foaf:page IRI*
+  dcat:landingPage IRI*;
+  dct:language xsd:string+;
+  dct:license IRI?
 }
 
 :organisationShape IRI {

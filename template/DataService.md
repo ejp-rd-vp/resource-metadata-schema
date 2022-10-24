@@ -3,10 +3,15 @@ If applicable, it defines all the data services responsible for providing access
 
 ## Title
 The name of the data service. This is a required field and needs to be unique in this spreadsheet.
-> **Warning** This field is `required`, and should be `unique`
+> **Warning** This field is `required`, and should be `unique` or when this service serves multiple data
+> sets the combinations of data service with datasets needs to be unique.
 
 ## Description
 A description of this data service.
+> **Note** This field is `optional`
+
+## Description
+A description of the services available via the end-points, including their operations, parameters etc.
 > **Note** This field is `optional`
 
 ## License
@@ -18,9 +23,10 @@ This is the URL that can be used to access this data service. The URL has to sta
 > **Warning** This field is `required`
 
 ## DatasetTitle
-The name of the dataset to which this service provide access. Choose a title of a dataset by selecting at dataset title from the
-dropdown list.
-> **Warning** This field is `required`
+The name of the dataset to which this service provide access, or, when this service serves multiple datasets,
+the list of dataset titles should be provided, separated by commas.
+
+> **Note** This field is `optional`
 
 ## Version
 If applicable, it should provide the version of the data service as a string of text.

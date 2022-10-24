@@ -1,8 +1,11 @@
+# Ideally this single shex file should replace all others.
+
 PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :catalogShape IRI {
@@ -10,9 +13,87 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:title xsd:string;
   dct:description xsd:string*;
   dct:publisher @:organisationShape;
-  ejp:patientRegistry IRI*;
-  ejp:biobank IRI*;
-  ejp:guideline IRI*
+  dcat:dataset @:datasetShape*;
+  dcat:service @:dataserviceShape*;
+  dcat:catalog @:catalogShape*;
+  ejprd:patientRegistry @:patientRegistryShape*;
+  ejprd:biobank @:biobankShape*;
+  ejprd:guideline @:guidelineShape*
+}
+
+:guidelineShape IRI {
+  a [ejprd:Guideline];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+  dcat:theme IRI+;
+  dct:publisher @:organisationShape;
+  dcat:landingPage IRI*
+}
+
+:patientRegistryShape IRI {
+  a [ejprd:PatientRegistry];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+  dcat:theme IRI+;
+  dct:publisher @:organisationShape;
+  dcat:landingPage IRI*;
+  dct:language IRI+;
+  ejp:populationCoverage @:populationCoverageShape*;
+}
+
+:biobankShape IRI {
+  a [ejprd:Biobank];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+  dcat:theme IRI+;
+  dct:publisher @:organisationShape;
+  dcat:landingPage IRI*;
+  dct:language xsd:string+;
+  ejp:populationCoverage @:populationCoverageShape*;
+}
+
+:datasetShape IRI {
+  a [dcat:Dataset];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+  dcat:theme IRI+;
+  dct:publisher @:organisationShape;
+  dcat:landingPage IRI*;
+  dct:license IRI;
+  ejp:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPQueryable>];
+  sio:SIO_000001 IRI?;
+  dct:hasVersion xsd:string;
+  dcat:keyword xsd:string*;
+  dcat:distribution IRI*
+  dct:language xsd:string+
+}
+
+:dataserviceShape IRI {
+  a [dcat:DataService];
+  dct:title xsd:string;
+  dct:description xsd:string;
+  dcat:endpointDescription xsd:string*;
+  dct:license IRI;
+  dcat:endpointURL IRI;
+  dcat:servesDataset IRI*;
+  dct:hasVersion xsd:string?;
+  dcat:keyword xsd:string*;
+  dct:publisher @:organisationShape;
+  dct:conformsTo IRI?
+}
+
+
+:resourceShape IRI {
+  a [dcat:Resource];
+  dct:title xsd:string;
+  dct:description xsd:string*;
+  dcat:theme IRI+;
+  dct:hasVersion xsd:string?;
+  dcat:keyword xsd:string*;
+  dct:publisher @:organisationShape;
+  dcat:landingPage IRI*;
+  dct:language xsd:string+;
+  dct:license IRI?
 }
 
 :locationShape IRI {
@@ -27,4 +108,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:description xsd:string*;
   dct:spatial @:locationShape*;
   foaf:page IRI
+}
+
+:populationCoverageShape IRI {
+  a [sio:SIO_001166];
+  rdfs:label ["National" "International" "Regional"]
 }
