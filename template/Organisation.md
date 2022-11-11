@@ -1,5 +1,5 @@
 # Organisation
-This sheet describes all the organisations that are referenced in the definition of an EJP RD resource.
+This sheet describes an organisation that provides access to 1 or more rare disease related resources.
 
 ## Title
 The name of the organisation. This is a required field and needs to be unique. Other sheets will refer organisations by their name. 

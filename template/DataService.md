@@ -29,7 +29,7 @@ the list of dataset titles should be provided, separated by commas.
 > **Note** This field is `optional`
 
 ## Version
-If applicable, it should provide the version of the data service as a string of text.
+If applicable, it should provide the version of the data service (not the version of the data it serves) as a string of text. 
 > **Note** This field is `optional`
 
 ## Publisher
