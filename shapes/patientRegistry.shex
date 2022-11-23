@@ -6,6 +6,7 @@ PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
 
 :patientRegistryShape IRI {
   a [ejprd:PatientRegistry];
@@ -17,6 +18,8 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
   dcat:landingPage IRI*;
   dct:language IRI+;
   ejp:populationCoverage @:populationCoverageShape*;
+  dct:conformsTo IRI?;
+  (dct:accessRights IRI | odrl:hasPolicy IRI)?
 }
 
 :locationShape IRI {

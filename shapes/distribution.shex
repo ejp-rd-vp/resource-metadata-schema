@@ -4,6 +4,7 @@ PREFIX dct:   <http://purl.org/dc/terms/>
 PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
 
 :distributionShape IRI {
   a [dcat:Distribution];
@@ -14,7 +15,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:hasVersion xsd:string;
   dcat:mediaType xsd:string?;
   dct:publisher @:organisationShape;
-  dct:isPartOf IRI*
+  dct:isPartOf IRI*;
+  (dct:accessRights IRI | odrl:hasPolicy IRI)?
 }
 
 :locationShape IRI {

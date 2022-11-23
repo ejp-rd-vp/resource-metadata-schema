@@ -18,6 +18,10 @@ It consists of 1 or more IRIs separated by commas. When set, it specifies releva
 that classifies the guideline. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
 > **Warning** This field is `required`
 
+## ConformTo
+The IRI of the ontology this dataset adheres to and from which concepts are used in defining the Theme for this dataset.
+> **Recommendation** Specifying a value for this field is `recommended`
+
 ## Publisher
 The title of an organisation that has been specified on the [Organisation](Organisation.md) sheet.
 > **Warning** This field is `required`
@@ -34,3 +38,14 @@ A comma separated list of ISO 639-1 two-letter codes for the languages this guid
 en,nl indicates that this guideline is available in English and Dutch/Flemish.
 
 > **Warning** This field is `required`
+
+## Access
+A URL where information regarding who is allowed to access this resource is provided.
+
+> **Recommendation** Specifying a value for this field is `recommended`
+
+## AccessType
+Select either "ODRL Policy" if the access to this resource is defined compliant to ODRL policy or "Access Information" if
+this URL provides access information.
+
+> **Recommendation** Specifying a value for this field is `recommended`

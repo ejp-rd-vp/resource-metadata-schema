@@ -20,13 +20,18 @@ hPSCreg is a global registry for human pluripotent stem cell lines (hPSC-lines).
 
 ## Theme
 Defines a list of concepts that this dataset deal with. It consists of IRIs separated by commas that specifies 
-relevant ontology concepts that classify the dataset. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
+relevant ontology concepts that classify the dataset. Typically these can be looked up using the 
+[Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS). 
 
 *Example:*
 http://purl.obolibrary.org/obo/CLO_0037308.
 > **Warning** This field is `required`
 
-##VPConnection
+## ConformTo
+The IRI of the ontology this dataset adheres to and from which concepts are used in defining the Theme for this dataset.
+> **Recommendation** Specifying a value for this field is `recommended`
+
+## VPConnection
 This property tells the EJP RD Virtual Platform whether this dataset is queryable or only discoverable. If the dataset is 
 queryable, it is assumed to be discoverable. The 2 option here are:
 
@@ -82,3 +87,14 @@ A comma separated list of ISO 639-1 two-letter codes for the languages this data
 en,nl the indicate that the dataset is available in English and Dutch/Flemish.
 
 > **Warning** This field is `required`
+
+## Access
+A URL where information regarding who is allowed to access this resource is provided.
+
+> **Recommendation** Specifying a value for this field is `recommended`
+
+## AccessType
+Select either "ODRL Policy" if the access to this resource is defined compliant to ODRL policy or "Access Information" if
+this URL provides access information.
+
+> **Recommendation** Specifying a value for this field is `recommended`

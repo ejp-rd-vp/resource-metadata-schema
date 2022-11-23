@@ -37,7 +37,17 @@ This is the organisation responsible for this data service. Choose an organisati
 select the title from the dropdown list.
 > **Warning** This field is `required`
 
-## ConformTo 
+## ConformTo
 If applicable, a URL to the specification this data service implements and adheres to. The URL has to start with http:// or https://.
 > **Note** This field is `optional`
 
+## Access
+A URL where information regarding who is allowed to access this resource is provided.
+
+> **Recommendation** Specifying a value for this field is `recommended`
+
+## AccessType
+Select either "ODRL Policy" if the access to this resource is defined compliant to ODRL policy or "Access Information" if
+this URL provides access information.
+
+> **Recommendation** Specifying a value for this field is `recommended`

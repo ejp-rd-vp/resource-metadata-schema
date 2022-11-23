@@ -5,6 +5,7 @@ PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
 
 :datasetShape IRI {
   a [dcat:Dataset];
@@ -18,8 +19,10 @@ PREFIX sio: <http://semanticscience.org/resource/>
   sio:SIO_000001 IRI?;
   dct:hasVersion xsd:string;
   dcat:keyword xsd:string*;
-  dcat:distribution IRI*
-  dct:language xsd:string+
+  dcat:distribution IRI*;
+  dct:language xsd:string+;
+  dct:conformsTo IRI?;
+  (dct:accessRights IRI | odrl:hasPolicy IRI)?
 }
 
 :locationShape IRI {

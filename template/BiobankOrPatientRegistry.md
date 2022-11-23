@@ -53,6 +53,17 @@ en,nl indicates that this biobank or patient registry is available in English an
 
 > **Warning** This field is `required`
 
+## Access
+A URL where information regarding who is allowed to access this resource is provided.
+
+> **Recommendation** Specifying a value for this field is `recommended`
+
+## AccessType
+Select either "ODRL Policy" if the access to this resource is defined compliant to ODRL policy or "Access Information" if
+this URL provides access information.
+
+> **Recommendation** Specifying a value for this field is `recommended`
+
 # Example
 <table>
   <tr>

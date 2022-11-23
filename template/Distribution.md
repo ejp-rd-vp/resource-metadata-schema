@@ -47,3 +47,14 @@ on the Organisation sheet.
 Refers to related resources in which this distribution is physically or logically included. This consists of a list of URLs
 separated by commas.
 > **Note** This field is `optional`
+
+## Access
+A URL where information regarding who is allowed to access this resource is provided.
+
+> **Recommendation** Specifying a value for this field is `recommended`
+
+## AccessType
+Select either "ODRL Policy" if the access to this resource is defined compliant to ODRL policy or "Access Information" if
+this URL provides access information.
+
+> **Recommendation** Specifying a value for this field is `recommended`
