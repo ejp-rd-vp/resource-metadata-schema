@@ -23,6 +23,7 @@
 @prefix sio:  <http://semanticscience.org/resource/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ordo: <http://www.orpha.net/ORDO/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :biobank a ejp:Biobank ;
   dct:publisher :organisation ;        
@@ -30,6 +31,8 @@
   ejp:populationCoverage  :population_coverage ;
   dcat:theme  ordo:Orphanet_171895 ;
   foaf:page <http://www.stammzellspende.at> .
+
+ordo:Orphanet_171895 a skos:Concept . # Declaration to comply with dcat:theme range of skos:Concept
 
 :organisation a foaf:Organisation ;
   dct:title "Fonds Österreichisches Stammzellregister" ;
