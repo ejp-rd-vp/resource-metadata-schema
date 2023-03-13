@@ -10,7 +10,6 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   a [dcat:DataService];
   dct:title xsd:string;
   dct:description xsd:string*;
-  dcat:theme IRI+;
   dcat:endpointDescription xsd:string*;
   dct:license IRI;
   dcat:endpointURL IRI;

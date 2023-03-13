@@ -14,15 +14,6 @@ A description of this data service.
 A description of the services available via the end-points, including their operations, parameters etc.
 > **Note** This field is `optional`
 
-## Theme
-Defines a list of concepts that this dataset deal with. It consists of IRIs separated by commas that specifies
-relevant ontology concepts that classify the data served by this data service. Typically these can be looked up using the
-[Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
-
-*Example:*
-http://purl.obolibrary.org/obo/CLO_0037308.
-> **Warning** This field is `required`
-
 ## License
 This should contain a URL that provides details regarding the license that is applicable to this data service.
 > **Warning** This field is `required`
