@@ -31,6 +31,13 @@ that classify the biobank or patient registry. Typically these can be looked up 
 The title of an organisation that has been specified on the [Organisation](Organisation.md) sheet.
 > **Warning** This field is `required`
 
+
+## PersonalData
+This field is used to indicate whether this biobank or patient registry deals with personal data or not. If this
+biobank or patient registry deals with personal data, the value of this field should be "Yes", else "No".
+
+> **Warning** This field is `required`.
+
 ## Webpages
 This is a commas separated list of the URLs to webpages with more information regarding the organisation. Each URL has to
 start with http:// or https://.

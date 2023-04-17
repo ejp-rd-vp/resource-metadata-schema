@@ -18,6 +18,12 @@ A description of the services available via the end-points, including their oper
 This should contain a URL that provides details regarding the license that is applicable to this data service.
 > **Warning** This field is `required`
 
+## PersonalData
+This field is used to indicate whether this dataset deals with personal data or not. If this dataset deals with personal
+data, the value of this field should be "Yes", else "No".
+
+> **Warning** This field is `required`.
+
 ## EndpointURL
 This is the URL that can be used to access this data service. The URL has to start with http:// or https://.
 > **Warning** This field is `required`

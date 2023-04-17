@@ -4,6 +4,7 @@ PREFIX dct:   <http://purl.org/dc/terms/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
 
 :resourceShape IRI {
   a [dcat:Resource];
@@ -17,7 +18,8 @@ PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
   dct:language xsd:string+;
   dct:license IRI?;
   dct:conformsTo IRI?;
-  (dct:accessRights IRI | odrl:hasPolicy IRI)?
+  (dct:accessRights IRI | odrl:hasPolicy IRI)?;
+  ejprd:personalData xsd:boolean?
 }
 
 :organisationShape IRI {

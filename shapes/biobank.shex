@@ -7,6 +7,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
+PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
 
 :biobankShape IRI {
   a [ejrdp:Biobank];
@@ -17,7 +18,8 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dct:publisher @:organisationShape;
   dcat:landingPage IRI*;
   dct:language xsd:string+;
-  ejp:populationCoverage @:populationCoverageShape*;
+  ejprd:populationCoverage @:populationCoverageShape*;
+  ejprd:personalData xsd:boolean
 }
 
 :locationShape IRI {

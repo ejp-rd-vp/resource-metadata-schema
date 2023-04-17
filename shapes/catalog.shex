@@ -38,7 +38,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:publisher @:organisationShape;
   dcat:landingPage IRI*;
   dct:language IRI+;
-  ejp:populationCoverage @:populationCoverageShape*;
+  ejprd:populationCoverage @:populationCoverageShape*;
+  ejprd:personalData xsd:boolean
 }
 
 :biobankShape IRI {
@@ -49,7 +50,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:publisher @:organisationShape;
   dcat:landingPage IRI*;
   dct:language xsd:string+;
-  ejp:populationCoverage @:populationCoverageShape*;
+  ejprd:populationCoverage @:populationCoverageShape*;
+   ejprd:personalData xsd:boolean
 }
 
 :datasetShape IRI {
@@ -64,8 +66,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   sio:SIO_000001 IRI?;
   dct:hasVersion xsd:string;
   dcat:keyword xsd:string*;
-  dcat:distribution IRI*
-  dct:language xsd:string+
+  dcat:distribution IRI*;
+  dct:language xsd:string+;
+  ejprd:personalData xsd:boolean
 }
 
 :dataserviceShape IRI {
@@ -79,7 +82,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:hasVersion xsd:string?;
   dcat:keyword xsd:string*;
   dct:publisher @:organisationShape;
-  dct:conformsTo IRI?
+  dct:conformsTo IRI?;
+  (dct:accessRights IRI | odrl:hasPolicy IRI)?;
+  ejprd:personalData xsd:boolean
 }
 
 

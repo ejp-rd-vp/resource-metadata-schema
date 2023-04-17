@@ -46,6 +46,13 @@ This should contain a URL that provides details regarding the license that is ap
 https://creativecommons.org/licenses/by/4.0
 > **Warning** This field is `required`
 
+## PersonalData
+This field is used to indicate whether this dataset deals with personal data or not. If this dataset deals with personal 
+data, the value of this field should be "Yes", else "No".
+
+> **Warning** This field is `required`.
+
+
 ## IsRelatedTo
 When the dataset refers to a biobank or patient registry, it should contain the title of a [biobank or patient registry](BiobankOrPatientRegistry.md)
 as defined on BiobankPatientRegistry sheet.

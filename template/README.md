@@ -33,12 +33,6 @@ or guidelines together under a single title, you need to fill in this sheet.
 Export the spreadsheet. We recommend you export the spreadsheet as a tab-delimited (TSV) file. This is because it is very likely
 that commas will be used in descriptions, addresses etc. 
 
-# Examples
-## Simple Data Set - GWAS Associations
-
-## Simple Data Service - OLS
-
-## Catalog example - EBI providing access to OLS, OxO & GWAS.
 
 
 
