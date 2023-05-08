@@ -10,6 +10,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX datacite: <http://purl.org/spar/datacite/> 
 
 # Collection in MIABIS 2.0 represents a set of samples with at least one common characteristic (
 :collectionShape IRI {
@@ -53,19 +54,12 @@ PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
   dct:description xsd:stirng*;
   dcat:landingPage IRI*;
   obo:OBIB_0000735 :biobankOrganizationShape; # obo:OBIB_0000735 is "owned by"
-  dct:spatial :locationShape;
+  dct:spatial IRI*;
   dcat:contactPoint [vcard:Individual];
   obo:BFO_0000051 @:collectionShape+; # obo:BFO_0000051 is "has part"
-  dct:spatial @:locationShape
 }
 
 :biobankOrganizationShape IRI {
   rdf:type [foaf:Organization obo:OBIB_0000623]; # obo:OBIB_0000623 is Biobank Organization
   obo:OBIB_0000732 @:biobankShape # OBIB_0000732 is "owns"
-}
-
-:locationShape IRI {
-  rdf:type [dct:Location];
-  dct:title xsd:string;
-  dct:description xsd:string*;
 }
