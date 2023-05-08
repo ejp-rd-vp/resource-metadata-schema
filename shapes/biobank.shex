@@ -7,17 +7,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
-PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 
-:biobankShape IRI {
-  a [ejrdp:Biobank];
+# Collection in MIABIS 2.0 represents a set of samples with at least one common characteristic (
+:collectionShape IRI {
+  rdf:type [dcat:Resource dcat:Dataset obo:OBIB_0000625]; # obo:OBIB_0000625 is "Hosted Study Collection"
   dct:title xsd:string;
+  dct:alternative xsd:string*;
   foaf:logo IRI?;
   dct:description xsd:string*;
   dct:license IRI;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;
-  dct:publisher @:organisationShape;
+  dct:publisher [foaf:Agent];
   dcat:landingPage IRI*;
   dct:language xsd:string+;
   ejprd:populationCoverage ["National" "International" "Regional" "European"];
@@ -29,20 +33,7 @@ PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
 }
 
 :locationShape IRI {
-  a [dct:Location];
+  rdf:type [dct:Location];
   dct:title xsd:string;
   dct:description xsd:string*;
-}
-
-:organisationShape IRI {
-  a [foaf:Organisation];
-  dct:title xsd:string;
-  dct:description xsd:string*;
-  dct:spatial @:locationShape;
-  foaf:page IRI*
-}
-
-:populationCoverageShape IRI {
-  a [sio:SIO_001166];
-  rdfs:label ["National" "International" "Regional"]
 }
