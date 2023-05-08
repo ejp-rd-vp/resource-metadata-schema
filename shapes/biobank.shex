@@ -62,4 +62,4 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
 :biobankOrganizationShape IRI {
   rdf:type [foaf:Organization obo:OBIB_0000623]; # obo:OBIB_0000623 is Biobank Organization
   obo:OBIB_0000732 @:biobankShape # OBIB_0000732 is "owns"
-}
+}git 
