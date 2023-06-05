@@ -52,7 +52,7 @@ These two concepts of MIABIS have been mapped to DCAT:Resources and denoted usin
   dcat:theme ordo:Orphanet_589 .
 
 :biobank
-  a obo:OBIB_0000616, dcat:Resource;
+  a obo:OBIB_0000623, dcat:Resource;
   dct:identifier "biobank-id";
   dct:title "Biobank of Rare Diseases";
   dct:alternative "BRD";
