@@ -14,7 +14,7 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
 
 # Collection in MIABIS 2.0 represents a set of samples with at least one common characteristic (
 :collectionShape IRI {
-  rdf:type [dcat:Resource dcat:Dataset obo:OBIB_0000625]; # obo:OBIB_0000625 is "Hosted Study Collection"
+  rdf:type [dcat:Resource dcat:Dataset obo:OBIB_0000616]; # obo:OBIB_0000616 is "Biobank"
   dct:identifier xsd:string;
   dct:title xsd:string;
   dct:alternative xsd:string*;
@@ -23,7 +23,6 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
   dct:license IRI;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;
-  dct:publisher [foaf:Agent];
   dcat:landingPage IRI*;
   dct:language xsd:string+;
   ejprd:populationCoverage ["National" "International" "Regional" "European"];
@@ -33,33 +32,26 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
   odrl:hasPolicy IRI?;
   dct:conformsTo IRI?
   dct:contactPoint [vcard:Individual];
-  obo:BFO_0000050 @:biobankShape # obo:BFO_0000050 is "part of"
-  # missing mapping of some properties that are present in MIABIS:
-  # age low
-  # age high
-  # age unit
-  # data categories
-  # material type
-  # storage temperature
-  # collection type
+  obo:OBIB_0000735 @:biobankShape # obo:OBIB_0000735 is "is owned by", reverse of OBIB_0000732 "owns"
 }
 
 # In MIABIS, Biobank is defined as an organization or an organizational unit that stores samples and data related to the samples.
 # Only Organizational property are used to describe a Biobank
 :biobankShape IRI {
-  rdf:type [dcat:Resource obo:OBIB_0000616]; # obo:OBIB_0000616 is Biobank
+  rdf:type [dcat:Resource obo:OBIB_0000623]; # obo:OBIB_0000623 is Biobank Organization
   dct:identifier xsd:string;
   dct:title xsd:string;
   dct:alternative xsd:string*;
   dct:description xsd:stirng*;
   dcat:landingPage IRI*;
-  obo:OBIB_0000735 :biobankOrganizationShape; # obo:OBIB_0000735 is "owned by"
+  dcat:publisher @:biobankOrganizationShape;
   dct:spatial IRI*;
   dcat:contactPoint [vcard:Individual];
-  obo:BFO_0000051 @:collectionShape+; # obo:BFO_0000051 is "has part"
+  obo:OBIB_0000732 @:collectionShape+; # OBIB_0000732 is "owns"
 }
 
 :biobankOrganizationShape IRI {
   rdf:type [foaf:Organization obo:OBIB_0000623]; # obo:OBIB_0000623 is Biobank Organization
+  foaf:name xsd:string;
   obo:OBIB_0000732 @:biobankShape # OBIB_0000732 is "owns"
-}git 
+}

@@ -6,7 +6,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix lang: <http://id.loc.gov/vocabulary/iso639-1/> .
-@prefix fdp-o: <https://w3id.org/fdp/fdp-o#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
@@ -15,10 +14,9 @@
 
 
 :collection
-  a obo:OBIB_0000645, dcat:Dataset;
+  a obo:OBIB_0000616, dcat:Dataset;
   dct:identifier "collection-id";
-  dct:isPartOf :catalog;
-  obo:BFO_0000050 :biobank;
+  obo:OBIB_0000735 :biobank;
   dct:title "Muscle tissue collection";
   dcat:contactPoint [ a vcard:Individual;
       vcard:email <mailto:info@ejprdbiobank.org>;
@@ -27,10 +25,7 @@
       vcard:hasHonorificSuffix "PhD"
     ];
   dct:description "Example collection of samples";
-  dcat:theme ordo:Orphanet_589;
-  fdp-o:metadataIdentifier [ a datacite:Identifier;
-      dct:identifier :collection
-    ] .
+  dcat:theme ordo:Orphanet_589 .
 
 :biobank
   a obo:OBIB_0000616, dcat:Resource;
@@ -39,7 +34,7 @@
   dct:alternative "BRD";
   dct:description "Biobank with collections of biopsies of muscular diseases";
   dcat:landingPage <https://examplebiobank.org>;
-  obo:OBIB_0000735 :biobankOrganization;
+  dct:publisher :biobankOrganization;
   dct:spatial  <http://publications.europa.eu/resource/authority/country/AUT>;;
   dcat:contactPoint [ a vcard:Individual;
       vcard:email <mailto:director@ejprdbiobank.org>;
@@ -47,12 +42,8 @@
       vcard:hasFamilyName "Rossi";
       vcard:hasHonorificSuffix "PhD"
     ];
-  obo:BFO_0000051 :collection;
-  fdp-o:metadataIdentifier [ a datacite:Identifier;
-      dct:identifier :biobank
-  ] .
+  obo:OBIB_0000732 :collection .
 
 :biobankOrganization 
-  a obo:OBIB_0000623, foaf:Organization;
-  foaf:name "University of Muscle Diseases";
-  obo:OBIB_0000732 :biobank .
+  a foaf:Organization;
+  foaf:name "University of Muscle Diseases" .
