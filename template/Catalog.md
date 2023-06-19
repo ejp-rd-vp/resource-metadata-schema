@@ -45,3 +45,11 @@ this columns needs to be filled with a list of CatalogTitles from this tab, that
 again separated by commas.
 
 > **Note** This field is `optional
+
+## VPConnection
+This property tells the EJP RD Virtual Platform whether this dataset is queryable or only discoverable. If the dataset is
+queryable, it is assumed to be discoverable. The 2 option here are:
+
+- http://purl.org/ejp-rd/vocabulary/VPDiscoverable
+- http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable
+> **Warning** This field is `required`

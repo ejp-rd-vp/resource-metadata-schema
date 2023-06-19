@@ -68,7 +68,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dcat:keyword xsd:string*;
   dcat:distribution IRI*;
   dct:language xsd:string+;
-  ejprd:personalData xsd:boolean
+  ejprd:personalData xsd:boolean;
+  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable>]
 }
 
 :dataserviceShape IRI {

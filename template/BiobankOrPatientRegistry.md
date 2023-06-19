@@ -38,6 +38,15 @@ biobank or patient registry deals with personal data, the value of this field sh
 
 > **Warning** This field is `required`.
 
+## VPConnection
+This property tells the EJP RD Virtual Platform whether this dataset is queryable or only discoverable. If the dataset is
+queryable, it is assumed to be discoverable. The 2 option here are:
+
+- http://purl.org/ejp-rd/vocabulary/VPDiscoverable
+- http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable
+> **Warning** This field is `required`
+
+
 ## Webpages
 This is a commas separated list of the URLs to webpages with more information regarding the organisation. Each URL has to
 start with http:// or https://.

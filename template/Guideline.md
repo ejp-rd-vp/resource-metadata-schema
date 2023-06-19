@@ -22,6 +22,14 @@ that classifies the guideline. Typically these can be looked up using the [Ontol
 The IRI of the ontology this dataset adheres to and from which concepts are used in defining the Theme for this dataset.
 > **Recommendation** Specifying a value for this field is `recommended`
 
+## VPConnection
+This property tells the EJP RD Virtual Platform whether this dataset is queryable or only discoverable. If the dataset is
+queryable, it is assumed to be discoverable. The 2 option here are:
+
+- http://purl.org/ejp-rd/vocabulary/VPDiscoverable
+- http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable
+> **Warning** This field is `required`
+
 ## Publisher
 The title of an organisation that has been specified on the [Organisation](Organisation.md) sheet.
 > **Warning** This field is `required`
