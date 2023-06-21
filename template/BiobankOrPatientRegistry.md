@@ -18,13 +18,10 @@ A description of this biobank or patient registry.
 > **Note** This field is `optional`
 
 ## PopulationCoverage
-Gives an indication of the part of the population covered by this biobank/patient registry. This field is optional. When 
-supplied it must consist of one or more of the following values: National, International, Regional. When more than one
-value is applicable, it should be separated by commas.
+Gives an indication of the part of the population covered by this biobank/patient registry. This field must have 1 of 
+the following values: "National", "International", "Regional" or "European". 
+> **Warning** This field is `required`
 
-*Example:*
-National|International
-> **Note** This field is `optional`
 
 ## Theme
 It consists of 1 or more IRIs separated by commas. When set, it specifies relevant ontology concepts
@@ -92,24 +89,3 @@ this URL provides access information.
 
 > **Recommendation** Specifying a value for this field is `recommended`
 
-# Example
-<table>
-  <tr>
-   <td><strong>Title</strong></td>
-   <td><strong>Description</strong></td>
-   <td><strong>PopulationCoverage</strong></td>
-   <td><strong>Theme</strong></td>
-   <td><strong>Publisher</strong></td>
-   <td><strong>Webpages</strong></td>
-   <td><strong>Type</strong></td>
-  </tr>
-  <tr>
-   <td>ECEMC: Registry of the Spanish Collaborative Study of Congenital Malformations</td>
-   <td>The ECEMC investigates the causes of congenital defects and malformations that are observed in newborn children.</td>
-   <td>National</td>
-   <td>http://www.orpha.net/ORDO/Orphanet_558|http://purl.obolibrary.org/obo/OMIABIS_0001002</td>
-   <td>Unidad de Investigación sobre Anomalías Congénitas</td>
-   <td>http://www.fundacion1000.es/ecemc</td>
-   <td>ejp:PatientRegistry</td>
-  </tr>
-</table>

@@ -19,7 +19,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dct:publisher @:organisationShape;
   dcat:landingPage IRI*;
   dct:language IRI+;
-  ejprd:populationCoverage @:populationCoverageShape*;
+  ejprd:populationCoverage ["National" "International" "Regional" "European"];
   dct:conformsTo IRI?;
   (dct:accessRights IRI | odrl:hasPolicy IRI)?;
   ejprd:personalData xsd:string?;
