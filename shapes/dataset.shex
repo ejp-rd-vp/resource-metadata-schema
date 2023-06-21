@@ -15,7 +15,6 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dct:publisher @:organisationShape;
   dcat:landingPage IRI*;
   dct:license IRI;
-  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPQueryable>];
   sio:SIO_000001 IRI?;
   dct:hasVersion xsd:string;
   dcat:keyword xsd:string*;
@@ -24,7 +23,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dct:conformsTo IRI?;
   (dct:accessRights IRI | odrl:hasPolicy IRI)?;
   ejprd:personalData xsd:boolean;
-  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable>]
+  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscovery>]
 }
 
 :locationShape IRI {

@@ -20,7 +20,7 @@ PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
   dct:language xsd:string+;
   ejprd:populationCoverage @:populationCoverageShape*;
   ejprd:personalData xsd:boolean;
-  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable>]
+  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscovery>]
 }
 
 :locationShape IRI {

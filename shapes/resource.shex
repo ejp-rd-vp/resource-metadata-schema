@@ -20,7 +20,7 @@ PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
   dct:conformsTo IRI?;
   (dct:accessRights IRI | odrl:hasPolicy IRI)?;
   ejprd:personalData xsd:boolean?;
-  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable>]
+  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscovery>]
 }
 
 :organisationShape IRI {

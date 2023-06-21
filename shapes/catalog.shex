@@ -62,14 +62,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dct:publisher @:organisationShape;
   dcat:landingPage IRI*;
   dct:license IRI;
-  ejp:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPQueryable>];
   sio:SIO_000001 IRI?;
   dct:hasVersion xsd:string;
   dcat:keyword xsd:string*;
   dcat:distribution IRI*;
   dct:language xsd:string+;
   ejprd:personalData xsd:boolean;
-  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable>]
+  ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscovery>]
 }
 
 :dataserviceShape IRI {

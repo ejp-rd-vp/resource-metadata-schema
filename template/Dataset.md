@@ -32,8 +32,8 @@ The IRI of the ontology this dataset adheres to and from which concepts are used
 > **Recommendation** Specifying a value for this field is `recommended`
 
 ## VPConnection
-This property tells the EJP RD Virtual Platform whether this dataset is queryable or only discoverable. If the dataset is
-queryable, it is assumed to be discoverable. The 2 option here are:
+This property tells the EJP RD Virtual Platform whether content of this resource is discoverable or whether
+the resource is discoverable. The 2 option here are:
 
 - http://purl.org/ejp-rd/vocabulary/VPDiscoverable
 - http://purl.org/ejp-rd/vocabulary/VPContentDiscovery
