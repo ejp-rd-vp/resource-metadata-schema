@@ -41,7 +41,7 @@ the resource is discoverable. The 2 option here are:
 
 ## EndpointURL
 This is the URL that can be used to access this data service. The URL has to start with http:// or https://.
-> **Warning** This field is `required`
+> **Note** This field is `optional`
 
 ## DatasetTitle
 The name of the dataset to which this service provide access, or, when this service serves multiple datasets,

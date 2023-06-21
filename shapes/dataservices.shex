@@ -13,7 +13,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dct:description xsd:string*;
   dcat:endpointDescription xsd:string*;
   dct:license IRI;
-  dcat:endpointURL IRI;
+  dcat:endpointURL IRI?;
   dcat:servesDataset IRI*;
   dct:hasVersion xsd:string?;
   dct:publisher @:organisationShape;
