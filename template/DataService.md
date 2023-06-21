@@ -52,11 +52,17 @@ the resource is discoverable. The 2 option here are:
 This is the URL that can be used to access this data service. The URL has to start with http:// or https://.
 > **Note** This field is `optional`
 
-## DatasetTitle
+## DatasetTitle (dcat:servesData)
 The name of the dataset to which this service provide access, or, when this service serves multiple datasets,
 the list of dataset titles should be provided, separated by commas.
 
 > **Note** This field is `optional`
+ 
+## AccessService
+A data service that gives access to the distribution of the dataset
+
+> **Note** This field is `optional`
+
 
 ## Version
 If applicable, it should provide the version of the data service (not the version of the data it serves) as a string of text. 
