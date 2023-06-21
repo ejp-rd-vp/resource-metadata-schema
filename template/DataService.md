@@ -58,8 +58,9 @@ This is the organisation responsible for this data service. Choose an organisati
 select the title from the dropdown list.
 > **Warning** This field is `required`
 
-## ConformTo
-If applicable, a URL to the specification this data service implements and adheres to. The URL has to start with http:// or https://.
+## ConformsTo
+The standard that the output data from the service will conform to - e.g. JSON-LD, or .CSV.
+If applicable, it should have a URI as a value, that points to the spec document of that data standard.
 > **Note** This field is `optional`
 
 ## Access

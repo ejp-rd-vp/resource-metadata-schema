@@ -43,9 +43,11 @@ https://w3id.org/ejp-rd/resources/licenses/v1.0/.
 ## PersonalData
 Set to "true" if the resource onboarded to the Virtual Platform contains personal data, personal data 
 meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".
-
-
 > **Warning** This field is `required`.
+
+## ConformsTo
+If applicable, it should point to the IRI an established standard to which the described resource conforms
+> **Recommendation** Specifying a value for this field is `recommended`
 
 ## VPConnection
 This property tells the EJP RD Virtual Platform whether content of this resource is discoverable or whether 

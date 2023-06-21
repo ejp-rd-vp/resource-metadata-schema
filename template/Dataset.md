@@ -42,7 +42,7 @@ relevant ontology concepts that classify the dataset. Typically these can be loo
 http://purl.obolibrary.org/obo/CLO_0037308.
 > **Warning** This field is `required`
 
-## ConformTo
+## ConformsTo
 The IRI of the ontology this dataset adheres to and from which concepts are used in defining the Theme for this dataset.
 > **Recommendation** Specifying a value for this field is `recommended`
 

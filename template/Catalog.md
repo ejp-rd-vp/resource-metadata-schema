@@ -65,6 +65,10 @@ again separated by commas.
 
 > **Note** This field is `optional
 
+## ConformsTo
+If applicable, it should point to the IRI an established standard to which the described resource conforms
+> **Recommendation** Specifying a value for this field is `recommended`
+
 ## VPConnection
 This property tells the EJP RD Virtual Platform whether content of this resource is discoverable or whether
 the resource is discoverable. The 2 option here are:

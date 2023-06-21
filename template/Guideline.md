@@ -32,8 +32,8 @@ It consists of 1 or more IRIs separated by commas. When set, it specifies releva
 that classifies the guideline. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
 > **Warning** This field is `required`
 
-## ConformTo
-The IRI of the ontology this dataset adheres to and from which concepts are used in defining the Theme for this dataset.
+## ConformsTo
+If applicable, it should point to the IRI an established standard to which the described resource conforms
 > **Recommendation** Specifying a value for this field is `recommended`
 
 ## VPConnection
