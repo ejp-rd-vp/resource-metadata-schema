@@ -28,8 +28,8 @@ data, the value of this field should be "Yes", else "No".
 This property tells the EJP RD Virtual Platform whether content of this resource is discoverable or whether
 the resource is discoverable. The 2 option here are:
 
-- http://purl.org/ejp-rd/vocabulary/VPDiscoverable
-- http://purl.org/ejp-rd/vocabulary/VPContentDiscovery
+- http://purl.org/ejp-rd/vocabulary/VPDiscoverable: indicates that you are requesting to be indexed by the platform
+- http://purl.org/ejp-rd/vocabulary/VPContentDiscovery: indicates that you have implemented the /individuals interface for Beacon2
 > **Warning** This field is `required`
 
 ## EndpointURL
