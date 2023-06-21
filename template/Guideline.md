@@ -8,6 +8,10 @@ The name of the guideline. This is a required field and needs to be unique in th
 [Catalog](Catalog.md)
 > **Warning** This field is `required`, and should be `unique`
 
+## Logo
+A graphic representation of this resource.
+> **Note** This field is `optional`
+
 ## Description
 A description of this guideline.
 > **Note** This field is `optional`

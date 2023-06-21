@@ -57,6 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :datasetShape IRI {
   a [dcat:Dataset];
   dct:title xsd:string;
+  foaf:logo IRI?;
   dct:description xsd:string*;
   dcat:theme IRI+;
   dct:publisher @:organisationShape;

@@ -11,6 +11,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
 :patientRegistryShape IRI {
   a [ejprd:PatientRegistry];
   dct:title xsd:string;
+  foaf:logo IRI?;
   dct:description xsd:string*;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;

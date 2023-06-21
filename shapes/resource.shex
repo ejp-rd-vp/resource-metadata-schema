@@ -9,6 +9,7 @@ PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
 :resourceShape IRI {
   a [dcat:Resource];
   dct:title xsd:string;
+  foaf:logo IRI?;
   dct:description xsd:string*;
   dcat:theme IRI+;
   dct:hasVersion xsd:string?;

@@ -7,6 +7,10 @@ The name of the dataset. This is a required field and needs to be unique in this
 *Used by:*
 `Distribution`
 
+## Logo
+A graphic representation of this resource.
+> **Note** This field is `optional`
+
 *Example:*
 hPSC-lines
 > **Warning** This field is `required`, and should be `unique`

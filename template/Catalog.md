@@ -8,6 +8,10 @@ The name of the catalog. This is a required field and needs to be unique in this
 
 > **Warning** This field is `required`, and should be `unique`
 
+## Logo
+A graphic representation of this resource.
+> **Note** This field is `optional`
+
 ## Description
 A brief description of the catalog. It can consist of multiple strings.
 

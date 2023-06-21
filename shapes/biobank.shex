@@ -12,6 +12,7 @@ PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
 :biobankShape IRI {
   a [ejrdp:Biobank];
   dct:title xsd:string;
+  foaf:logo IRI?;
   dct:description xsd:string*;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;

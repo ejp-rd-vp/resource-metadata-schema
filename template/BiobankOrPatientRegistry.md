@@ -9,6 +9,10 @@ The name of the biobank or patient registry. This is a required field and needs 
 [Catalog](Catalog.md)
 > **Warning** This field is `required`, and should be `unique`
 
+## Logo
+A graphic representation of this resource.
+> **Note** This field is `optional`
+
 ## Description
 A description of this biobank or patient registry.
 > **Note** This field is `optional`

@@ -21,12 +21,16 @@ hPSCreg® offers the research community, legislators, regulators and the general
 the current status of human pluripotent stem cell (hPSC) research.
 > **Note** This field is `optional`
 
-## Webpages
+## Homepage
 This is a comma separated list of the URLs to webpages with more information regarding the organisation. Each URL has to
 start with http:// or https://.
 
 *Example:*
 https://hpscreg.eu/
+> **Note** This field is `optional`
+
+## Logo
+A graphic representation of this resource.
 > **Note** This field is `optional`
 
 ## Location title

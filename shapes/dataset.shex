@@ -10,6 +10,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
 :datasetShape IRI {
   a [dcat:Dataset];
   dct:title xsd:string;
+  foaf:logo IRI?;
   dct:description xsd:string*;
   dcat:theme IRI+;
   dct:publisher @:organisationShape;

@@ -10,6 +10,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
 :guidelineShape IRI {
   a [ejprd:Guideline];
   dct:title xsd:string;
+  foaf:logo IRI?;
   dct:description xsd:string*;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;

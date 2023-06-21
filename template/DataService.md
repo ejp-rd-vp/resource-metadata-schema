@@ -6,6 +6,10 @@ The name of the data service. This is a required field and needs to be unique in
 > **Warning** This field is `required`, and should be `unique` or when this service serves multiple data
 > sets the combinations of data service with datasets needs to be unique.
 
+## Logo
+A graphic representation of this resource.
+> **Note** This field is `optional`
+
 ## Description
 A description of this data service.
 > **Note** This field is `optional`
