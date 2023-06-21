@@ -21,7 +21,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   ejprd:populationCoverage @:populationCoverageShape*;
   dct:conformsTo IRI?;
   (dct:accessRights IRI | odrl:hasPolicy IRI)?;
-  ejprd:personalData xsd:boolean;
+  ejprd:personalData xsd:string?;
   ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscovery>]
 }
 

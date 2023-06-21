@@ -10,9 +10,9 @@ The name of the data service. This is a required field and needs to be unique in
 A graphic representation of this resource.
 > **Note** This field is `optional`
 
-## Description
-A description of this data service.
-> **Note** This field is `optional`
+## PersonalData
+Set to "true" if the resource onboarded to the Virtual Platform contains personal data, personal data
+meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".
 
 ## Description
 A description of the services available via the end-points, including their operations, parameters etc.

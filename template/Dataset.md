@@ -15,6 +15,10 @@ A graphic representation of this resource.
 hPSC-lines
 > **Warning** This field is `required`, and should be `unique`
 
+## PersonalData
+Set to "true" if the resource onboarded to the Virtual Platform contains personal data, personal data
+meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".
+
 ## Description
 A description of the dataset. It can consist of multiple strings.
 

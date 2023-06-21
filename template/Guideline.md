@@ -16,6 +16,9 @@ A graphic representation of this resource.
 A description of this guideline.
 > **Note** This field is `optional`
 
+## PersonalData
+Set to "true" if the resource onboarded to the Virtual Platform contains personal data, personal data
+meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".
 
 ## Theme
 It consists of 1 or more IRIs separated by commas. When set, it specifies relevant ontology concepts

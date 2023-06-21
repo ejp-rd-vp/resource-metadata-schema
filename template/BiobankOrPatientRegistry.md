@@ -37,8 +37,9 @@ The title of an organisation that has been specified on the [Organisation](Organ
 
 
 ## PersonalData
-This field is used to indicate whether this biobank or patient registry deals with personal data or not. If this
-biobank or patient registry deals with personal data, the value of this field should be "Yes", else "No".
+Set to "true" if the resource onboarded to the Virtual Platform contains personal data, personal data 
+meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".
+
 
 > **Warning** This field is `required`.
 

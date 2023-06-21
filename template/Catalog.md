@@ -12,6 +12,14 @@ The name of the catalog. This is a required field and needs to be unique in this
 A graphic representation of this resource.
 > **Note** This field is `optional`
 
+## Publisher
+The title of an organisation that has been specified on the [Organisation](Organisation.md) sheet.
+> **Warning** This field is `required`
+
+## PersonalData
+Set to "true" if the resource onboarded to the Virtual Platform contains personal data, personal data
+meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".
+
 ## Description
 A brief description of the catalog. It can consist of multiple strings.
 
