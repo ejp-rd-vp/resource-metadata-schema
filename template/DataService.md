@@ -29,7 +29,7 @@ This property tells the EJP RD Virtual Platform whether this dataset is queryabl
 queryable, it is assumed to be discoverable. The 2 option here are:
 
 - http://purl.org/ejp-rd/vocabulary/VPDiscoverable
-- http://purl.org/ejp-rd/vocabulary/VPContentDiscoverable
+- http://purl.org/ejp-rd/vocabulary/VPContentDiscovery
 > **Warning** This field is `required`
 
 ## EndpointURL
