@@ -12,6 +12,7 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dct:title xsd:string;
   foaf:logo IRI?;
   dct:description xsd:string*;
+  dct:license IRI;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;
   dct:hasVersion xsd:string;

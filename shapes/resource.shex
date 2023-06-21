@@ -17,10 +17,10 @@ PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
   dct:publisher @:organisationShape;
   dcat:landingPage IRI*;
   dct:language xsd:string+;
-  dct:license IRI?;
+  dct:license IRI;
   dct:conformsTo IRI?;
   (dct:accessRights IRI | odrl:hasPolicy IRI)?;
-  ejprd:personalData xsd:string?;
+  ejprd:personalData xsd:string;
   ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscovery>]
 }
 

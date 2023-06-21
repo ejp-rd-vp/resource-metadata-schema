@@ -60,6 +60,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   foaf:logo IRI?;
   dct:description xsd:string*;
   dcat:theme IRI+;
+  dct:license IRI;
   dct:publisher @:organisationShape;
   dcat:landingPage IRI*;
   dct:license IRI;

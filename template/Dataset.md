@@ -15,6 +15,13 @@ A graphic representation of this resource.
 hPSC-lines
 > **Warning** This field is `required`, and should be `unique`
 
+## License
+This should contain a URL that provides details regarding the license that is applicable to this resource.
+If no suitable license can be provided, then the default license should be used:
+https://w3id.org/ejp-rd/resources/licenses/v1.0/.
+
+> **Warning** This field is `required`
+
 ## PersonalData
 Set to "true" if the resource onboarded to the Virtual Platform contains personal data, personal data
 meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".

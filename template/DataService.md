@@ -19,7 +19,10 @@ A description of the services available via the end-points, including their oper
 > **Note** This field is `optional`
 
 ## License
-This should contain a URL that provides details regarding the license that is applicable to this data service.
+This should contain a URL that provides details regarding the license that is applicable to this resource.
+If no suitable license can be provided, then the default license should be used: 
+https://w3id.org/ejp-rd/resources/licenses/v1.0/.
+
 > **Warning** This field is `required`
 
 ## PersonalData

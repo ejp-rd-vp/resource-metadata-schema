@@ -14,6 +14,7 @@ PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
   dct:title xsd:string;
   foaf:logo IRI?;
   dct:description xsd:string*;
+  dct:license IRI;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;
   dct:publisher @:organisationShape;
