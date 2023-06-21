@@ -15,8 +15,17 @@ Set to "true" if the resource onboarded to the Virtual Platform contains persona
 meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".
 
 ## Description
+A human-readable (narrative) description of the functionality and features of the Servie
 A description of the services available via the end-points, including their operations, parameters etc.
-> **Note** This field is `optional`
+> **Recommendation** Specifying a value for this field is `recommended`
+
+## EndpointDescription
+A machine-readable document defining the API of the service (e.g. in openAPI)
+> **Warning** This field is `required` for services that are attached to [Dataset](Dataset.md)
+> 
+> **Note** This field is `optional` for services that are attached to [Catalog](Catalog.md)
+> 
+> (this is regulated at the level of policy, not at the level of schema)
 
 ## License
 This should contain a URL that provides details regarding the license that is applicable to this resource.
@@ -61,7 +70,7 @@ select the title from the dropdown list.
 ## ConformsTo
 The standard that the output data from the service will conform to - e.g. JSON-LD, or .CSV.
 If applicable, it should have a URI as a value, that points to the spec document of that data standard.
-> **Note** This field is `optional`
+> **Recommendation** Specifying a value for this field is `recommended`
 
 ## Access
 A URL where information regarding who is allowed to access this resource is provided.
