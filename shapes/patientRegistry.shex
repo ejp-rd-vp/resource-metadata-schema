@@ -21,7 +21,8 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dct:language IRI+;
   ejprd:populationCoverage ["National" "International" "Regional" "European"];
   dct:conformsTo IRI?;
-  (dct:accessRights IRI | odrl:hasPolicy IRI)?;
+  dct:accessRights IRI?;
+  odrl:hasPolicy IRI?;
   ejprd:personalData xsd:string?;
   ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscovery>]
 }

@@ -76,3 +76,15 @@ the resource is discoverable. The 2 option here are:
 - http://purl.org/ejp-rd/vocabulary/VPDiscoverable: indicates that you are requesting to be indexed by the platform
 - http://purl.org/ejp-rd/vocabulary/VPContentDiscovery: indicates that you have implemented the /individuals interface for Beacon2
 > **Warning** This field is `required`
+
+## AccessRight
+Information about who can access the resource or an indication of its security status. This should
+point to a URL where this information can be found.
+
+> **Recommendation** Specifying a value for this field is `recommended`
+
+## ODRLPolicy (in DCAT 2 `odrl:hasPolicy`)
+An ODRL conformant policy expressing the rights associated with the resource. This should point to
+a URL where this information can be found.
+
+> **Recommendation** Specifying a value for this field is `recommended`

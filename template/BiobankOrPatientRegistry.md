@@ -80,14 +80,15 @@ en,nl indicates that this biobank or patient registry is available in English an
 
 > **Warning** This field is `required`
 
-## Access
-A URL where information regarding who is allowed to access this resource is provided.
+## AccessRight
+Information about who can access the resource or an indication of its security status. This should 
+point to a URL where this information can be found.
 
 > **Recommendation** Specifying a value for this field is `recommended`
 
-## AccessType
-Select either "ODRL Policy" if the access to this resource is defined compliant to ODRL policy or "Access Information" if
-this URL provides access information.
+## ODRLPolicy (in DCAT 2 `odrl:hasPolicy`)
+An ODRL conformant policy expressing the rights associated with the resource. This should point to
+a URL where this information can be found.
 
 > **Recommendation** Specifying a value for this field is `recommended`
 

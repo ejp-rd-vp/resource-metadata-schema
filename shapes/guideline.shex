@@ -20,7 +20,8 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dcat:landingPage IRI*;
   dct:language xsd:string+
   dct:conformsTo IRI?;
-  (dct:accessRights IRI | odrl:hasPolicy IRI)?;
+  dct:accessRights IRI?;
+  odrl:hasPolicy IRI?;
   ejprd:vpConnection [<http://purl.org/ejp-rd/vocabulary/VPDiscoverable> <http://purl.org/ejp-rd/vocabulary/VPContentDiscovery>];
   ejprd:personalData xsd:string?
 }

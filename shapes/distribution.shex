@@ -16,7 +16,8 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dcat:mediaType xsd:string?;
   dct:publisher @:organisationShape;
   dct:isPartOf IRI*;
-  (dct:accessRights IRI | odrl:hasPolicy IRI)?
+  dct:accessRights IRI?;
+  odrl:hasPolicy IRI?
 }
 
 :locationShape IRI {

@@ -7,6 +7,7 @@ PREFIX ejprd:   <http://purl.org/ejp-rd/vocabulary/>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX sio:  <http://semanticscience.org/resource/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
 
 :catalogShape IRI {
   a [dcat:Catalog];
@@ -18,7 +19,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dcat:catalog @:catalogShape*;
   ejprd:patientRegistry @:patientRegistryShape*;
   ejprd:biobank @:biobankShape*;
-  ejprd:guideline @:guidelineShape*
+  ejprd:guideline @:guidelineShape*;
+  dct:accessRights IRI?;
+  odrl:hasPolicy IRI?;
+  dct:conformsTo IRI?
 }
 
 :guidelineShape IRI {

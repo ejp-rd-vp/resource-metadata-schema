@@ -73,7 +73,7 @@ When the dataset refers to a biobank or patient registry, it should contain the 
 as defined on BiobankPatientRegistry sheet.
 > **Note** This field is `optional`
 
-## Version
+## Version (in DCAT 2 `hasVersion`)
 Where applicable, it should provide the version as a string of text.
 
 *Example:*
@@ -110,13 +110,14 @@ en,nl the indicate that the dataset is available in English and Dutch/Flemish.
 
 > **Warning** This field is `required`
 
-## Access
-A URL where information regarding who is allowed to access this resource is provided.
+## AccessRight
+Information about who can access the resource or an indication of its security status. This should
+point to a URL where this information can be found.
 
 > **Recommendation** Specifying a value for this field is `recommended`
 
-## AccessType
-Select either "ODRL Policy" if the access to this resource is defined compliant to ODRL policy or "Access Information" if
-this URL provides access information.
+## ODRLPolicy (in DCAT 2 `odrl:hasPolicy`)
+An ODRL conformant policy expressing the rights associated with the resource. This should point to
+a URL where this information can be found.
 
 > **Recommendation** Specifying a value for this field is `recommended`
