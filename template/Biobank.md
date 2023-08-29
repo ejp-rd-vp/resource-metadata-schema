@@ -1,9 +1,9 @@
-# Biobank or patient registries
-Defines all the biobanks and/or patient registries for this EJP RD resource in the case where datasets are about content 
-of a rare disease resources such as biobanks and patient registries.
+# Biobank
+Defines all the biobanks for this EJP RD resource in the case where datasets are about content 
+of a rare disease resources such as biobanks.
 
 ## Title
-The name of the biobank or patient registry. This is a required field and needs to be unique in this spreadsheet.
+The name of the biobank. This is a required field and needs to be unique in this spreadsheet.
 
 *Used by:*
 [Catalog](Catalog.md)
@@ -14,18 +14,18 @@ A graphic representation of this resource.
 > **Note** This field is `optional`
 
 ## Description
-A description of this biobank or patient registry.
+A description of this biobank.
 > **Note** This field is `optional`
 
 ## PopulationCoverage
-Gives an indication of the part of the population covered by this biobank/patient registry. This field must have 1 of 
+Gives an indication of the part of the population covered by this biobank. This field must have 1 of 
 the following values: "National", "International", "Regional" or "European". 
 > **Warning** This field is `required`
 
 
 ## Theme
 It consists of 1 or more IRIs separated by commas. When set, it specifies relevant ontology concepts
-that classify the biobank or patient registry. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
+that classify the biobank. Typically these can be looked up using the [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS).
 > **Warning** This field is `required`
 
 ## Publisher
@@ -63,20 +63,16 @@ This is a commas separated list of the URLs to webpages with more information re
 start with http:// or https://.
 > **Note** This field is `optional`
 
-## Type
-Select either "Biobank" or "Patient registry" depending on whether this describes a biobank or a patient registry.
-> **Warning** This field is `required`
-
 ## Keywords
-The list of keywords applicable to this biobank or patient registry, separated by commas.
+The list of keywords applicable to this biobank, separated by commas.
 
 > **Note** This field is `optional`
 
 ## Language
-A comma separated list of ISO 639-1 two-letter codes for the languages this biobank or patient registry is provided in.
+A comma separated list of ISO 639-1 two-letter codes for the languages this biobank is provided in.
 
 *Example:*
-en,nl indicates that this biobank or patient registry is available in English and Dutch/Flemish.
+en,nl indicates that this biobank is available in English and Dutch/Flemish.
 
 > **Warning** This field is `required`
 
