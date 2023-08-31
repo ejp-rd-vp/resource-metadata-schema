@@ -59,3 +59,4 @@ An ODRL conformant policy expressing the rights associated with the resource. Th
 a URL where this information can be found.
 
 > **Recommendation** Specifying a value for this field is `recommended`
+

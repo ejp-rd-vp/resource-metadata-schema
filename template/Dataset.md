@@ -43,7 +43,8 @@ http://purl.obolibrary.org/obo/CLO_0037308.
 > **Warning** This field is `required`
 
 ## ConformsTo
-The IRI of the ontology this dataset adheres to and from which concepts are used in defining the Theme for this dataset.
+The IRI of the ontology or data format standard that this dataset adheres to and from which concepts are used in defining 
+the Theme for this dataset.
 > **Recommendation** Specifying a value for this field is `recommended`
 
 ## VPConnection
@@ -121,3 +122,24 @@ An ODRL conformant policy expressing the rights associated with the resource. Th
 a URL where this information can be found.
 
 > **Recommendation** Specifying a value for this field is `recommended`
+
+## Identifier
+A unique identifier of the item. Recommended practice is to identify the resource by means of a string 
+conforming to an identification system. Examples include International Standard Book Number (ISBN), 
+Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be 
+provided as HTTP URIs.
+> **Warning** This field is `required`
+
+## ContactPoint
+Relevant [contact information](ContactPoint.md) for this dataset. 
+> **Warning** This field is `required`
+
+## Issued
+The date on which this dataset was created
+> **Warning** This field is `required`
+
+## Modified
+The date on which this dataset was updated or same as issue date if it has not been modified.
+> **Warning** This field is `required`
+
+
