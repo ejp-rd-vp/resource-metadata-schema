@@ -14,7 +14,8 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
 
 # Collection in MIABIS 2.0 represents a collection as a set of samples with at least one common characteristic
 :collectionShape IRI {
-  rdf:type [dcat:Resource obo:OBIB_0000616]; # obo:OBIB_0000616 is "Biobank"
+  rdf:type dcat:Dataset;
+  rdf:type obo:OBIB_0000616; # obo:OBIB_0000616 is "Biobank"
   dct:identifier xsd:string;
   dct:title xsd:string;
   foaf:logo IRI?;
@@ -23,7 +24,7 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
   dct:license IRI;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;
-  dct:publisher @:biobankShape # obo:OBIB_0000735 is "is owned by", reverse of OBIB_0000732 "owns"
+  dct:publisher @:biobankShape;
   dcat:landingPage IRI*;
   dct:language xsd:string+;
   ejprd:populationCoverage ["National" "International" "Regional" "European"];
@@ -32,31 +33,32 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
   dct:accessRights IRI?;
   odrl:hasPolicy IRI?;
   dct:conformsTo IRI?;
-  dct:contactPoint [vcard:Individual]?;
-}
-
-:locationShape IRI {
-  a [dct:Location];
-  dct:title xsd:string;
-  dct:description xsd:string*;
+  dct:contactPoint vcard:Kind?
 }
 
 # In MIABIS, Biobank is defined as an organization or an organizational unit that stores samples and data related to the samples.
 # Only Organizational property are used to describe a Biobank
 :biobankShape IRI {
-  rdf:type [foaf:Organization obo:OBIB_0000623]; # obo:OBIB_0000623 is Biobank Organization
+  rdf:type foaf:Organization;
+  rdf:type obo:OBIB_0000623; # obo:OBIB_0000623 is Biobank Organization
   dct:identifier xsd:string;
   dct:title xsd:string;
   dct:alternative xsd:string*;
   dct:description xsd:stirng*;
   dcat:landingPage IRI*;
   dct:spatial @:locationShape;
-  dcat:contactPoint [vcard:Individual];
-  obo:OBIB_0000732 @:collectionShape+; # OBIB_0000732 is "owns"
-  obo:RO_0000053 @:biobankLegalEntity #  
+  dcat:contactPoint vcard:Kind;
+  obo:RO_0000053 @:biobankLegalEntity; # obo:RO_0000053 is a generic "has characteristic" that MUST have "Legal entity" as object
+  obo:OBIB_0000732 @:collectionShape+ # OBIB_0000732 is "owns"
 }
 
 :biobankLegalEntity IRI {
   rdf:type [obo:OMRSE_00000038]; # OMRSE_00000038 is legal person role
   dct:title xsd:string
+}
+
+:locationShape IRI {
+  a [dct:Location];
+  dct:title xsd:string;
+  dct:description xsd:string*;
 }

@@ -2,10 +2,11 @@ To represent biobanks, the [Minimum Information About BIobank data Sharing](http
 
 MIABIS contains two concepts at Resource level:
 
-* Sample Collection: represents a set of samples with at least one common characteristic
+* Sample Collection: represents a set of samples with at least one common characteristic.
 * Biobank: is defined as an organization or an organizational unit that stores samples and data related to the samples. In MIABIS Core 2.0 biobanks do not contain samples directly, but they are hosting sample collections.
 
-These two concepts of MIABIS have been mapped to DCAT:Resources and denoted using classes from [OBIB](https://www.ebi.ac.uk/ols4/ontologies/obib) ontology.
+
+These two concepts of MIABIS have been modelled similarly to Dataset and denoted more specifically using classes from [OBIB](https://www.ebi.ac.uk/ols4/ontologies/obib) ontology.
 
 
 ### Metadata model figure
@@ -38,36 +39,39 @@ These two concepts of MIABIS have been mapped to DCAT:Resources and denoted usin
 
 
 :collection
-  a obo:OBIB_0000616, dcat:Dataset;
+  a obo:OBIB_0000616, dcat:Resouce;
   dct:identifier "collection-id";
-  obo:OBIB_0000735 :biobank;
-  dct:title "Muscle tissue collection";
+  dct:title "Muscle Tissue Collection";
+  dct:description "Example collection of samples";
+  dct:alternative "MTC";
+  dcat:theme ordo:Orphanet_589;
+  dcat:keyword "Myastenia gravis"
+  dct:publisher :biobank;
+  dcat:landingPage <https://mtc.brd.org>;
+  dct:language <http://lexvo.org/id/iso639-3/eng>;
+  ejprd:personalData "true";
   dcat:contactPoint [ a vcard:Individual;
       vcard:email <mailto:info@ejprdbiobank.org>;
       vcard:hasGivenName "John";
       vcard:hasFamilyName "Smith";
       vcard:hasHonorificSuffix "PhD"
-    ];
-  dct:description "Example collection of samples";
-  dcat:theme ordo:Orphanet_589 .
+    ].
 
 :biobank
-  a obo:OBIB_0000623, dcat:Resource;
+  a obo:OBIB_0000623, foaf:Organization;
   dct:identifier "biobank-id";
   dct:title "Biobank of Rare Diseases";
   dct:alternative "BRD";
   dct:description "Biobank with collections of biopsies of muscular diseases";
-  dcat:landingPage <https://examplebiobank.org>;
-  dct:publisher :biobankOrganization;
+  dcat:landingPage <https://brd.org>;
   dct:spatial  <http://publications.europa.eu/resource/authority/country/AUT>;;
-  dcat:contactPoint [ a vcard:Individual;
-      vcard:email <mailto:director@ejprdbiobank.org>;
-      vcard:hasGivenName "Mario";
-      vcard:hasFamilyName "Rossi";
-      vcard:hasHonorificSuffix "PhD"
-    ];
+  obo:RO_0000053 :biobankOrganization;  # has characteristic. The object MUST be of type Legal en
   obo:OBIB_0000732 :collection .
+  dcat:contactPoint [ a vcard:Organization;
+      vcard:url <https://brd.org/contacts>
+ ].
+  
 
 :biobankOrganization 
-  a foaf:Organization;
-  foaf:name "University of Muscle Diseases" .```
+  a obo:OMRSE_00000038;
+  foaf:name "University of Muscle Diseases" .``
