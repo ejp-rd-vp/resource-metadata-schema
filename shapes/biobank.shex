@@ -14,13 +14,12 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
 
 # Collection in MIABIS 2.0 represents a collection as a set of samples with at least one common characteristic
 :collectionShape IRI {
-  rdf:type dcat:Dataset;
+  rdf:type dcat:Resource;
   rdf:type obo:OBIB_0000616; # obo:OBIB_0000616 is "Biobank"
   dct:identifier xsd:string;
   dct:title xsd:string;
   foaf:logo IRI?;
   dct:description xsd:string*;
-  dct:alternative xsd:string*;
   dct:license IRI;
   dcat:theme IRI+;
   dcat:keyword xsd:string*;
@@ -43,12 +42,11 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
   rdf:type obo:OBIB_0000623; # obo:OBIB_0000623 is Biobank Organization
   dct:identifier xsd:string;
   dct:title xsd:string;
-  dct:alternative xsd:string*;
-  dct:description xsd:stirng*;
-  dcat:landingPage IRI*;
+  dct:description xsd:string*;
+  foaf:homepage IRI*;
   dct:spatial @:locationShape;
   dcat:contactPoint vcard:Kind;
-  obo:RO_0000053 @:biobankLegalEntity; # obo:RO_0000053 is a generic "has characteristic" that MUST have "Legal entity" as object
+  obo:RO_0000053 @:biobankLegalEntity?; # obo:RO_0000053 is a generic "has characteristic" that MUST have "Legal entity" as object
   obo:OBIB_0000732 @:collectionShape+ # OBIB_0000732 is "owns"
 }
 

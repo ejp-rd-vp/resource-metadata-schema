@@ -39,11 +39,10 @@ These two concepts of MIABIS have been modelled similarly to Dataset and denoted
 
 
 :collection
-  a obo:OBIB_0000616, dcat:Resouce;
+  a obo:OBIB_0000616, dcat:Resource;
   dct:identifier "collection-id";
   dct:title "Muscle Tissue Collection";
   dct:description "Example collection of samples";
-  dct:alternative "MTC";
   dcat:theme ordo:Orphanet_589;
   dcat:keyword "Myastenia gravis"
   dct:publisher :biobank;
@@ -61,9 +60,8 @@ These two concepts of MIABIS have been modelled similarly to Dataset and denoted
   a obo:OBIB_0000623, foaf:Organization;
   dct:identifier "biobank-id";
   dct:title "Biobank of Rare Diseases";
-  dct:alternative "BRD";
   dct:description "Biobank with collections of biopsies of muscular diseases";
-  dcat:landingPage <https://brd.org>;
+  fofa:homepage <https://brd.org>;
   dct:spatial  <http://publications.europa.eu/resource/authority/country/AUT>;;
   obo:RO_0000053 :biobankOrganization;  # has characteristic. The object MUST be of type Legal en
   obo:OBIB_0000732 :collection .
@@ -74,4 +72,5 @@ These two concepts of MIABIS have been modelled similarly to Dataset and denoted
 
 :biobankOrganization 
   a obo:OMRSE_00000038;
-  foaf:name "University of Muscle Diseases" .``
+  foaf:name "University of Muscle Diseases" .
+```
