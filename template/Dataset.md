@@ -47,13 +47,12 @@ The IRI of the ontology or data format standard that this dataset adheres to and
 the Theme for this dataset.
 > **Recommendation** Specifying a value for this field is `recommended`
 
-## VPConnection
-This property tells the EJP RD Virtual Platform whether content of this resource is discoverable or whether
-the resource is discoverable. The 2 option here are:
+## Type
+Defines the type of this resource which for the EJP RD Virtual Platform can be one of the following:
 
-- http://purl.org/ejp-rd/vocabulary/VPDiscoverable: indicates that you are requesting to be indexed by the platform
-- http://purl.org/ejp-rd/vocabulary/VPContentDiscovery: indicates that you have implemented the /individuals interface for Beacon2
-> **Warning** This field is `required`
+- http://purl.org/ejp-rd/vocabulary/VPBeacon2_individuals:  the annotated resource (always a DataService) provides the Beacon2 /individuals interface
+- http://purl.org/ejp-rd/vocabulary/VPBeacon2_catalog: the annotated resource (always a DataService) provides the Beacon2 /catalog interface
+> **Warning** This field is `required`> **Warning** This field is `required`
 
 ## License
 This should contain a URL that provides details regarding the license that is applicable to this dataset.
@@ -74,8 +73,9 @@ When the dataset refers to a biobank or patient registry, it should contain the 
 as defined on BiobankPatientRegistry sheet.
 > **Note** This field is `optional`
 
-## Version (in DCAT 2 `hasVersion`)
-Where applicable, it should provide the version as a string of text.
+## Version
+If applicable, it should provide the version of the dataset as a string of text.
+> **Note** This field is `optional`
 
 *Example:*
 4.11.2

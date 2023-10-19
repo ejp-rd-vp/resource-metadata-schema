@@ -27,9 +27,6 @@ or whether you first need to download the data in order to be able to view the d
 This should contain a URL that provides details regarding the license that is applicable to this distribution.
 > **Warning** This field is `required`
 
-## Version
-It should provide the version of the distribution as a string of text.
-> **Warning** This field is `required`
 
 ## MediaType
 If applicable, use the dropdown to select a media type list in the Mediatypes sheet. 

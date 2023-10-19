@@ -49,12 +49,11 @@ meaning data related to indentified or identifiable persons (as per GDPR definit
 If applicable, it should point to the IRI an established standard to which the described resource conforms
 > **Recommendation** Specifying a value for this field is `recommended`
 
-## VPConnection
-This property tells the EJP RD Virtual Platform whether content of this resource is discoverable or whether 
-the resource is discoverable. The 2 option here are:
+## Type
+Defines the type of this resource which for the EJP RD Virtual Platform can be one of the following:
 
-- http://purl.org/ejp-rd/vocabulary/VPDiscoverable: indicates that you are requesting to be indexed by the platform
-- http://purl.org/ejp-rd/vocabulary/VPContentDiscovery: indicates that you have implemented the /individuals interface for Beacon2
+- http://purl.org/ejp-rd/vocabulary/VPBeacon2_individuals:  the annotated resource (always a DataService) provides the Beacon2 /individuals interface
+- http://purl.org/ejp-rd/vocabulary/VPBeacon2_catalog: the annotated resource (always a DataService) provides the Beacon2 /catalog interface
 > **Warning** This field is `required`
 
 
@@ -106,3 +105,7 @@ The date on which this biobank was created
 ## Modified
 The date on which this biobank was updated or same as issue date if it has not been modified.
 > **Warning** This field is `required`
+
+## Version
+If applicable, it should provide the version of the biobank as a string of text.
+> **Note** This field is `optional`
