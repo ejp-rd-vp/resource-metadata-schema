@@ -29,8 +29,7 @@ meaning data related to indentified or identifiable persons (as per GDPR definit
 
 ## Description
 A brief description of the catalog. It can consist of multiple strings.
-
-> **Note** This field is `optional`
+> **Warning** This field is `required`
 
 ## DatasetTitles
 A list of 0 or more dataset titles, as defined on the Dataset tab, separated by commas.

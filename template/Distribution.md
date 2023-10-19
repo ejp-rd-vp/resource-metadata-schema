@@ -12,11 +12,16 @@ dropdown list.
 
 ## Description
 A description of the distribution.
-> **Note** This field is `optional`
+> **Warning** This field is `required`
 
 ## URL
 The URL from where the data can be accessed or downloaded.
 > **Warning** This field is `required`
+
+## AccessService
+A data service that gives access to the distribution of the dataset
+
+> **Note** This field is `optional` 
 
 ## Type
 Select either "Access" or "Download" depending on whether the URL will allow you to view the data without downloading it 

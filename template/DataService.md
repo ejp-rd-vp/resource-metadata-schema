@@ -17,7 +17,7 @@ meaning data related to indentified or identifiable persons (as per GDPR definit
 ## Description
 A human-readable (narrative) description of the functionality and features of the Servie
 A description of the services available via the end-points, including their operations, parameters etc.
-> **Recommendation** Specifying a value for this field is `recommended`
+> **Warning** This field is `required`
 
 ## EndpointDescription
 A machine-readable document defining the API of the service (e.g. in openAPI)
@@ -56,11 +56,7 @@ The name of the dataset to which this service provide access, or, when this serv
 the list of dataset titles should be provided, separated by commas.
 
 > **Note** This field is `optional`
- 
-## AccessService
-A data service that gives access to the distribution of the dataset
 
-> **Note** This field is `optional`
 
 
 ## Version

@@ -15,7 +15,7 @@ A graphic representation of this resource.
 
 ## Description
 A description of this patient registry.
-> **Note** This field is `optional`
+> **Warning** This field is `required`
 
 ## PopulationCoverage
 Gives an indication of the part of the population covered by this patient registry. This field must have 1 of 

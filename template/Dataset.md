@@ -31,7 +31,7 @@ A description of the dataset. It can consist of multiple strings.
 
 *Example:*
 hPSCreg is a global registry for human pluripotent stem cell lines (hPSC-lines).
-> **Note** This field is `optional`
+> **Warning** This field is `required`
 
 ## Theme
 Defines a list of concepts that this dataset deal with. It consists of IRIs separated by commas that specifies 

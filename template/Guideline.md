@@ -14,7 +14,7 @@ A graphic representation of this resource.
 
 ## Description
 A description of this guideline.
-> **Note** This field is `optional`
+> **Warning** This field is `required`
 
 ## License
 This should contain a URL that provides details regarding the license that is applicable to this resource.
