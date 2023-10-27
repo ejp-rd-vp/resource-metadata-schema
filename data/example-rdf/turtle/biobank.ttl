@@ -1,26 +1,50 @@
 @prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
-@prefix dcat:  <http://www.w3.org/ns/dcat#> .
-@prefix dct:   <http://purl.org/dc/terms/> .
-@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix sio:  <http://semanticscience.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix lang: <http://id.loc.gov/vocabulary/iso639-1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix ordo: <http://www.orpha.net/ORDO/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
 
-:biobank a ejp:Biobank ;
-  dct:publisher :organisation ;        
-  dct:title "Austrian Bone Marrow Donor Registry" ;
-  dct:description "Donor registry";
-  ejp:populationCoverage  :population_coverage ;
-  dcat:theme  ordo:Orphanet_171895 ;
-  foaf:page <http://www.stammzellspende.at> .
 
-:organisation a foaf:Organisation ;
-  dct:title "Fonds Österreichisches Stammzellregister" ;
-  dct:spatial  :location .
+:collection
+  a obo:OBIB_0000616, dcat:Resource;
+  dct:identifier "collection-id";
+  dct:title "Muscle Tissue Collection";
+  dct:description "Example collection of samples";
+  dcat:theme ordo:Orphanet_589;
+  dcat:keyword "Myastenia gravis"
+  dct:publisher :biobank;
+  dcat:landingPage <https://mtc.brd.org>;
+  dct:language <http://lexvo.org/id/iso639-3/eng>;
+  ejprd:personalData "true";
+  dcat:contactPoint [ a vcard:Individual;
+      vcard:email <mailto:info@ejprdbiobank.org>;
+      vcard:hasGivenName "John";
+      vcard:hasFamilyName "Smith";
+      vcard:hasHonorificSuffix "PhD"
+    ].
 
-:population_coverage  a sio:SIO_001166 ;
-  rdfs:label  "National" .
+:biobank
+  a obo:OBIB_0000623, foaf:Organization;
+  dct:identifier "biobank-id";
+  dct:title "Biobank of Rare Diseases";
+  dct:description "Biobank with collections of biopsies of muscular diseases";
+  fofa:homepage <https://brd.org>;
+  dct:spatial  <http://publications.europa.eu/resource/authority/country/AUT>;;
+  obo:RO_0000053 :biobankOrganization;  # has characteristic. The object MUST be of type Legal en
+  obo:OBIB_0000732 :collection .
+  dcat:contactPoint [ a vcard:Organization;
+      vcard:url <https://brd.org/contacts>
+ ].
+  
 
-:location a dct:Location ;
-  dct:title  "Austria" .
+:biobankOrganization 
+  a obo:OMRSE_00000038;
+  foaf:name "University of Muscle Diseases" .
