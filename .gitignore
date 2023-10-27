@@ -1,3 +1,9 @@
 
 *.backup
 .idea
+.images/diagram_onboarding_doc/vpprefdata/
+.images/diagram_onboarding_doc/vpprefdata/vpp~
+*.vpp.working
+*.vpp.working-journal
+*.lock
+.images/diagram_onboarding_doc/vpprefdata/tmp/*
