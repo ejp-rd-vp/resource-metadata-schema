@@ -2,4 +2,6 @@
 Provides contact information for a metadata resource. 
 
 ## URL
-A URL pointing to a website that represents the person in some way.
+Range is a URL
+
+> **Warning** This field is `required`

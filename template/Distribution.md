@@ -1,64 +1,84 @@
 # Distribution
-If applicable, it defines all the distributions for different dataset for this EJP RD resource.
-
-## Title
-The name of the distribution. This is a required field and needs to be unique in this spreadsheet.
-> **Warning** This field is `required`, and should be `unique`
-
-## DatasetTitle
-The name of the dataset represented by this distribution. Choose a title of a dataset by selecting at dataset title from the 
-dropdown list.
-> **Warning** This field is `required`
-
-## Description
-A description of the distribution.
-> **Warning** This field is `required`
-
-## URL
-The URL from where the data can be accessed or downloaded.
-> **Warning** This field is `required`
-
-## AccessService
-A data service that gives access to the distribution of the dataset
-
-> **Note** This field is `optional` 
-
-## Type
-Select either "Access" or "Download" depending on whether the URL will allow you to view the data without downloading it 
-or whether you first need to download the data in order to be able to view the data.
-> **Warning** This field is `required`
+A distribution is a representation of your data. You can have as many distributions as
+needed of a dataset. For example, one distribution in .csv, another one in .json, etc.
 
 ## License
-This should contain a URL that provides details regarding the license that is applicable to this distribution.
+This should contain a URL that provides details regarding the license that is applicable to this resource.
+If no suitable license can be provided, then the default license should be used:
+[https://w3id.org/ejp-rd/resources/licenses/v1.0/](https://w3id.org/ejp-rd/resources/licenses/v1.0/). Other licenses are:   
+[https://creativecommons.org/licenses/](https://creativecommons.org/licenses/),
+e.g. [http://creativecommons.org/licenses/by-nc-nd/4.0](http://creativecommons.org/licenses/by-nc-nd/4.0).
+
 > **Warning** This field is `required`
 
 
-## MediaType
-If applicable, use the dropdown to select a media type list in the Mediatypes sheet. 
+## Title
+The name of the Distribution. This is a required
+field and needs to be unique.
 
-*Example:*
-json
-> **Note** This field is `optional`
+> **Warning** This field is `required`, and should be `unique`
+
+## Description
+A description of the Distribution.
+
+> **Warning** This field is `required`
 
 ## Publisher
-The organisation responsible for making this distribution available. Use the dropdown to select an organisation listed
-on the Organisation sheet.
+Pointer to the Organisation that published the
+resource. The range is foaf:Organisation.
+
 > **Warning** This field is `required`
 
-## IsPartOf
-Refers to related resources in which this distribution is physically or logically included. This consists of a list of URLs
-separated by commas.
+## Version 
+The version indicator (name or identifier) of a
+resource. The range is a rdfs:literal.
+
+> **Warning** This field is `required`
+
+## Access Rights
+Information about who can access the
+resource or an indication of its security status.
+This should point to a URL where this
+information can be found. We strongly
+recommend that access rights are described
+as [DUC CCE profile](https://duc.le.ac.uk/).
+
+> **Recommendation** This field is `recommended`
+
+## ODRL Policy
+An ODRL conformant policy
+document (https://www.w3.org/TR/
+odrl-model/) expressing the rights
+and/or responsibilities associated
+with access to and/or use of the
+resource. This should point to a URL
+where this conformant document
+has been published.
+
 > **Note** This field is `optional`
 
-## AccessRight
-Information about who can access the resource or an indication of its security status. This should
-point to a URL where this information can be found.
+## Media Type
+If you have more than one media type
+available for your resource and you wish to
+make them all accessible, you need to add
+another “Distribution”. Example: json.
 
-> **Recommendation** Specifying a value for this field is `recommended`
+> **Note** This field is `optional`
 
-## ODRLPolicy (in DCAT 2 `odrl:hasPolicy`)
-An ODRL conformant policy expressing the rights associated with the resource. This should point to
-a URL where this information can be found.
+## Is Part Of
+Refers to related resources in which this
+distribution is physically or logically included.
+The range is a URL.
 
-> **Recommendation** Specifying a value for this field is `recommended`
+> **Note** This field is `optional`
 
+## Access URL or Download URL
+The URL from where the data can be
+accessed or downloaded.
+
+> **Note** This field is `optional`
+
+## Access Service
+Pointer to the dcat:DataService if available
+
+> **Note** This field is `optional`

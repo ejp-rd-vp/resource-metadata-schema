@@ -1,145 +1,165 @@
 # Dataset
-Defines all the datasets for this EJP RD resource.
+DCAT vocabulary already has a concept dcat:Dataset which is a sub-class of
+dcat:Resource. We use this concept to describe any rare disease-related dataset.
+When a dataset is about the content of rare disease resources such as biobank and
+patient registry then we recommend using sio:isrelatedto property to connect the
+dataset to its rare disease resource.
+
+## License 
+This should contain a URL that provides details regarding the license that is applicable to this resource.
+If no suitable license can be provided, then the default license should be used:
+[https://w3id.org/ejp-rd/resources/licenses/v1.0/](https://w3id.org/ejp-rd/resources/licenses/v1.0/). Other licenses are:   
+[https://creativecommons.org/licenses/](https://creativecommons.org/licenses/),
+e.g. [http://creativecommons.org/licenses/by-nc-nd/4.0](http://creativecommons.org/licenses/by-nc-nd/4.0).
+
+> **Warning** This field is `required`
 
 ## Title
 The name of the dataset. This is a required field and needs to be unique in this spreadsheet.
 
-*Used by:*
-`Distribution`
-
-## Logo
-A graphic representation of this resource.
-> **Note** This field is `optional`
-
 *Example:*
 hPSC-lines
+
 > **Warning** This field is `required`, and should be `unique`
 
-## License
-This should contain a URL that provides details regarding the license that is applicable to this resource.
-If no suitable license can be provided, then the default license should be used:
-https://w3id.org/ejp-rd/resources/licenses/v1.0/.
+
+## Description
+A description of the Dataset.
+
+*Example:*
+hPSCreg is a global registry for human pluripotent stem cell lines (hPSC-lines).
 
 > **Warning** This field is `required`
+
+## Theme
+Points to an URL that specifies relevant ontology concepts that classify the Biobank. Typically, these can be looked
+up using the [Ontology Lookup Service (OLS)](https://www.ebi.ac.uk/ols4/index)  or [Bioportal](https://bioportal.bioontology.org/).
+
+*Example:*
+http://purl.obolibrary.org/obo/CLO_0037308.
+
+> **Warning** This field is `required`
+
+## Publisher
+Pointer to the Organisation that published the
+resource. The range is foaf:Organisation
+
+> **Warning** This field is `required`
+
 
 ## PersonalData
 Set to "true" if the resource onboarded to the Virtual Platform contains personal data, personal data
 meaning data related to indentified or identifiable persons (as per GDPR definition), otherwise "false".
 
-## Description
-A description of the dataset. It can consist of multiple strings.
-
-*Example:*
-hPSCreg is a global registry for human pluripotent stem cell lines (hPSC-lines).
 > **Warning** This field is `required`
 
-## Theme
-Defines a list of concepts that this dataset deal with. It consists of IRIs separated by commas that specifies 
-relevant ontology concepts that classify the dataset. Typically these can be looked up using the 
-[Ontology Lookup Service](https://www.ebi.ac.uk/ols/index) (OLS). 
+## Language
+An ISO 639-1 two-letter code for the
+languages this patient registry is provided
+in. Example: en indicates that this patient
+registry is available in English. The range is
+an xsd:string. The ISO language codes
+can be found at:
+[https://id.loc.gov/vocabulary/iso639-1.html](https://id.loc.gov/vocabulary/iso639-1.html) and an example:
+[en](http://id.loc.gov/vocabulary/iso639-1/en).
 
-*Example:*
-http://purl.obolibrary.org/obo/CLO_0037308.
 > **Warning** This field is `required`
 
-## ConformsTo
-The IRI of the ontology or data format standard that this dataset adheres to and from which concepts are used in defining 
-the Theme for this dataset.
-> **Recommendation** Specifying a value for this field is `recommended`
+## Contact Point
+Pointer to a Contact Point, Range, vCard
 
-## Type
-Defines the type of this resource which for the EJP RD Virtual Platform can be one of the following:
-
-- http://purl.org/ejp-rd/vocabulary/VPBeacon2_individuals:  the annotated resource (always a DataService) provides the Beacon2 /individuals interface
-- http://purl.org/ejp-rd/vocabulary/VPBeacon2_catalog: the annotated resource (always a DataService) provides the Beacon2 /catalog interface
-> **Warning** This field is `required`> **Warning** This field is `required`
-
-## License
-This should contain a URL that provides details regarding the license that is applicable to this dataset.
-
-*Example:*
-https://creativecommons.org/licenses/by/4.0
 > **Warning** This field is `required`
 
-## PersonalData
-This field is used to indicate whether this dataset deals with personal data or not. If this dataset deals with personal 
-data, the value of this field should be "Yes", else "No".
+## Access Rights
+Information about who can access the
+resource or an indication of its security status.
+This should point to a URL where this
+information can be found. We strongly
+recommend that access rights are described
+as [DUC CCE profile](https://duc.le.ac.uk/).
 
-> **Warning** This field is `required`.
+> **Recommendation** This field is `recommended`
 
 
-## IsRelatedTo
-When the dataset refers to a biobank or patient registry, it should contain the title of a [biobank or patient registry](Biobank.md)
-as defined on BiobankPatientRegistry sheet.
-> **Note** This field is `optional`
-
-## Version
-If applicable, it should provide the version of the dataset as a string of text.
-> **Note** This field is `optional`
-
-*Example:*
-4.11.2
-> **Warning** This field is `required`
-
-## Keywords
-The list of keywords applicable to this dataset, separated by commas.
-
-*Example:* 
-pluripotent|cell lines|stem cell
-> **Note** This field is `optional`
-
-## Publisher
-The title of the organisation responsible for publishing this dataset. This should be a title of an organisation as given
-on the [Organisation sheet](Organisation.md).
-
-*Example:*
-Human pluripotent stem cell registry
-> **Warning** This field is `required`
-
-## Landing page
-The web page from where the dataset can be browsed. The URL has to start with http:// or https://.
+## Landing Page
+This a URL to a web page with more
+information regarding the Biobank. Any URL
+must start with http:// or https://.
 
 *Example:*
 https://hpscreg.eu/search?q
-> **Note** This field is `optional`.
 
-## Language
-A comma separated list of ISO 639-1 two-letter codes for the languages this dataset is provided in.
+> **Recommendation** This field is `recommended`
 
-*Example:*
-en,nl the indicate that the dataset is available in English and Dutch/Flemish.
+This property is attached to every
+portion of your Metadata record
+that you wish the VP to explore
+(e.g. Dataset X, Data Service Y, but
+NOT Dataset Z). If you do not add
+this tag to at least the description of
+your resource, you will not be
+onboarded.
+The range is [http://purl.org/ejp-rd/vocabulary/VPDiscoverable](http://purl.org/ejp-rd/vocabulary/VPDiscoverable).
 
-> **Warning** This field is `required`
+> **Note** This field is `optional`
 
-## AccessRight
-Information about who can access the resource or an indication of its security status. This should
-point to a URL where this information can be found.
+## ODRL Policy
+An ODRL conformant policy
+document (https://www.w3.org/TR/
+odrl-model/) expressing the rights
+and/or responsibilities associated
+with access to and/or use of the
+resource. This should point to a URL
+where this conformant document
+has been published.
 
-> **Recommendation** Specifying a value for this field is `recommended`
+> **Note** This field is `optional`
 
-## ODRLPolicy (in DCAT 2 `odrl:hasPolicy`)
-An ODRL conformant policy expressing the rights associated with the resource. This should point to
-a URL where this information can be found.
+## Keyword
+Keywords applicable to this Dataset
 
-> **Recommendation** Specifying a value for this field is `recommended`
+> **Note** This field is `optional`
+
+## Logo
+A link to the graphic representation
+of this resource.
+
+> **Note** This field is `optional`
 
 ## Identifier
-A unique identifier of the item. Recommended practice is to identify the resource by means of a string 
-conforming to an identification system. Examples include International Standard Book Number (ISBN), 
-Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be 
-provided as HTTP URIs.
-> **Warning** This field is `required`
+Identifier of this resource. It can be
+a link. Range is an xsd:string
 
-## ContactPoint
-Relevant [contact information](ContactPoint.md) for this dataset. 
-> **Warning** This field is `required`
+> **Note** This field is `optional`
 
 ## Issued
-The date on which this dataset was created
-> **Warning** This field is `required`
+This resource publication date. The
+range is xsd:date.
+
+> **Note** This field is `optional`
 
 ## Modified
-The date on which this dataset was updated or same as issue date if it has not been modified.
-> **Warning** This field is `required`
+This resource last revision date. The
+range is xsd:date.
 
+> **Note** This field is `optional`
+
+## Version
+The version indicator (name or
+identifier) of a resource. The range
+is a rdfs:literal
+
+*Example:*
+4.11.2
+
+> **Note** This field is `optional`
+
+## Conforms To
+If applicable, it should point to the
+URL, an established standard to
+which the data within the
+described resource conforms (e.g.
+MAGE-ML for Microarray data).
+
+> **Note** This field is `optional`
 
