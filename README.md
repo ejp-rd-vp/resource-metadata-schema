@@ -16,7 +16,7 @@ The core model is designed to represent data about a rare disease patient and bi
 The figure below gives an overview of upper level concepts and properties used in our metadata model.
 
 <p align="center"> 
-	<img src="images/diagram_onboarding_doc/.png"> 
+	<img src="images/diagram_onboarding_doc/ejprdmetadataschema.png"> 
 </p> 
 
 You can browse different metadata modules by visiting the links below.
