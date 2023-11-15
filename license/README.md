@@ -1,3 +1,3 @@
 # Default EJP-RD-VP License
 
-Version number in directory list
+For license information about this Resource, please contact the Resource owner/curator.
