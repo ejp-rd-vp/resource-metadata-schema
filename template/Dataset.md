@@ -8,7 +8,7 @@ dataset to its rare disease resource.
 ## License 
 This should contain a URL that provides details regarding the license that is applicable to this resource.
 If no suitable license can be provided, then the default license should be used:
-[https://w3id.org/ejp-rd/resources/licenses/v1.0/](https://w3id.org/ejp-rd/resources/licenses/v1.0/). Other licenses are:   
+[https://w3id.org/ejp-rd/resources/licenses/](https://w3id.org/ejp-rd/resources/licenses/). Other licenses are:   
 [https://creativecommons.org/licenses/](https://creativecommons.org/licenses/),
 e.g. [http://creativecommons.org/licenses/by-nc-nd/4.0](http://creativecommons.org/licenses/by-nc-nd/4.0).
 
