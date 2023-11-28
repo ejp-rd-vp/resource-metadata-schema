@@ -23,8 +23,8 @@ e.g. [http://creativecommons.org/licenses/by-nc-nd/4.0](http://creativecommons.o
 ## Type 
 In the context of a Data Service, if the service
 is a Beacon, the range is either dcterms:type
-[http://purl.org/ejp-rd/vocabulary/VPBeacon2_individuals](http://purl.org/ejp-rd/vocabulary/VPBeacon2_individuals) or
-[http://purl.org/ejp-rd/vocabulary/VPBeacon2_catalog](http://purl.org/ejp-rd/vocabulary/VPBeacon2_catalog).
+[https://w3id.org/ejp-rd/vocabulary#VPBeacon2_individuals](https://w3id.org/ejp-rd/vocabulary#VPBeacon2_individuals) or
+[https://w3id.org/ejp-rd/vocabulary#VPBeacon2_catalog](https://w3id.org/ejp-rd/vocabulary#VPBeacon2_catalog).
 If the service is anything besides a Beacon, use
 one of the children of [EDAM Operation](http://edamontology.org/operation_0004).
 
@@ -134,7 +134,7 @@ NOT Dataset Z). If you do not add
 this tag to at least the description of
 your resource, you will not be
 onboarded.
-The range is [http://purl.org/ejp-rd/vocabulary/VPDiscoverable](http://purl.org/ejp-rd/vocabulary/VPDiscoverable).
+The range is [https://w3id.org/ejp-rd/vocabulary#VPDiscoverable](https://w3id.org/ejp-rd/vocabulary#VPDiscoverable).
 
 > **Note** This field is `optional`
 

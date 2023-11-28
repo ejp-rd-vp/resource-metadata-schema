@@ -131,7 +131,7 @@ NOT Dataset Z). If you do not add
 this tag to at least the description of
 your resource, you will not be
 onboarded.
-The range is [http://purl.org/ejp-rd/vocabulary/VPDiscoverable](http://purl.org/ejp-rd/vocabulary/VPDiscoverable).
+The range is [https://w3id.org/ejp-rd/vocabulary#VPDiscoverable](https://w3id.org/ejp-rd/vocabulary#VPDiscoverable).
 
 > **Note** This field is `optional`
 
@@ -176,8 +176,8 @@ If applicable, it should point to the IRI an established standard to which the d
 ## Type
 Defines the type of this resource which for the EJP RD Virtual Platform can be one of the following:
 
-- http://purl.org/ejp-rd/vocabulary/VPBeacon2_individuals:  the annotated resource (always a DataService) provides the Beacon2 /individuals interface
-- http://purl.org/ejp-rd/vocabulary/VPBeacon2_catalog: the annotated resource (always a DataService) provides the Beacon2 /catalog interface
+- https://w3id.org/ejp-rd/vocabulary#VPBeacon2_individuals:  the annotated resource (always a DataService) provides the Beacon2 /individuals interface
+- https://w3id.org/ejp-rd/vocabulary#VPBeacon2_catalog: the annotated resource (always a DataService) provides the Beacon2 /catalog interface
 > **Warning** This field is `required`> **Warning** This field is `required`
 
 ## Publisher

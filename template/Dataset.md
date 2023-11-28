@@ -99,7 +99,7 @@ NOT Dataset Z). If you do not add
 this tag to at least the description of
 your resource, you will not be
 onboarded.
-The range is [http://purl.org/ejp-rd/vocabulary/VPDiscoverable](http://purl.org/ejp-rd/vocabulary/VPDiscoverable).
+The range is [https://w3id.org/ejp-rd/vocabulary#VPDiscoverable](https://w3id.org/ejp-rd/vocabulary#VPDiscoverable).
 
 > **Note** This field is `optional`
 

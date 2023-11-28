@@ -17,7 +17,7 @@
 @prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
-@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix ejp:   <https://w3id.org/ejp-rd/vocabulary#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
@@ -51,7 +51,7 @@
 PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX ejp:   <https://w3id.org/ejp-rd/vocabulary#>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>

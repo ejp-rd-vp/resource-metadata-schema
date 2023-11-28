@@ -15,7 +15,7 @@
 @prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
-@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix ejp:   <https://w3id.org/ejp-rd/vocabulary#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
 :location a dct:Location ;
@@ -50,7 +50,7 @@
 PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX ejp:   <https://w3id.org/ejp-rd/vocabulary#>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -88,7 +88,7 @@ The properties `ejp:patientRegistry`, `ejp:biobank`, `ejp:guideline` are mention
 @prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
-@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix ejp:   <https://w3id.org/ejp-rd/vocabulary#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
 :location a dct:Location ;
@@ -112,7 +112,7 @@ The properties `ejp:patientRegistry`, `ejp:biobank`, `ejp:guideline` are mention
 @prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
-@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix ejp:   <https://w3id.org/ejp-rd/vocabulary#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
 :location a dct:Location ;
@@ -137,7 +137,7 @@ The properties `ejp:patientRegistry`, `ejp:biobank`, `ejp:guideline` are mention
 @prefix : <http://purl.org/ejp-rd/metadata-model/v1/example-rdf/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
-@prefix ejp:   <http://purl.org/ejp-rd/vocabulary/> .
+@prefix ejp:   <https://w3id.org/ejp-rd/vocabulary#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
 :location a dct:Location ;

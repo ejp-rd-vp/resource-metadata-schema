@@ -60,7 +60,7 @@ DCAT vocabulary has already has concept `dcat:Dataset` which is a sub-class of `
 PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX ejp:   <https://w3id.org/ejp-rd/vocabulary#>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sio: <http://semanticscience.org/resource/>
@@ -155,7 +155,7 @@ Often a dataset can be made available for use via data dump such as RDF,mysql da
 PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX ejp:   <https://w3id.org/ejp-rd/vocabulary#>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -247,7 +247,7 @@ When you create a distribution entry please make sure that the distribution entr
 PREFIX : <http://purl.org/ejp-rd/metadata-model/v1/shex/>
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX ejp:   <http://purl.org/ejp-rd/vocabulary/>
+PREFIX ejp:   <https://w3id.org/ejp-rd/vocabulary#>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
