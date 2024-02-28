@@ -1,0 +1,22 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix fdpo: <https://w3id.org/fdp/fdp-o#> .
+@prefix ejprd: <https://purl.archive.org/ejp-rd/vocabulary/> .
+@prefix clo: <http://purl.obolibrary.org/obo/CLO_> .
+
+<https://www.ibmt.fraunhofer.de/> a foaf:Organization;
+  dc:title "Fraunhofer IBMT" ;
+  foaf:page <https://www.ibmt.fraunhofer.de>.
+
+<https://hpscreg.eu> a dcat:Resource, dcat:DataService, fdpo:FAIRDataPoint, fdpo:MetadataService;  
+  dc:license <https://ejp-rd-vp.github.io/resource-metadata-schema/license/>;
+  dc:title "hPSCreg";
+  dc:description "The human pluripotent stem cell registry (hPSCreg), accessible at https://hpscreg.eu, is a public registry and data portal for human embryonic and induced pluripotent stem cell lines (hESC and hiPSC).";  
+  dcat:contactPoint <https://hpscreg.eu/contact>;
+  <https://purl.archive.org/ejp-rd/vocabulary/personalData> false;
+  dc:language <http://www.wikidata.org/entity/Q1860>;
+  ejprd:vpConnection ejprd:VPDiscoverable, ejprd:VPContentDiscovery;
+  dc:hasVersion "1";
+  dcat:theme clo:0037308 .
