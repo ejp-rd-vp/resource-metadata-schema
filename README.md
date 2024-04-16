@@ -64,5 +64,6 @@ be sufficient to expose data about these resource through the virtual platform
 
 ## Configurations to provide metadata records according to the EJP-RD schemas
 
-* Spreadsheet to FDP reference implementation: [here](template/README.md)
 * FDP reference implementation or FAIR in a Box (FiaB): [here](https://github.com/ejp-rd-vp/FDP-Reference-Implementation-Configuration)
+* Spreadsheet to FDP reference implementation: [here](template/README.md)
+
