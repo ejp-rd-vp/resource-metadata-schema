@@ -62,5 +62,7 @@ be sufficient to expose data about these resource through the virtual platform
 * Expose if the resource has further contact information
 * ...
 
-## Steps for defining the metadata of your resource
-Detailed steps and the related Google/Excel spreadsheet template can be found [here](template/README.md) 
+## Configurations to provide metadata records according to the EJP-RD schemas
+
+* Spreadsheet to FDP reference implementation: [here](template/README.md)
+* FDP reference implementatio or FAIR in a Box (FiaB): [here](https://github.com/ejp-rd-vp/FDP-Reference-Implementation-Configuration)
