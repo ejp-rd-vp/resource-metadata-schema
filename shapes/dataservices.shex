@@ -5,6 +5,7 @@ PREFIX ejprd:   <https://w3id.org/ejp-rd/vocabulary#>
 PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
+PREFIX vcard: < http://www.w3.org/2006/vcard/ns#>
 
 :dataserviceShape IRI {
   a [dcat:DataService];
@@ -18,11 +19,12 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dcat:accessService:IRI?;
   dcat:version xsd:string?;
   dct:publisher @:organisationShape;
+  dcat:contactPoint @:contactShape;
   dct:conformsTo IRI?;
   dct:accessRights IRI?;
   odrl:hasPolicy IRI?;
   ejprd:personalData xsd:string?;
-  ejprd:vpConnection [<https://w3id.org/ejp-rd/vocabulary#VPDiscoverable> <https://w3id.org/ejp-rd/vocabulary#VPContentDiscovery>]
+  ejprd:vpConnection [<https://w3id.org/ejp-rd/vocabulary#VPDiscoverable>]
 }
 
 :locationShape IRI {
@@ -37,5 +39,9 @@ PREFIX odrl: <https://www.w3.org/TR/odrl-model/>
   dct:description xsd:string*;
   dct:spatial @:locationShape*;
   foaf:page IRI*
+}
+:contactShape IRI {
+  a [vcard:Kind];
+  vcard:url IRI
 }
 
